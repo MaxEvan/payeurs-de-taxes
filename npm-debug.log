@@ -1,0 +1,2995 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'gulp-less' ]
+2 info using npm@1.4.27
+3 info using node@v0.10.30
+4 warn package.json @ No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'gulp-less', null ]
+7 verbose cache add name=undefined spec="gulp-less" args=["gulp-less",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'gulp-less',
+8 verbose parsed url   path: 'gulp-less',
+8 verbose parsed url   href: 'gulp-less' }
+9 silly lockFile c3a282a6-gulp-less gulp-less
+10 verbose lock gulp-less /Users/Maxime/.npm/c3a282a6-gulp-less.lock
+11 silly lockFile c3a282a6-gulp-less gulp-less
+12 silly lockFile c3a282a6-gulp-less gulp-less
+13 verbose addNamed [ 'gulp-less', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile d85f802e-gulp-less gulp-less@
+16 verbose lock gulp-less@ /Users/Maxime/.npm/d85f802e-gulp-less.lock
+17 silly addNameRange { name: 'gulp-less', range: '*', hasData: false }
+18 verbose request where is /gulp-less
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 53c8ea28ff04ea55
+21 verbose url raw /gulp-less
+22 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-less' ]
+23 verbose url resolved https://registry.npmjs.org/gulp-less
+24 verbose request where is https://registry.npmjs.org/gulp-less
+25 info trying registry request attempt 1 at 20:42:18
+26 verbose etag "DNRNPBCLDWNO91232IU6139RS"
+27 http GET https://registry.npmjs.org/gulp-less
+28 http 304 https://registry.npmjs.org/gulp-less
+29 silly registry.get cb [ 304,
+29 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+29 silly registry.get     server: 'Apache',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+29 silly registry.get     'cache-control': 'max-age=60',
+29 silly registry.get     etag: '"DNRNPBCLDWNO91232IU6139RS"',
+29 silly registry.get     'x-served-by': 'cache-jfk1032-JFK',
+29 silly registry.get     'x-cache': 'HIT',
+29 silly registry.get     'x-cache-hits': '1',
+29 silly registry.get     'x-timer': 'S1410914539.113751,VS0,VE0',
+29 silly registry.get     vary: 'Accept',
+29 silly registry.get     'content-length': '0',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 verbose etag https://registry.npmjs.org/gulp-less from cache
+31 silly addNameRange number 2 { name: 'gulp-less', range: '*', hasData: true }
+32 silly addNameRange versions [ 'gulp-less',
+32 silly addNameRange   [ '0.0.0',
+32 silly addNameRange     '0.0.1',
+32 silly addNameRange     '0.0.2',
+32 silly addNameRange     '0.0.3',
+32 silly addNameRange     '1.0.1',
+32 silly addNameRange     '1.0.0',
+32 silly addNameRange     '1.0.2',
+32 silly addNameRange     '1.1.0',
+32 silly addNameRange     '1.1.1',
+32 silly addNameRange     '1.1.3',
+32 silly addNameRange     '1.1.4',
+32 silly addNameRange     '1.1.5',
+32 silly addNameRange     '1.1.6',
+32 silly addNameRange     '1.1.7',
+32 silly addNameRange     '1.1.8',
+32 silly addNameRange     '1.1.10',
+32 silly addNameRange     '1.2.0',
+32 silly addNameRange     '1.2.1',
+32 silly addNameRange     '1.2.2',
+32 silly addNameRange     '1.2.3',
+32 silly addNameRange     '1.2.4',
+32 silly addNameRange     '1.3.0',
+32 silly addNameRange     '1.3.1',
+32 silly addNameRange     '1.3.2',
+32 silly addNameRange     '1.3.3',
+32 silly addNameRange     '1.3.4',
+32 silly addNameRange     '1.3.5' ] ]
+33 verbose addNamed [ 'gulp-less', '1.3.5' ]
+34 verbose addNamed [ '1.3.5', '1.3.5' ]
+35 silly lockFile 85de49e2-gulp-less-1-3-5 gulp-less@1.3.5
+36 verbose lock gulp-less@1.3.5 /Users/Maxime/.npm/85de49e2-gulp-less-1-3-5.lock
+37 silly lockFile 85de49e2-gulp-less-1-3-5 gulp-less@1.3.5
+38 silly lockFile 85de49e2-gulp-less-1-3-5 gulp-less@1.3.5
+39 silly lockFile d85f802e-gulp-less gulp-less@
+40 silly lockFile d85f802e-gulp-less gulp-less@
+41 silly resolved [ { name: 'gulp-less',
+41 silly resolved     version: '1.3.5',
+41 silly resolved     description: 'Less for Gulp',
+41 silly resolved     main: 'index.js',
+41 silly resolved     scripts: { test: 'jshint index.js && node_modules/.bin/mocha -R spec' },
+41 silly resolved     repository:
+41 silly resolved      { type: 'git',
+41 silly resolved        url: 'git://github.com/plus3network/gulp-less.git' },
+41 silly resolved     keywords: [ 'gulpplugin', 'gulp', 'less' ],
+41 silly resolved     author: { name: 'Chris Cowan' },
+41 silly resolved     license: 'MIT',
+41 silly resolved     gitHead: '507383fe7771a092e8a7bcb23a9bd33c1904ce34',
+41 silly resolved     dependencies:
+41 silly resolved      { 'convert-source-map': '^0.4.0',
+41 silly resolved        'gulp-util': '^3.0.0',
+41 silly resolved        less: '^1.7.4',
+41 silly resolved        'lodash.defaults': '^2.4.1',
+41 silly resolved        through2: '^0.5.1',
+41 silly resolved        'vinyl-sourcemaps-apply': '^0.1.1' },
+41 silly resolved     devDependencies: { should: '^3.1.3', mocha: '^1.16.2', jshint: '^2.4.1' },
+41 silly resolved     bugs: { url: 'https://github.com/plus3network/gulp-less/issues' },
+41 silly resolved     homepage: 'https://github.com/plus3network/gulp-less',
+41 silly resolved     _id: 'gulp-less@1.3.5',
+41 silly resolved     _shasum: '2adc74df903bc9a990cbdbb53b0d9a17ca00f59c',
+41 silly resolved     _from: 'gulp-less@',
+41 silly resolved     _npmVersion: '1.4.21',
+41 silly resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+41 silly resolved     maintainers: [ [Object], [Object] ],
+41 silly resolved     dist:
+41 silly resolved      { shasum: '2adc74df903bc9a990cbdbb53b0d9a17ca00f59c',
+41 silly resolved        tarball: 'http://registry.npmjs.org/gulp-less/-/gulp-less-1.3.5.tgz' },
+41 silly resolved     directories: {},
+41 silly resolved     _resolved: 'https://registry.npmjs.org/gulp-less/-/gulp-less-1.3.5.tgz',
+41 silly resolved     readme: 'ERROR: No README data found!' } ]
+42 info install gulp-less@1.3.5 into /Users/Maxime/Desktop/Development/PDTX
+43 info installOne gulp-less@1.3.5
+44 verbose node_modules/gulp-less unbuild
+45 verbose tar unpack /Users/Maxime/.npm/gulp-less/1.3.5/package.tgz
+46 silly lockFile 7566d188-ment-PDTX-node-modules-gulp-less tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+47 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less /Users/Maxime/.npm/7566d188-ment-PDTX-node-modules-gulp-less.lock
+48 silly lockFile eb0a5dd5--npm-gulp-less-1-3-5-package-tgz tar:///Users/Maxime/.npm/gulp-less/1.3.5/package.tgz
+49 verbose lock tar:///Users/Maxime/.npm/gulp-less/1.3.5/package.tgz /Users/Maxime/.npm/eb0a5dd5--npm-gulp-less-1-3-5-package-tgz.lock
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm extractEntry .npmignore
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm extractEntry index.js
+55 silly gunzTarPerm extractEntry .travis.yml
+56 silly gunzTarPerm extractEntry examples/gulpfile.js
+57 silly gunzTarPerm extractEntry examples/normal.less
+58 silly gunzTarPerm extractEntry test/main.js
+59 silly gunzTarPerm extractEntry test/expect/buttons.css
+60 silly gunzTarPerm extractEntry test/fixtures/buttons.less
+61 silly gunzTarPerm extractEntry test/fixtures/forms.less
+62 silly gunzTarPerm extractEntry test/fixtures/mixins.less
+63 silly gunzTarPerm extractEntry test/fixtures/normalize.less
+64 silly gunzTarPerm extractEntry test/fixtures/variables.less
+65 silly lockFile 7566d188-ment-PDTX-node-modules-gulp-less tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+66 silly lockFile 7566d188-ment-PDTX-node-modules-gulp-less tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+67 silly lockFile eb0a5dd5--npm-gulp-less-1-3-5-package-tgz tar:///Users/Maxime/.npm/gulp-less/1.3.5/package.tgz
+68 silly lockFile eb0a5dd5--npm-gulp-less-1-3-5-package-tgz tar:///Users/Maxime/.npm/gulp-less/1.3.5/package.tgz
+69 info preinstall gulp-less@1.3.5
+70 verbose readDependencies using package.json deps
+71 verbose readDependencies using package.json deps
+72 verbose cache add [ 'convert-source-map@^0.4.0', null ]
+73 verbose cache add name=undefined spec="convert-source-map@^0.4.0" args=["convert-source-map@^0.4.0",null]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: 'convert-source-map@^0.4.0',
+74 verbose parsed url   path: 'convert-source-map@^0.4.0',
+74 verbose parsed url   href: 'convert-source-map@^0.4.0' }
+75 verbose cache add [ 'gulp-util@^3.0.0', null ]
+76 verbose cache add name=undefined spec="gulp-util@^3.0.0" args=["gulp-util@^3.0.0",null]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: 'gulp-util@^3.0.0',
+77 verbose parsed url   path: 'gulp-util@^3.0.0',
+77 verbose parsed url   href: 'gulp-util@^3.0.0' }
+78 verbose cache add [ 'less@^1.7.4', null ]
+79 verbose cache add name=undefined spec="less@^1.7.4" args=["less@^1.7.4",null]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: 'less@^1.7.4',
+80 verbose parsed url   path: 'less@^1.7.4',
+80 verbose parsed url   href: 'less@^1.7.4' }
+81 verbose cache add name="convert-source-map" spec="^0.4.0" args=["convert-source-map","^0.4.0"]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: '^0.4.0',
+82 verbose parsed url   path: '^0.4.0',
+82 verbose parsed url   href: '^0.4.0' }
+83 verbose addNamed [ 'convert-source-map', '^0.4.0' ]
+84 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+85 silly lockFile 42298fe6-convert-source-map-0-4-0 convert-source-map@^0.4.0
+86 verbose lock convert-source-map@^0.4.0 /Users/Maxime/.npm/42298fe6-convert-source-map-0-4-0.lock
+87 verbose cache add name="gulp-util" spec="^3.0.0" args=["gulp-util","^3.0.0"]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: '^3.0.0',
+88 verbose parsed url   path: '^3.0.0',
+88 verbose parsed url   href: '^3.0.0' }
+89 verbose addNamed [ 'gulp-util', '^3.0.0' ]
+90 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+91 silly lockFile dfa9a863-gulp-util-3-0-0 gulp-util@^3.0.0
+92 verbose lock gulp-util@^3.0.0 /Users/Maxime/.npm/dfa9a863-gulp-util-3-0-0.lock
+93 verbose cache add [ 'lodash.defaults@^2.4.1', null ]
+94 verbose cache add name=undefined spec="lodash.defaults@^2.4.1" args=["lodash.defaults@^2.4.1",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'lodash.defaults@^2.4.1',
+95 verbose parsed url   path: 'lodash.defaults@^2.4.1',
+95 verbose parsed url   href: 'lodash.defaults@^2.4.1' }
+96 verbose cache add [ 'through2@^0.5.1', null ]
+97 verbose cache add name=undefined spec="through2@^0.5.1" args=["through2@^0.5.1",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'through2@^0.5.1',
+98 verbose parsed url   path: 'through2@^0.5.1',
+98 verbose parsed url   href: 'through2@^0.5.1' }
+99 verbose cache add name="less" spec="^1.7.4" args=["less","^1.7.4"]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: '^1.7.4',
+100 verbose parsed url   path: '^1.7.4',
+100 verbose parsed url   href: '^1.7.4' }
+101 verbose addNamed [ 'less', '^1.7.4' ]
+102 verbose addNamed [ null, '>=1.7.4-0 <2.0.0-0' ]
+103 silly lockFile bf7ac02f-less-1-7-4 less@^1.7.4
+104 verbose lock less@^1.7.4 /Users/Maxime/.npm/bf7ac02f-less-1-7-4.lock
+105 verbose cache add name="lodash.defaults" spec="^2.4.1" args=["lodash.defaults","^2.4.1"]
+106 verbose parsed url { protocol: null,
+106 verbose parsed url   slashes: null,
+106 verbose parsed url   auth: null,
+106 verbose parsed url   host: null,
+106 verbose parsed url   port: null,
+106 verbose parsed url   hostname: null,
+106 verbose parsed url   hash: null,
+106 verbose parsed url   search: null,
+106 verbose parsed url   query: null,
+106 verbose parsed url   pathname: '^2.4.1',
+106 verbose parsed url   path: '^2.4.1',
+106 verbose parsed url   href: '^2.4.1' }
+107 verbose addNamed [ 'lodash.defaults', '^2.4.1' ]
+108 verbose addNamed [ null, '>=2.4.1-0 <3.0.0-0' ]
+109 silly lockFile 872d420a-lodash-defaults-2-4-1 lodash.defaults@^2.4.1
+110 verbose lock lodash.defaults@^2.4.1 /Users/Maxime/.npm/872d420a-lodash-defaults-2-4-1.lock
+111 verbose cache add name="through2" spec="^0.5.1" args=["through2","^0.5.1"]
+112 verbose parsed url { protocol: null,
+112 verbose parsed url   slashes: null,
+112 verbose parsed url   auth: null,
+112 verbose parsed url   host: null,
+112 verbose parsed url   port: null,
+112 verbose parsed url   hostname: null,
+112 verbose parsed url   hash: null,
+112 verbose parsed url   search: null,
+112 verbose parsed url   query: null,
+112 verbose parsed url   pathname: '^0.5.1',
+112 verbose parsed url   path: '^0.5.1',
+112 verbose parsed url   href: '^0.5.1' }
+113 verbose addNamed [ 'through2', '^0.5.1' ]
+114 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+115 silly lockFile 86ea49db-through2-0-5-1 through2@^0.5.1
+116 verbose lock through2@^0.5.1 /Users/Maxime/.npm/86ea49db-through2-0-5-1.lock
+117 verbose cache add [ 'vinyl-sourcemaps-apply@^0.1.1', null ]
+118 verbose cache add name=undefined spec="vinyl-sourcemaps-apply@^0.1.1" args=["vinyl-sourcemaps-apply@^0.1.1",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'vinyl-sourcemaps-apply@^0.1.1',
+119 verbose parsed url   path: 'vinyl-sourcemaps-apply@^0.1.1',
+119 verbose parsed url   href: 'vinyl-sourcemaps-apply@^0.1.1' }
+120 silly addNameRange { name: 'convert-source-map',
+120 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+120 silly addNameRange   hasData: false }
+121 silly addNameRange { name: 'gulp-util',
+121 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+121 silly addNameRange   hasData: false }
+122 verbose cache add name="vinyl-sourcemaps-apply" spec="^0.1.1" args=["vinyl-sourcemaps-apply","^0.1.1"]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: '^0.1.1',
+123 verbose parsed url   path: '^0.1.1',
+123 verbose parsed url   href: '^0.1.1' }
+124 verbose addNamed [ 'vinyl-sourcemaps-apply', '^0.1.1' ]
+125 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+126 silly lockFile 4c061f06-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@^0.1.1
+127 verbose lock vinyl-sourcemaps-apply@^0.1.1 /Users/Maxime/.npm/4c061f06-vinyl-sourcemaps-apply-0-1-1.lock
+128 silly addNameRange { name: 'less', range: '>=1.7.4-0 <2.0.0-0', hasData: false }
+129 silly addNameRange { name: 'lodash.defaults',
+129 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+129 silly addNameRange   hasData: false }
+130 silly addNameRange { name: 'through2', range: '>=0.5.1-0 <0.6.0-0', hasData: false }
+131 silly addNameRange { name: 'vinyl-sourcemaps-apply',
+131 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+131 silly addNameRange   hasData: false }
+132 verbose request where is /convert-source-map
+133 verbose request registry https://registry.npmjs.org/
+134 verbose url raw /convert-source-map
+135 verbose url resolving [ 'https://registry.npmjs.org/', './convert-source-map' ]
+136 verbose url resolved https://registry.npmjs.org/convert-source-map
+137 verbose request where is https://registry.npmjs.org/convert-source-map
+138 info trying registry request attempt 1 at 20:42:18
+139 verbose etag "728SNU7BT1CNJR7S68159LD2E"
+140 http GET https://registry.npmjs.org/convert-source-map
+141 verbose request where is /gulp-util
+142 verbose request registry https://registry.npmjs.org/
+143 verbose url raw /gulp-util
+144 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-util' ]
+145 verbose url resolved https://registry.npmjs.org/gulp-util
+146 verbose request where is https://registry.npmjs.org/gulp-util
+147 info trying registry request attempt 1 at 20:42:18
+148 verbose etag "5FPS60D5W6OU9G8GO3FSENCJJ"
+149 http GET https://registry.npmjs.org/gulp-util
+150 verbose request where is /through2
+151 verbose request registry https://registry.npmjs.org/
+152 verbose url raw /through2
+153 verbose url resolving [ 'https://registry.npmjs.org/', './through2' ]
+154 verbose url resolved https://registry.npmjs.org/through2
+155 verbose request where is https://registry.npmjs.org/through2
+156 info trying registry request attempt 1 at 20:42:18
+157 verbose etag "D62WCPLY7DSLTJVVLO8UN7AJY"
+158 http GET https://registry.npmjs.org/through2
+159 verbose request where is /lodash.defaults
+160 verbose request registry https://registry.npmjs.org/
+161 verbose url raw /lodash.defaults
+162 verbose url resolving [ 'https://registry.npmjs.org/', './lodash.defaults' ]
+163 verbose url resolved https://registry.npmjs.org/lodash.defaults
+164 verbose request where is https://registry.npmjs.org/lodash.defaults
+165 info trying registry request attempt 1 at 20:42:18
+166 verbose etag "5YHEV5AYXHM99W1SQL5KJH61F"
+167 http GET https://registry.npmjs.org/lodash.defaults
+168 verbose request where is /vinyl-sourcemaps-apply
+169 verbose request registry https://registry.npmjs.org/
+170 verbose url raw /vinyl-sourcemaps-apply
+171 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl-sourcemaps-apply' ]
+172 verbose url resolved https://registry.npmjs.org/vinyl-sourcemaps-apply
+173 verbose request where is https://registry.npmjs.org/vinyl-sourcemaps-apply
+174 info trying registry request attempt 1 at 20:42:18
+175 verbose etag "4VEN9GAOCME2GTF23ED17FU1N"
+176 http GET https://registry.npmjs.org/vinyl-sourcemaps-apply
+177 verbose request where is /less
+178 verbose request registry https://registry.npmjs.org/
+179 verbose url raw /less
+180 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+181 verbose url resolved https://registry.npmjs.org/less
+182 verbose request where is https://registry.npmjs.org/less
+183 info trying registry request attempt 1 at 20:42:18
+184 verbose etag "C3L1AAG9BPTJY7231378V9BKD"
+185 http GET https://registry.npmjs.org/less
+186 http 304 https://registry.npmjs.org/gulp-util
+187 silly registry.get cb [ 304,
+187 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+187 silly registry.get     server: 'Apache',
+187 silly registry.get     via: '1.1 varnish',
+187 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+187 silly registry.get     'cache-control': 'max-age=60',
+187 silly registry.get     etag: '"5FPS60D5W6OU9G8GO3FSENCJJ"',
+187 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+187 silly registry.get     'x-cache': 'HIT',
+187 silly registry.get     'x-cache-hits': '1',
+187 silly registry.get     'x-timer': 'S1410914539.390396,VS0,VE0',
+187 silly registry.get     vary: 'Accept',
+187 silly registry.get     'content-length': '0',
+187 silly registry.get     'keep-alive': 'timeout=10, max=50',
+187 silly registry.get     connection: 'Keep-Alive' } ]
+188 verbose etag https://registry.npmjs.org/gulp-util from cache
+189 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.0-0 <4.0.0-0', hasData: true }
+190 silly addNameRange versions [ 'gulp-util',
+190 silly addNameRange   [ '0.0.1',
+190 silly addNameRange     '1.0.0',
+190 silly addNameRange     '1.1.0',
+190 silly addNameRange     '1.1.1',
+190 silly addNameRange     '1.2.0',
+190 silly addNameRange     '1.3.0',
+190 silly addNameRange     '2.0.0',
+190 silly addNameRange     '2.1.1',
+190 silly addNameRange     '2.1.2',
+190 silly addNameRange     '2.1.3',
+190 silly addNameRange     '2.1.4',
+190 silly addNameRange     '2.2.0',
+190 silly addNameRange     '2.2.1',
+190 silly addNameRange     '2.2.2',
+190 silly addNameRange     '2.2.3',
+190 silly addNameRange     '2.2.5',
+190 silly addNameRange     '2.2.6',
+190 silly addNameRange     '2.2.7',
+190 silly addNameRange     '2.2.8',
+190 silly addNameRange     '2.2.9',
+190 silly addNameRange     '2.2.10',
+190 silly addNameRange     '2.2.11',
+190 silly addNameRange     '2.2.12',
+190 silly addNameRange     '2.2.13',
+190 silly addNameRange     '2.2.14',
+190 silly addNameRange     '2.2.15',
+190 silly addNameRange     '2.2.16',
+190 silly addNameRange     '2.2.17',
+190 silly addNameRange     '2.2.18',
+190 silly addNameRange     '2.2.19',
+190 silly addNameRange     '2.2.20',
+190 silly addNameRange     '3.0.0',
+190 silly addNameRange     '3.0.1' ] ]
+191 verbose addNamed [ 'gulp-util', '3.0.1' ]
+192 verbose addNamed [ '3.0.1', '3.0.1' ]
+193 silly lockFile ea8d3cdd-gulp-util-3-0-1 gulp-util@3.0.1
+194 verbose lock gulp-util@3.0.1 /Users/Maxime/.npm/ea8d3cdd-gulp-util-3-0-1.lock
+195 silly lockFile ea8d3cdd-gulp-util-3-0-1 gulp-util@3.0.1
+196 silly lockFile ea8d3cdd-gulp-util-3-0-1 gulp-util@3.0.1
+197 silly lockFile dfa9a863-gulp-util-3-0-0 gulp-util@^3.0.0
+198 silly lockFile dfa9a863-gulp-util-3-0-0 gulp-util@^3.0.0
+199 http 304 https://registry.npmjs.org/through2
+200 silly registry.get cb [ 304,
+200 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+200 silly registry.get     server: 'Apache',
+200 silly registry.get     via: '1.1 varnish',
+200 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+200 silly registry.get     'cache-control': 'max-age=60',
+200 silly registry.get     etag: '"D62WCPLY7DSLTJVVLO8UN7AJY"',
+200 silly registry.get     'x-served-by': 'cache-jfk1026-JFK',
+200 silly registry.get     'x-cache': 'HIT',
+200 silly registry.get     'x-cache-hits': '1',
+200 silly registry.get     'x-timer': 'S1410914539.406072,VS0,VE0',
+200 silly registry.get     vary: 'Accept',
+200 silly registry.get     'content-length': '0',
+200 silly registry.get     'keep-alive': 'timeout=10, max=50',
+200 silly registry.get     connection: 'Keep-Alive' } ]
+201 verbose etag https://registry.npmjs.org/through2 from cache
+202 silly addNameRange number 2 { name: 'through2', range: '>=0.5.1-0 <0.6.0-0', hasData: true }
+203 silly addNameRange versions [ 'through2',
+203 silly addNameRange   [ '0.0.0',
+203 silly addNameRange     '0.0.1',
+203 silly addNameRange     '0.0.2',
+203 silly addNameRange     '0.0.3',
+203 silly addNameRange     '0.0.4',
+203 silly addNameRange     '0.0.5',
+203 silly addNameRange     '0.1.0',
+203 silly addNameRange     '0.2.0',
+203 silly addNameRange     '0.2.1',
+203 silly addNameRange     '0.2.2',
+203 silly addNameRange     '0.2.3',
+203 silly addNameRange     '0.3.0',
+203 silly addNameRange     '0.4.0',
+203 silly addNameRange     '0.4.1',
+203 silly addNameRange     '1.0.0',
+203 silly addNameRange     '0.4.2',
+203 silly addNameRange     '0.5.0',
+203 silly addNameRange     '0.5.1',
+203 silly addNameRange     '0.6.0',
+203 silly addNameRange     '1.1.0',
+203 silly addNameRange     '0.6.1',
+203 silly addNameRange     '1.1.1' ] ]
+204 verbose addNamed [ 'through2', '0.5.1' ]
+205 verbose addNamed [ '0.5.1', '0.5.1' ]
+206 silly lockFile cc0b1369-through2-0-5-1 through2@0.5.1
+207 verbose lock through2@0.5.1 /Users/Maxime/.npm/cc0b1369-through2-0-5-1.lock
+208 silly lockFile cc0b1369-through2-0-5-1 through2@0.5.1
+209 silly lockFile cc0b1369-through2-0-5-1 through2@0.5.1
+210 silly lockFile 86ea49db-through2-0-5-1 through2@^0.5.1
+211 silly lockFile 86ea49db-through2-0-5-1 through2@^0.5.1
+212 http 304 https://registry.npmjs.org/less
+213 silly registry.get cb [ 304,
+213 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+213 silly registry.get     server: 'Apache',
+213 silly registry.get     via: '1.1 varnish',
+213 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+213 silly registry.get     'cache-control': 'max-age=60',
+213 silly registry.get     etag: '"C3L1AAG9BPTJY7231378V9BKD"',
+213 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+213 silly registry.get     'x-cache': 'HIT',
+213 silly registry.get     'x-cache-hits': '1',
+213 silly registry.get     'x-timer': 'S1410914539.430296,VS0,VE15',
+213 silly registry.get     vary: 'Accept',
+213 silly registry.get     'content-length': '0',
+213 silly registry.get     'keep-alive': 'timeout=10, max=49',
+213 silly registry.get     connection: 'Keep-Alive' } ]
+214 verbose etag https://registry.npmjs.org/less from cache
+215 silly addNameRange number 2 { name: 'less', range: '>=1.7.4-0 <2.0.0-0', hasData: true }
+216 silly addNameRange versions [ 'less',
+216 silly addNameRange   [ '1.0.10',
+216 silly addNameRange     '1.0.11',
+216 silly addNameRange     '1.0.14',
+216 silly addNameRange     '1.0.18',
+216 silly addNameRange     '1.0.19',
+216 silly addNameRange     '1.0.21',
+216 silly addNameRange     '1.0.32',
+216 silly addNameRange     '1.0.36',
+216 silly addNameRange     '1.0.5',
+216 silly addNameRange     '1.0.40',
+216 silly addNameRange     '1.0.41',
+216 silly addNameRange     '1.0.44',
+216 silly addNameRange     '1.1.0',
+216 silly addNameRange     '1.1.1',
+216 silly addNameRange     '1.1.2',
+216 silly addNameRange     '1.1.4',
+216 silly addNameRange     '1.1.5',
+216 silly addNameRange     '1.1.6',
+216 silly addNameRange     '1.2.0',
+216 silly addNameRange     '1.2.1',
+216 silly addNameRange     '1.2.2',
+216 silly addNameRange     '1.3.0',
+216 silly addNameRange     '1.3.1',
+216 silly addNameRange     '1.3.2',
+216 silly addNameRange     '1.3.3',
+216 silly addNameRange     '1.4.0-b1',
+216 silly addNameRange     '1.4.0-b2',
+216 silly addNameRange     '1.4.0-b3',
+216 silly addNameRange     '1.4.0-b4',
+216 silly addNameRange     '1.4.0',
+216 silly addNameRange     '1.4.1',
+216 silly addNameRange     '1.4.2',
+216 silly addNameRange     '1.5.0-b1',
+216 silly addNameRange     '1.5.0-b2',
+216 silly addNameRange     '1.5.0-b3',
+216 silly addNameRange     '1.5.0-b4',
+216 silly addNameRange     '1.5.0',
+216 silly addNameRange     '1.5.1',
+216 silly addNameRange     '1.6.0',
+216 silly addNameRange     '1.6.1',
+216 silly addNameRange     '1.6.2',
+216 silly addNameRange     '1.6.3',
+216 silly addNameRange     '1.7.0',
+216 silly addNameRange     '1.7.1',
+216 silly addNameRange     '1.7.3',
+216 silly addNameRange     '1.7.4',
+216 silly addNameRange     '1.7.5' ] ]
+217 verbose addNamed [ 'less', '1.7.5' ]
+218 verbose addNamed [ '1.7.5', '1.7.5' ]
+219 silly lockFile fbb355ce-less-1-7-5 less@1.7.5
+220 verbose lock less@1.7.5 /Users/Maxime/.npm/fbb355ce-less-1-7-5.lock
+221 silly lockFile fbb355ce-less-1-7-5 less@1.7.5
+222 silly lockFile fbb355ce-less-1-7-5 less@1.7.5
+223 silly lockFile bf7ac02f-less-1-7-4 less@^1.7.4
+224 silly lockFile bf7ac02f-less-1-7-4 less@^1.7.4
+225 http 304 https://registry.npmjs.org/vinyl-sourcemaps-apply
+226 silly registry.get cb [ 304,
+226 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+226 silly registry.get     server: 'Apache',
+226 silly registry.get     via: '1.1 varnish',
+226 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+226 silly registry.get     'cache-control': 'max-age=60',
+226 silly registry.get     etag: '"4VEN9GAOCME2GTF23ED17FU1N"',
+226 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+226 silly registry.get     'x-cache': 'HIT',
+226 silly registry.get     'x-cache-hits': '1',
+226 silly registry.get     'x-timer': 'S1410914539.413354,VS0,VE73',
+226 silly registry.get     vary: 'Accept',
+226 silly registry.get     'content-length': '0',
+226 silly registry.get     'keep-alive': 'timeout=10, max=50',
+226 silly registry.get     connection: 'Keep-Alive' } ]
+227 verbose etag https://registry.npmjs.org/vinyl-sourcemaps-apply from cache
+228 silly addNameRange number 2 { name: 'vinyl-sourcemaps-apply',
+228 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+228 silly addNameRange   hasData: true }
+229 silly addNameRange versions [ 'vinyl-sourcemaps-apply', [ '0.1.0', '0.1.1' ] ]
+230 verbose addNamed [ 'vinyl-sourcemaps-apply', '0.1.1' ]
+231 verbose addNamed [ '0.1.1', '0.1.1' ]
+232 silly lockFile d95acd55-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@0.1.1
+233 verbose lock vinyl-sourcemaps-apply@0.1.1 /Users/Maxime/.npm/d95acd55-vinyl-sourcemaps-apply-0-1-1.lock
+234 silly lockFile d95acd55-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@0.1.1
+235 silly lockFile d95acd55-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@0.1.1
+236 silly lockFile 4c061f06-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@^0.1.1
+237 silly lockFile 4c061f06-vinyl-sourcemaps-apply-0-1-1 vinyl-sourcemaps-apply@^0.1.1
+238 http 304 https://registry.npmjs.org/lodash.defaults
+239 silly registry.get cb [ 304,
+239 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+239 silly registry.get     server: 'Apache',
+239 silly registry.get     via: '1.1 varnish',
+239 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+239 silly registry.get     'cache-control': 'max-age=60',
+239 silly registry.get     etag: '"5YHEV5AYXHM99W1SQL5KJH61F"',
+239 silly registry.get     'x-served-by': 'cache-jfk1027-JFK',
+239 silly registry.get     'x-cache': 'HIT',
+239 silly registry.get     'x-cache-hits': '1',
+239 silly registry.get     'x-timer': 'S1410914539.409924,VS0,VE84',
+239 silly registry.get     vary: 'Accept',
+239 silly registry.get     'content-length': '0',
+239 silly registry.get     'keep-alive': 'timeout=10, max=50',
+239 silly registry.get     connection: 'Keep-Alive' } ]
+240 verbose etag https://registry.npmjs.org/lodash.defaults from cache
+241 silly addNameRange number 2 { name: 'lodash.defaults',
+241 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+241 silly addNameRange   hasData: true }
+242 silly addNameRange versions [ 'lodash.defaults',
+242 silly addNameRange   [ '2.0.0', '2.1.0', '2.2.0', '2.2.1', '2.3.0', '2.4.0', '2.4.1' ] ]
+243 verbose addNamed [ 'lodash.defaults', '2.4.1' ]
+244 verbose addNamed [ '2.4.1', '2.4.1' ]
+245 silly lockFile 0bf25818-lodash-defaults-2-4-1 lodash.defaults@2.4.1
+246 verbose lock lodash.defaults@2.4.1 /Users/Maxime/.npm/0bf25818-lodash-defaults-2-4-1.lock
+247 silly lockFile 0bf25818-lodash-defaults-2-4-1 lodash.defaults@2.4.1
+248 silly lockFile 0bf25818-lodash-defaults-2-4-1 lodash.defaults@2.4.1
+249 silly lockFile 872d420a-lodash-defaults-2-4-1 lodash.defaults@^2.4.1
+250 silly lockFile 872d420a-lodash-defaults-2-4-1 lodash.defaults@^2.4.1
+251 http 304 https://registry.npmjs.org/convert-source-map
+252 silly registry.get cb [ 304,
+252 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:19 GMT',
+252 silly registry.get     server: 'Apache',
+252 silly registry.get     via: '1.1 varnish',
+252 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:19 GMT',
+252 silly registry.get     'cache-control': 'max-age=60',
+252 silly registry.get     etag: '"728SNU7BT1CNJR7S68159LD2E"',
+252 silly registry.get     'x-served-by': 'cache-jfk1026-JFK',
+252 silly registry.get     'x-cache': 'HIT',
+252 silly registry.get     'x-cache-hits': '1',
+252 silly registry.get     'x-timer': 'S1410914539.375966,VS0,VE350',
+252 silly registry.get     vary: 'Accept',
+252 silly registry.get     'content-length': '0',
+252 silly registry.get     'keep-alive': 'timeout=10, max=50',
+252 silly registry.get     connection: 'Keep-Alive' } ]
+253 verbose etag https://registry.npmjs.org/convert-source-map from cache
+254 silly addNameRange number 2 { name: 'convert-source-map',
+254 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+254 silly addNameRange   hasData: true }
+255 silly addNameRange versions [ 'convert-source-map',
+255 silly addNameRange   [ '0.1.0',
+255 silly addNameRange     '0.2.0',
+255 silly addNameRange     '0.2.1',
+255 silly addNameRange     '0.2.2',
+255 silly addNameRange     '0.2.3',
+255 silly addNameRange     '0.2.4',
+255 silly addNameRange     '0.2.5',
+255 silly addNameRange     '0.2.6',
+255 silly addNameRange     '0.3.0',
+255 silly addNameRange     '0.3.1',
+255 silly addNameRange     '0.3.2',
+255 silly addNameRange     '0.3.3',
+255 silly addNameRange     '0.3.4',
+255 silly addNameRange     '0.3.5',
+255 silly addNameRange     '0.4.0',
+255 silly addNameRange     '0.4.1' ] ]
+256 verbose addNamed [ 'convert-source-map', '0.4.1' ]
+257 verbose addNamed [ '0.4.1', '0.4.1' ]
+258 silly lockFile 26e0755b-convert-source-map-0-4-1 convert-source-map@0.4.1
+259 verbose lock convert-source-map@0.4.1 /Users/Maxime/.npm/26e0755b-convert-source-map-0-4-1.lock
+260 silly lockFile 26e0755b-convert-source-map-0-4-1 convert-source-map@0.4.1
+261 silly lockFile 26e0755b-convert-source-map-0-4-1 convert-source-map@0.4.1
+262 silly lockFile 42298fe6-convert-source-map-0-4-0 convert-source-map@^0.4.0
+263 silly lockFile 42298fe6-convert-source-map-0-4-0 convert-source-map@^0.4.0
+264 silly resolved [ { name: 'gulp-util',
+264 silly resolved     description: 'Utility functions for gulp plugins',
+264 silly resolved     version: '3.0.1',
+264 silly resolved     homepage: 'http://github.com/wearefractal/gulp-util',
+264 silly resolved     repository:
+264 silly resolved      { type: 'git',
+264 silly resolved        url: 'git://github.com/wearefractal/gulp-util.git' },
+264 silly resolved     author:
+264 silly resolved      { name: 'Fractal',
+264 silly resolved        email: 'contact@wearefractal.com',
+264 silly resolved        url: 'http://wearefractal.com/' },
+264 silly resolved     main: './index.js',
+264 silly resolved     dependencies:
+264 silly resolved      { chalk: '^0.5.0',
+264 silly resolved        dateformat: '^1.0.7-1.2.3',
+264 silly resolved        lodash: '^2.4.1',
+264 silly resolved        'lodash._reinterpolate': '^2.4.1',
+264 silly resolved        'lodash.template': '^2.4.1',
+264 silly resolved        minimist: '^1.1.0',
+264 silly resolved        multipipe: '^0.1.0',
+264 silly resolved        through2: '^0.6.1',
+264 silly resolved        vinyl: '^0.4.0' },
+264 silly resolved     devDependencies:
+264 silly resolved      { mocha: '^1.17.0',
+264 silly resolved        should: '^4.0.0',
+264 silly resolved        'mocha-lcov-reporter': '^0.0.1',
+264 silly resolved        coveralls: '^2.7.0',
+264 silly resolved        istanbul: '^0.3.0',
+264 silly resolved        rimraf: '^2.2.5',
+264 silly resolved        jshint: '^2.4.1',
+264 silly resolved        'buffer-equal': '~0.0.1',
+264 silly resolved        'lodash.templatesettings': '^2.4.1',
+264 silly resolved        'event-stream': '^3.1.0' },
+264 silly resolved     scripts:
+264 silly resolved      { test: 'mocha --reporter spec && jshint',
+264 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+264 silly resolved     engines: { node: '>= 0.9' },
+264 silly resolved     licenses: [ [Object] ],
+264 silly resolved     gitHead: 'f6336c8ac9f52930b36ad14002cf267c06f801df',
+264 silly resolved     bugs: { url: 'https://github.com/wearefractal/gulp-util/issues' },
+264 silly resolved     _id: 'gulp-util@3.0.1',
+264 silly resolved     _shasum: '8214894d05c2bb6cc7f5544918a51ddf88180f00',
+264 silly resolved     _from: 'gulp-util@^3.0.0',
+264 silly resolved     _npmVersion: '1.4.21',
+264 silly resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+264 silly resolved     maintainers: [ [Object] ],
+264 silly resolved     dist:
+264 silly resolved      { shasum: '8214894d05c2bb6cc7f5544918a51ddf88180f00',
+264 silly resolved        tarball: 'http://registry.npmjs.org/gulp-util/-/gulp-util-3.0.1.tgz' },
+264 silly resolved     directories: {},
+264 silly resolved     _resolved: 'https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.1.tgz',
+264 silly resolved     readme: 'ERROR: No README data found!' },
+264 silly resolved   { name: 'through2',
+264 silly resolved     version: '0.5.1',
+264 silly resolved     description: 'A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise',
+264 silly resolved     main: 'through2.js',
+264 silly resolved     scripts:
+264 silly resolved      { test: 'node test/test.js',
+264 silly resolved        'test-local': 'brtapsauce-local test/basic-test.js' },
+264 silly resolved     repository: { type: 'git', url: 'https://github.com/rvagg/through2.git' },
+264 silly resolved     keywords: [ 'stream', 'streams2', 'through', 'transform' ],
+264 silly resolved     author:
+264 silly resolved      { name: 'Rod Vagg',
+264 silly resolved        email: 'r@va.gg',
+264 silly resolved        url: 'https://github.com/rvagg' },
+264 silly resolved     license: 'MIT',
+264 silly resolved     dependencies: { 'readable-stream': '~1.0.17', xtend: '~3.0.0' },
+264 silly resolved     devDependencies:
+264 silly resolved      { tape: '~2.3.0',
+264 silly resolved        bl: '~0.6.0',
+264 silly resolved        'stream-spigot': '~3.0.1',
+264 silly resolved        brtapsauce: '~0.2.2' },
+264 silly resolved     bugs: { url: 'https://github.com/rvagg/through2/issues' },
+264 silly resolved     homepage: 'https://github.com/rvagg/through2',
+264 silly resolved     _id: 'through2@0.5.1',
+264 silly resolved     dist:
+264 silly resolved      { shasum: 'dfdd012eb9c700e2323fd334f38ac622ab372da7',
+264 silly resolved        tarball: 'http://registry.npmjs.org/through2/-/through2-0.5.1.tgz' },
+264 silly resolved     _from: 'through2@^0.5.1',
+264 silly resolved     _npmVersion: '1.4.3',
+264 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+264 silly resolved     maintainers: [ [Object], [Object] ],
+264 silly resolved     directories: {},
+264 silly resolved     _shasum: 'dfdd012eb9c700e2323fd334f38ac622ab372da7',
+264 silly resolved     _resolved: 'https://registry.npmjs.org/through2/-/through2-0.5.1.tgz',
+264 silly resolved     readme: 'ERROR: No README data found!' },
+264 silly resolved   { name: 'less',
+264 silly resolved     version: '1.7.5',
+264 silly resolved     description: 'Leaner CSS',
+264 silly resolved     homepage: 'http://lesscss.org',
+264 silly resolved     author: { name: 'Alexis Sellier', email: 'self@cloudhead.net' },
+264 silly resolved     contributors: [ [Object] ],
+264 silly resolved     bugs: { url: 'https://github.com/less/less.js/issues' },
+264 silly resolved     repository: { type: 'git', url: 'https://github.com/less/less.js.git' },
+264 silly resolved     licenses: [ [Object] ],
+264 silly resolved     bin: { lessc: './bin/lessc' },
+264 silly resolved     main: './lib/less/index',
+264 silly resolved     directories: { test: './test' },
+264 silly resolved     jam: { main: './dist/less-1.7.5.js' },
+264 silly resolved     engines: { node: '>=0.8.0' },
+264 silly resolved     scripts: { test: 'grunt test' },
+264 silly resolved     optionalDependencies:
+264 silly resolved      { 'graceful-fs': '~3.0.2',
+264 silly resolved        mime: '~1.2.11',
+264 silly resolved        request: '~2.40.0',
+264 silly resolved        mkdirp: '~0.5.0',
+264 silly resolved        'clean-css': '2.2.x',
+264 silly resolved        'source-map': '0.1.x' },
+264 silly resolved     devDependencies:
+264 silly resolved      { diff: '~1.0',
+264 silly resolved        grunt: '~0.4.2',
+264 silly resolved        'grunt-contrib-clean': '~0.5.0',
+264 silly resolved        'grunt-contrib-concat': '~0.4.0',
+264 silly resolved        'grunt-contrib-connect': '~0.7.0',
+264 silly resolved        'grunt-contrib-jasmine': '~0.5.2',
+264 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+264 silly resolved        'grunt-contrib-uglify': '~0.4.0',
+264 silly resolved        'grunt-shell': '~0.7.0',
+264 silly resolved        'http-server': '~0.6.1',
+264 silly resolved        matchdep: '~0.3.0',
+264 silly resolved        'time-grunt': '~0.3.1' },
+264 silly resolved     keywords:
+264 silly resolved      [ 'compile less',
+264 silly resolved        'css nesting',
+264 silly resolved        'css variable',
+264 silly resolved        'css',
+264 silly resolved        'gradients css',
+264 silly resolved        'gradients css3',
+264 silly resolved        'less compiler',
+264 silly resolved        'less css',
+264 silly resolved        'less mixins',
+264 silly resolved        'less',
+264 silly resolved        'less.js',
+264 silly resolved        'lesscss',
+264 silly resolved        'mixins',
+264 silly resolved        'nested css',
+264 silly resolved        'parser',
+264 silly resolved        'preprocessor',
+264 silly resolved        'bootstrap css',
+264 silly resolved        'bootstrap less',
+264 silly resolved        'style',
+264 silly resolved        'styles',
+264 silly resolved        'stylesheet',
+264 silly resolved        'variables in css',
+264 silly resolved        'css less' ],
+264 silly resolved     dependencies:
+264 silly resolved      { 'graceful-fs': '~3.0.2',
+264 silly resolved        mime: '~1.2.11',
+264 silly resolved        request: '~2.40.0',
+264 silly resolved        mkdirp: '~0.5.0',
+264 silly resolved        'clean-css': '2.2.x',
+264 silly resolved        'source-map': '0.1.x' },
+264 silly resolved     _id: 'less@1.7.5',
+264 silly resolved     dist:
+264 silly resolved      { shasum: '4f220cf7288a27eaca739df6e4808a2d4c0d5756',
+264 silly resolved        tarball: 'http://registry.npmjs.org/less/-/less-1.7.5.tgz' },
+264 silly resolved     _from: 'less@^1.7.4',
+264 silly resolved     _npmVersion: '1.3.24',
+264 silly resolved     _npmUser: { name: 'agatronic', email: 'luke.a.page@gmail.com' },
+264 silly resolved     maintainers: [ [Object], [Object] ],
+264 silly resolved     _shasum: '4f220cf7288a27eaca739df6e4808a2d4c0d5756',
+264 silly resolved     _resolved: 'https://registry.npmjs.org/less/-/less-1.7.5.tgz',
+264 silly resolved     readme: 'ERROR: No README data found!' },
+264 silly resolved   { name: 'vinyl-sourcemaps-apply',
+264 silly resolved     version: '0.1.1',
+264 silly resolved     description: 'Apply a source map to a vinyl file, merging it with preexisting source maps',
+264 silly resolved     homepage: 'http://github.com/floridoo/vinyl-sourcemaps-apply',
+264 silly resolved     repository:
+264 silly resolved      { type: 'git',
+264 silly resolved        url: 'git://github.com/floridoo/vinyl-sourcemaps-apply.git' },
+264 silly resolved     main: 'index.js',
+264 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+264 silly resolved     keywords: [ 'vinyl', 'sourcemaps', 'source maps', 'gulp' ],
+264 silly resolved     author: { name: 'Florian Reiterer', email: 'me@florianreiterer.com' },
+264 silly resolved     license: 'ISC',
+264 silly resolved     dependencies: { 'source-map': '^0.1.33' },
+264 silly resolved     bugs: { url: 'https://github.com/floridoo/vinyl-sourcemaps-apply/issues' },
+264 silly resolved     _id: 'vinyl-sourcemaps-apply@0.1.1',
+264 silly resolved     dist:
+264 silly resolved      { shasum: '6435c8d216386466c000ead01065939eb4a83254',
+264 silly resolved        tarball: 'http://registry.npmjs.org/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.1.1.tgz' },
+264 silly resolved     _from: 'vinyl-sourcemaps-apply@^0.1.1',
+264 silly resolved     _npmVersion: '1.4.3',
+264 silly resolved     _npmUser: { name: 'floridoo', email: 'florian.reiterer@gmail.com' },
+264 silly resolved     maintainers: [ [Object] ],
+264 silly resolved     directories: {},
+264 silly resolved     _shasum: '6435c8d216386466c000ead01065939eb4a83254',
+264 silly resolved     _resolved: 'https://registry.npmjs.org/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.1.1.tgz',
+264 silly resolved     readme: 'ERROR: No README data found!' },
+264 silly resolved   { name: 'lodash.defaults',
+264 silly resolved     version: '2.4.1',
+264 silly resolved     description: 'The Lo-Dash function `_.defaults` as a Node.js module generated by lodash-cli.',
+264 silly resolved     homepage: 'http://lodash.com/custom-builds',
+264 silly resolved     license: 'MIT',
+264 silly resolved     keywords: [ 'functional', 'lodash', 'lodash-modularized', 'server', 'util' ],
+264 silly resolved     author:
+264 silly resolved      { name: 'John-David Dalton',
+264 silly resolved        email: 'john.david.dalton@gmail.com',
+264 silly resolved        url: 'http://allyoucanleet.com/' },
+264 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+264 silly resolved     bugs: { url: 'https://github.com/lodash/lodash-cli/issues' },
+264 silly resolved     repository: { type: 'git', url: 'https://github.com/lodash/lodash-cli.git' },
+264 silly resolved     dependencies: { 'lodash.keys': '~2.4.1', 'lodash._objecttypes': '~2.4.1' },
+264 silly resolved     readme: '# lodash.defaults v2.4.1\n\nThe [Lo-Dash](http://lodash.com/) function [`_.defaults`](http://lodash.com/docs#defaults) as a [Node.js](http://nodejs.org/) module generated by [lodash-cli](https://npmjs.org/package/lodash-cli).\n\n## Author\n\n| [![twitter/jdalton](http://gravatar.com/avatar/299a3d891ff1920b69c364d061007043?s=70)](https://twitter.com/jdalton "Follow @jdalton on Twitter") |\n|---|\n| [John-David Dalton](http://allyoucanleet.com/) |\n\n## Contributors\n\n| [![twitter/blainebublitz](http://gravatar.com/avatar/ac1c67fd906c9fecd823ce302283b4c1?s=70)](https://twitter.com/blainebublitz "Follow @BlaineBublitz on Twitter") | [![twitter/kitcambridge](http://gravatar.com/avatar/6662a1d02f351b5ef2f8b4d815804661?s=70)](https://twitter.com/kitcambridge "Follow @kitcambridge on Twitter") | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |\n|---|---|---|\n| [Blaine Bublitz](http://www.iceddev.com/) | [Kit Cambridge](http://kitcambridge.be/) | [Mathias Bynens](http://mathiasbynens.be/) |\n',
+264 silly resolved     readmeFilename: 'README.md',
+264 silly resolved     _id: 'lodash.defaults@2.4.1',
+264 silly resolved     dist:
+264 silly resolved      { shasum: 'a7e8885f05e68851144b6e12a8f3678026bc4c54',
+264 silly resolved        tarball: 'http://registry.npmjs.org/lodash.defaults/-/lodash.defaults-2.4.1.tgz' },
+264 silly resolved     _from: 'lodash.defaults@^2.4.1',
+264 silly resolved     _npmVersion: '1.3.14',
+264 silly resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+264 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+264 silly resolved     directories: {},
+264 silly resolved     _shasum: 'a7e8885f05e68851144b6e12a8f3678026bc4c54',
+264 silly resolved     _resolved: 'https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-2.4.1.tgz',
+264 silly resolved     scripts: {} },
+264 silly resolved   { name: 'convert-source-map',
+264 silly resolved     version: '0.4.1',
+264 silly resolved     description: 'Converts a source-map from/to  different formats and allows adding/changing properties.',
+264 silly resolved     main: 'index.js',
+264 silly resolved     scripts: { test: 'tap test/*.js' },
+264 silly resolved     repository:
+264 silly resolved      { type: 'git',
+264 silly resolved        url: 'git://github.com/thlorenz/convert-source-map.git' },
+264 silly resolved     homepage: 'https://github.com/thlorenz/convert-source-map',
+264 silly resolved     dependencies: {},
+264 silly resolved     devDependencies: { 'inline-source-map': '~0.3.0', tap: '~0.4.3' },
+264 silly resolved     keywords: [ 'convert', 'sourcemap', 'source', 'map', 'browser', 'debug' ],
+264 silly resolved     author:
+264 silly resolved      { name: 'Thorsten Lorenz',
+264 silly resolved        email: 'thlorenz@gmx.de',
+264 silly resolved        url: 'http://thlorenz.com' },
+264 silly resolved     license: 'MIT',
+264 silly resolved     engine: { node: '>=0.6' },
+264 silly resolved     gitHead: '725b2347a83b42011da465d00678e45605361012',
+264 silly resolved     bugs: { url: 'https://github.com/thlorenz/convert-source-map/issues' },
+264 silly resolved     _id: 'convert-source-map@0.4.1',
+264 silly resolved     _shasum: 'f919a0099fe31f80fc5a1d0eb303161b394070c7',
+264 silly resolved     _from: 'convert-source-map@^0.4.0',
+264 silly resolved     _npmVersion: '1.4.14',
+264 silly resolved     _npmUser: { name: 'thlorenz', email: 'thlorenz@gmx.de' },
+264 silly resolved     maintainers: [ [Object] ],
+264 silly resolved     dist:
+264 silly resolved      { shasum: 'f919a0099fe31f80fc5a1d0eb303161b394070c7',
+264 silly resolved        tarball: 'http://registry.npmjs.org/convert-source-map/-/convert-source-map-0.4.1.tgz' },
+264 silly resolved     directories: {},
+264 silly resolved     _resolved: 'https://registry.npmjs.org/convert-source-map/-/convert-source-map-0.4.1.tgz',
+264 silly resolved     readme: 'ERROR: No README data found!' } ]
+265 info install gulp-util@3.0.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+266 info install through2@0.5.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+267 info install less@1.7.5 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+268 info install vinyl-sourcemaps-apply@0.1.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+269 info install lodash.defaults@2.4.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+270 info install convert-source-map@0.4.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+271 info installOne gulp-util@3.0.1
+272 info installOne through2@0.5.1
+273 info installOne less@1.7.5
+274 info installOne vinyl-sourcemaps-apply@0.1.1
+275 info installOne lodash.defaults@2.4.1
+276 info installOne convert-source-map@0.4.1
+277 verbose node_modules/gulp-less/node_modules/gulp-util unbuild
+278 verbose node_modules/gulp-less/node_modules/through2 unbuild
+279 verbose node_modules/gulp-less/node_modules/less unbuild
+280 verbose node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply unbuild
+281 verbose node_modules/gulp-less/node_modules/lodash.defaults unbuild
+282 verbose node_modules/gulp-less/node_modules/convert-source-map unbuild
+283 verbose tar unpack /Users/Maxime/.npm/gulp-util/3.0.1/package.tgz
+284 silly lockFile b4695533-gulp-less-node-modules-gulp-util tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/gulp-util
+285 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/gulp-util /Users/Maxime/.npm/b4695533-gulp-less-node-modules-gulp-util.lock
+286 silly lockFile 2e6e72ea--npm-gulp-util-3-0-1-package-tgz tar:///Users/Maxime/.npm/gulp-util/3.0.1/package.tgz
+287 verbose lock tar:///Users/Maxime/.npm/gulp-util/3.0.1/package.tgz /Users/Maxime/.npm/2e6e72ea--npm-gulp-util-3-0-1-package-tgz.lock
+288 verbose tar unpack /Users/Maxime/.npm/through2/0.5.1/package.tgz
+289 silly lockFile c2b437b7--gulp-less-node-modules-through2 tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2
+290 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2 /Users/Maxime/.npm/c2b437b7--gulp-less-node-modules-through2.lock
+291 silly lockFile 1fffab49-e-npm-through2-0-5-1-package-tgz tar:///Users/Maxime/.npm/through2/0.5.1/package.tgz
+292 verbose lock tar:///Users/Maxime/.npm/through2/0.5.1/package.tgz /Users/Maxime/.npm/1fffab49-e-npm-through2-0-5-1-package-tgz.lock
+293 verbose tar unpack /Users/Maxime/.npm/less/1.7.5/package.tgz
+294 silly lockFile e8971200-ules-gulp-less-node-modules-less tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/less
+295 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/less /Users/Maxime/.npm/e8971200-ules-gulp-less-node-modules-less.lock
+296 silly lockFile 2afa2c54-axime-npm-less-1-7-5-package-tgz tar:///Users/Maxime/.npm/less/1.7.5/package.tgz
+297 verbose lock tar:///Users/Maxime/.npm/less/1.7.5/package.tgz /Users/Maxime/.npm/2afa2c54-axime-npm-less-1-7-5-package-tgz.lock
+298 verbose tar unpack /Users/Maxime/.npm/vinyl-sourcemaps-apply/0.1.1/package.tgz
+299 silly lockFile f4c1f13a-e-modules-vinyl-sourcemaps-apply tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply
+300 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply /Users/Maxime/.npm/f4c1f13a-e-modules-vinyl-sourcemaps-apply.lock
+301 silly lockFile 5a3549dc-urcemaps-apply-0-1-1-package-tgz tar:///Users/Maxime/.npm/vinyl-sourcemaps-apply/0.1.1/package.tgz
+302 verbose lock tar:///Users/Maxime/.npm/vinyl-sourcemaps-apply/0.1.1/package.tgz /Users/Maxime/.npm/5a3549dc-urcemaps-apply-0-1-1-package-tgz.lock
+303 verbose tar unpack /Users/Maxime/.npm/lodash.defaults/2.4.1/package.tgz
+304 silly lockFile e8f8cb15-ess-node-modules-lodash-defaults tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults
+305 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults /Users/Maxime/.npm/e8f8cb15-ess-node-modules-lodash-defaults.lock
+306 silly lockFile 3fb765bf-odash-defaults-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.defaults/2.4.1/package.tgz
+307 verbose lock tar:///Users/Maxime/.npm/lodash.defaults/2.4.1/package.tgz /Users/Maxime/.npm/3fb765bf-odash-defaults-2-4-1-package-tgz.lock
+308 verbose tar unpack /Users/Maxime/.npm/convert-source-map/0.4.1/package.tgz
+309 silly lockFile 4bb36d69--node-modules-convert-source-map tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map
+310 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map /Users/Maxime/.npm/4bb36d69--node-modules-convert-source-map.lock
+311 silly lockFile f59ec894-ert-source-map-0-4-1-package-tgz tar:///Users/Maxime/.npm/convert-source-map/0.4.1/package.tgz
+312 verbose lock tar:///Users/Maxime/.npm/convert-source-map/0.4.1/package.tgz /Users/Maxime/.npm/f59ec894-ert-source-map-0-4-1-package-tgz.lock
+313 silly gunzTarPerm modes [ '755', '644' ]
+314 silly gunzTarPerm modes [ '755', '644' ]
+315 silly gunzTarPerm modes [ '755', '644' ]
+316 silly gunzTarPerm modes [ '755', '644' ]
+317 silly gunzTarPerm modes [ '755', '644' ]
+318 silly gunzTarPerm extractEntry package.json
+319 silly gunzTarPerm modes [ '755', '644' ]
+320 silly gunzTarPerm extractEntry package.json
+321 silly gunzTarPerm extractEntry package.json
+322 silly gunzTarPerm extractEntry package.json
+323 silly gunzTarPerm extractEntry package.json
+324 silly gunzTarPerm extractEntry .npmignore
+325 silly gunzTarPerm extractEntry README.md
+326 silly gunzTarPerm extractEntry .npmignore
+327 silly gunzTarPerm extractEntry README.md
+328 silly gunzTarPerm extractEntry .npmignore
+329 silly gunzTarPerm extractEntry README.md
+330 silly gunzTarPerm extractEntry .npmignore
+331 silly gunzTarPerm extractEntry README.md
+332 silly gunzTarPerm extractEntry README.md
+333 silly gunzTarPerm extractEntry index.js
+334 silly gunzTarPerm extractEntry package.json
+335 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+336 silly gunzTarPerm extractEntry .npmignore
+337 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+338 silly gunzTarPerm extractEntry README.md
+339 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+340 silly gunzTarPerm extractEntry LICENSE
+341 silly gunzTarPerm extractEntry index.js
+342 silly gunzTarPerm extractEntry index.js
+343 silly gunzTarPerm extractEntry .jshintrc
+344 silly gunzTarPerm extractEntry LICENSE
+345 silly gunzTarPerm extractEntry through2.js
+346 silly gunzTarPerm extractEntry LICENSE
+347 silly gunzTarPerm extractEntry index.js
+348 silly gunzTarPerm extractEntry LICENSE.txt
+349 silly gunzTarPerm extractEntry .travis.yml
+350 silly gunzTarPerm extractEntry lib/File.js
+351 silly gunzTarPerm extractEntry LICENSE
+352 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+353 silly gunzTarPerm extractEntry .travis.yml
+354 silly gunzTarPerm extractEntry example/comment-to-json.js
+355 silly gunzTarPerm extractEntry Gruntfile.js
+356 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+357 silly gunzTarPerm extractEntry dist/less-1.1.0.js
+358 silly gunzTarPerm modified mode [ 'dist/less-1.1.0.js', 438, 420 ]
+359 silly gunzTarPerm extractEntry dist/less-1.5.1.js
+360 silly gunzTarPerm modified mode [ 'dist/less-1.5.1.js', 438, 420 ]
+361 silly gunzTarPerm extractEntry lib/colors.js
+362 silly gunzTarPerm extractEntry lib/combine.js
+363 silly gunzTarPerm extractEntry test/comment-regex.js
+364 silly gunzTarPerm extractEntry dist/less-1.5.1.min.js
+365 silly gunzTarPerm modified mode [ 'dist/less-1.5.1.min.js', 438, 420 ]
+366 silly gunzTarPerm extractEntry test/convert-source-map.js
+367 silly gunzTarPerm extractEntry test/map-file-comment.js
+368 silly gunzTarPerm extractEntry lib/date.js
+369 silly gunzTarPerm extractEntry lib/env.js
+370 silly gunzTarPerm extractEntry lib/buffer.js
+371 silly gunzTarPerm extractEntry lib/isNull.js
+372 silly gunzTarPerm extractEntry lib/isStream.js
+373 silly gunzTarPerm extractEntry lib/linefeed.js
+374 silly gunzTarPerm extractEntry lib/log.js
+375 silly gunzTarPerm extractEntry lib/noop.js
+376 silly gunzTarPerm extractEntry lib/beep.js
+377 silly gunzTarPerm extractEntry lib/replaceExtension.js
+378 silly gunzTarPerm extractEntry lib/PluginError.js
+379 silly gunzTarPerm extractEntry lib/template.js
+380 silly gunzTarPerm extractEntry lib/isBuffer.js
+381 silly lockFile e8f8cb15-ess-node-modules-lodash-defaults tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults
+382 silly lockFile e8f8cb15-ess-node-modules-lodash-defaults tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults
+383 silly lockFile 3fb765bf-odash-defaults-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.defaults/2.4.1/package.tgz
+384 silly lockFile 3fb765bf-odash-defaults-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.defaults/2.4.1/package.tgz
+385 silly lockFile f4c1f13a-e-modules-vinyl-sourcemaps-apply tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply
+386 silly lockFile f4c1f13a-e-modules-vinyl-sourcemaps-apply tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply
+387 silly lockFile 5a3549dc-urcemaps-apply-0-1-1-package-tgz tar:///Users/Maxime/.npm/vinyl-sourcemaps-apply/0.1.1/package.tgz
+388 silly lockFile 5a3549dc-urcemaps-apply-0-1-1-package-tgz tar:///Users/Maxime/.npm/vinyl-sourcemaps-apply/0.1.1/package.tgz
+389 info preinstall lodash.defaults@2.4.1
+390 info preinstall vinyl-sourcemaps-apply@0.1.1
+391 verbose readDependencies using package.json deps
+392 silly gunzTarPerm extractEntry test/fixtures/map-file-comment-double-slash.css
+393 silly gunzTarPerm extractEntry test/fixtures/map-file-comment-inline.css
+394 verbose readDependencies using package.json deps
+395 verbose readDependencies using package.json deps
+396 verbose cache add [ 'lodash.keys@~2.4.1', null ]
+397 verbose cache add name=undefined spec="lodash.keys@~2.4.1" args=["lodash.keys@~2.4.1",null]
+398 verbose parsed url { protocol: null,
+398 verbose parsed url   slashes: null,
+398 verbose parsed url   auth: null,
+398 verbose parsed url   host: null,
+398 verbose parsed url   port: null,
+398 verbose parsed url   hostname: null,
+398 verbose parsed url   hash: null,
+398 verbose parsed url   search: null,
+398 verbose parsed url   query: null,
+398 verbose parsed url   pathname: 'lodash.keys@~2.4.1',
+398 verbose parsed url   path: 'lodash.keys@~2.4.1',
+398 verbose parsed url   href: 'lodash.keys@~2.4.1' }
+399 verbose readDependencies using package.json deps
+400 verbose cache add [ 'lodash._objecttypes@~2.4.1', null ]
+401 verbose cache add name=undefined spec="lodash._objecttypes@~2.4.1" args=["lodash._objecttypes@~2.4.1",null]
+402 verbose parsed url { protocol: null,
+402 verbose parsed url   slashes: null,
+402 verbose parsed url   auth: null,
+402 verbose parsed url   host: null,
+402 verbose parsed url   port: null,
+402 verbose parsed url   hostname: null,
+402 verbose parsed url   hash: null,
+402 verbose parsed url   search: null,
+402 verbose parsed url   query: null,
+402 verbose parsed url   pathname: 'lodash._objecttypes@~2.4.1',
+402 verbose parsed url   path: 'lodash._objecttypes@~2.4.1',
+402 verbose parsed url   href: 'lodash._objecttypes@~2.4.1' }
+403 verbose cache add name="lodash.keys" spec="~2.4.1" args=["lodash.keys","~2.4.1"]
+404 verbose parsed url { protocol: null,
+404 verbose parsed url   slashes: null,
+404 verbose parsed url   auth: null,
+404 verbose parsed url   host: null,
+404 verbose parsed url   port: null,
+404 verbose parsed url   hostname: null,
+404 verbose parsed url   hash: null,
+404 verbose parsed url   search: null,
+404 verbose parsed url   query: null,
+404 verbose parsed url   pathname: '~2.4.1',
+404 verbose parsed url   path: '~2.4.1',
+404 verbose parsed url   href: '~2.4.1' }
+405 verbose addNamed [ 'lodash.keys', '~2.4.1' ]
+406 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+407 silly lockFile 5d1944a4-lodash-keys-2-4-1 lodash.keys@~2.4.1
+408 verbose lock lodash.keys@~2.4.1 /Users/Maxime/.npm/5d1944a4-lodash-keys-2-4-1.lock
+409 verbose cache add name="lodash._objecttypes" spec="~2.4.1" args=["lodash._objecttypes","~2.4.1"]
+410 verbose parsed url { protocol: null,
+410 verbose parsed url   slashes: null,
+410 verbose parsed url   auth: null,
+410 verbose parsed url   host: null,
+410 verbose parsed url   port: null,
+410 verbose parsed url   hostname: null,
+410 verbose parsed url   hash: null,
+410 verbose parsed url   search: null,
+410 verbose parsed url   query: null,
+410 verbose parsed url   pathname: '~2.4.1',
+410 verbose parsed url   path: '~2.4.1',
+410 verbose parsed url   href: '~2.4.1' }
+411 verbose addNamed [ 'lodash._objecttypes', '~2.4.1' ]
+412 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+413 silly lockFile c7e1c067-lodash-objecttypes-2-4-1 lodash._objecttypes@~2.4.1
+414 verbose lock lodash._objecttypes@~2.4.1 /Users/Maxime/.npm/c7e1c067-lodash-objecttypes-2-4-1.lock
+415 verbose cache add [ 'source-map@^0.1.33', null ]
+416 verbose cache add name=undefined spec="source-map@^0.1.33" args=["source-map@^0.1.33",null]
+417 verbose parsed url { protocol: null,
+417 verbose parsed url   slashes: null,
+417 verbose parsed url   auth: null,
+417 verbose parsed url   host: null,
+417 verbose parsed url   port: null,
+417 verbose parsed url   hostname: null,
+417 verbose parsed url   hash: null,
+417 verbose parsed url   search: null,
+417 verbose parsed url   query: null,
+417 verbose parsed url   pathname: 'source-map@^0.1.33',
+417 verbose parsed url   path: 'source-map@^0.1.33',
+417 verbose parsed url   href: 'source-map@^0.1.33' }
+418 verbose cache add name="source-map" spec="^0.1.33" args=["source-map","^0.1.33"]
+419 verbose parsed url { protocol: null,
+419 verbose parsed url   slashes: null,
+419 verbose parsed url   auth: null,
+419 verbose parsed url   host: null,
+419 verbose parsed url   port: null,
+419 verbose parsed url   hostname: null,
+419 verbose parsed url   hash: null,
+419 verbose parsed url   search: null,
+419 verbose parsed url   query: null,
+419 verbose parsed url   pathname: '^0.1.33',
+419 verbose parsed url   path: '^0.1.33',
+419 verbose parsed url   href: '^0.1.33' }
+420 verbose addNamed [ 'source-map', '^0.1.33' ]
+421 verbose addNamed [ null, '>=0.1.33-0 <0.2.0-0' ]
+422 silly lockFile 1e7dafd7-source-map-0-1-33 source-map@^0.1.33
+423 verbose lock source-map@^0.1.33 /Users/Maxime/.npm/1e7dafd7-source-map-0-1-33.lock
+424 silly addNameRange { name: 'lodash.keys',
+424 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+424 silly addNameRange   hasData: false }
+425 silly addNameRange { name: 'lodash._objecttypes',
+425 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+425 silly addNameRange   hasData: false }
+426 silly gunzTarPerm extractEntry dist/less-1.6.0.js
+427 silly gunzTarPerm modified mode [ 'dist/less-1.6.0.js', 438, 420 ]
+428 silly addNameRange { name: 'source-map',
+428 silly addNameRange   range: '>=0.1.33-0 <0.2.0-0',
+428 silly addNameRange   hasData: false }
+429 silly lockFile c2b437b7--gulp-less-node-modules-through2 tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2
+430 silly lockFile c2b437b7--gulp-less-node-modules-through2 tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2
+431 silly gunzTarPerm extractEntry test/fixtures/map-file-comment.css
+432 silly gunzTarPerm extractEntry test/fixtures/map-file-comment.css.map
+433 silly gunzTarPerm extractEntry dist/less-1.5.0.min.js
+434 silly gunzTarPerm modified mode [ 'dist/less-1.5.0.min.js', 438, 420 ]
+435 silly lockFile 1fffab49-e-npm-through2-0-5-1-package-tgz tar:///Users/Maxime/.npm/through2/0.5.1/package.tgz
+436 silly lockFile 1fffab49-e-npm-through2-0-5-1-package-tgz tar:///Users/Maxime/.npm/through2/0.5.1/package.tgz
+437 verbose request where is /lodash.keys
+438 verbose request registry https://registry.npmjs.org/
+439 verbose url raw /lodash.keys
+440 verbose url resolving [ 'https://registry.npmjs.org/', './lodash.keys' ]
+441 verbose url resolved https://registry.npmjs.org/lodash.keys
+442 verbose request where is https://registry.npmjs.org/lodash.keys
+443 info trying registry request attempt 1 at 20:42:19
+444 verbose etag "6D9Z1VOB8YX1GSSH2JOMRAG48"
+445 http GET https://registry.npmjs.org/lodash.keys
+446 verbose request where is /lodash._objecttypes
+447 verbose request registry https://registry.npmjs.org/
+448 verbose url raw /lodash._objecttypes
+449 verbose url resolving [ 'https://registry.npmjs.org/', './lodash._objecttypes' ]
+450 verbose url resolved https://registry.npmjs.org/lodash._objecttypes
+451 verbose request where is https://registry.npmjs.org/lodash._objecttypes
+452 info trying registry request attempt 1 at 20:42:19
+453 verbose etag "DIAAMZ7AMGV21Y2G9M3A2XDJ"
+454 http GET https://registry.npmjs.org/lodash._objecttypes
+455 verbose request where is /source-map
+456 verbose request registry https://registry.npmjs.org/
+457 verbose url raw /source-map
+458 verbose url resolving [ 'https://registry.npmjs.org/', './source-map' ]
+459 verbose url resolved https://registry.npmjs.org/source-map
+460 verbose request where is https://registry.npmjs.org/source-map
+461 info trying registry request attempt 1 at 20:42:19
+462 verbose etag "CTPHW9RYNF1ANEGGAB0F3ETOU"
+463 http GET https://registry.npmjs.org/source-map
+464 info preinstall through2@0.5.1
+465 verbose readDependencies using package.json deps
+466 verbose readDependencies using package.json deps
+467 verbose cache add [ 'readable-stream@~1.0.17', null ]
+468 verbose cache add name=undefined spec="readable-stream@~1.0.17" args=["readable-stream@~1.0.17",null]
+469 verbose parsed url { protocol: null,
+469 verbose parsed url   slashes: null,
+469 verbose parsed url   auth: null,
+469 verbose parsed url   host: null,
+469 verbose parsed url   port: null,
+469 verbose parsed url   hostname: null,
+469 verbose parsed url   hash: null,
+469 verbose parsed url   search: null,
+469 verbose parsed url   query: null,
+469 verbose parsed url   pathname: 'readable-stream@~1.0.17',
+469 verbose parsed url   path: 'readable-stream@~1.0.17',
+469 verbose parsed url   href: 'readable-stream@~1.0.17' }
+470 verbose cache add [ 'xtend@~3.0.0', null ]
+471 verbose cache add name=undefined spec="xtend@~3.0.0" args=["xtend@~3.0.0",null]
+472 verbose parsed url { protocol: null,
+472 verbose parsed url   slashes: null,
+472 verbose parsed url   auth: null,
+472 verbose parsed url   host: null,
+472 verbose parsed url   port: null,
+472 verbose parsed url   hostname: null,
+472 verbose parsed url   hash: null,
+472 verbose parsed url   search: null,
+472 verbose parsed url   query: null,
+472 verbose parsed url   pathname: 'xtend@~3.0.0',
+472 verbose parsed url   path: 'xtend@~3.0.0',
+472 verbose parsed url   href: 'xtend@~3.0.0' }
+473 verbose cache add name="readable-stream" spec="~1.0.17" args=["readable-stream","~1.0.17"]
+474 verbose parsed url { protocol: null,
+474 verbose parsed url   slashes: null,
+474 verbose parsed url   auth: null,
+474 verbose parsed url   host: null,
+474 verbose parsed url   port: null,
+474 verbose parsed url   hostname: null,
+474 verbose parsed url   hash: null,
+474 verbose parsed url   search: null,
+474 verbose parsed url   query: null,
+474 verbose parsed url   pathname: '~1.0.17',
+474 verbose parsed url   path: '~1.0.17',
+474 verbose parsed url   href: '~1.0.17' }
+475 verbose addNamed [ 'readable-stream', '~1.0.17' ]
+476 verbose addNamed [ null, '>=1.0.17-0 <1.1.0-0' ]
+477 silly lockFile be40b10f-readable-stream-1-0-17 readable-stream@~1.0.17
+478 verbose lock readable-stream@~1.0.17 /Users/Maxime/.npm/be40b10f-readable-stream-1-0-17.lock
+479 verbose cache add name="xtend" spec="~3.0.0" args=["xtend","~3.0.0"]
+480 verbose parsed url { protocol: null,
+480 verbose parsed url   slashes: null,
+480 verbose parsed url   auth: null,
+480 verbose parsed url   host: null,
+480 verbose parsed url   port: null,
+480 verbose parsed url   hostname: null,
+480 verbose parsed url   hash: null,
+480 verbose parsed url   search: null,
+480 verbose parsed url   query: null,
+480 verbose parsed url   pathname: '~3.0.0',
+480 verbose parsed url   path: '~3.0.0',
+480 verbose parsed url   href: '~3.0.0' }
+481 verbose addNamed [ 'xtend', '~3.0.0' ]
+482 verbose addNamed [ null, '>=3.0.0-0 <3.1.0-0' ]
+483 silly lockFile 25b42cb1-xtend-3-0-0 xtend@~3.0.0
+484 verbose lock xtend@~3.0.0 /Users/Maxime/.npm/25b42cb1-xtend-3-0-0.lock
+485 silly addNameRange { name: 'readable-stream',
+485 silly addNameRange   range: '>=1.0.17-0 <1.1.0-0',
+485 silly addNameRange   hasData: false }
+486 silly addNameRange { name: 'xtend', range: '>=3.0.0-0 <3.1.0-0', hasData: false }
+487 verbose request where is /readable-stream
+488 verbose request registry https://registry.npmjs.org/
+489 verbose url raw /readable-stream
+490 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream' ]
+491 verbose url resolved https://registry.npmjs.org/readable-stream
+492 verbose request where is https://registry.npmjs.org/readable-stream
+493 info trying registry request attempt 1 at 20:42:19
+494 verbose etag "64HWPM9QDWFPRSQQO5XG0WJFK"
+495 http GET https://registry.npmjs.org/readable-stream
+496 verbose request where is /xtend
+497 verbose request registry https://registry.npmjs.org/
+498 verbose url raw /xtend
+499 verbose url resolving [ 'https://registry.npmjs.org/', './xtend' ]
+500 verbose url resolved https://registry.npmjs.org/xtend
+501 verbose request where is https://registry.npmjs.org/xtend
+502 info trying registry request attempt 1 at 20:42:19
+503 verbose etag "EH3R312FP6OSMQ68B1JMMTPY6"
+504 http GET https://registry.npmjs.org/xtend
+505 silly gunzTarPerm extractEntry dist/less-1.6.1.js
+506 silly gunzTarPerm modified mode [ 'dist/less-1.6.1.js', 438, 420 ]
+507 silly gunzTarPerm extractEntry dist/less-1.6.1.min.js
+508 silly gunzTarPerm modified mode [ 'dist/less-1.6.1.min.js', 438, 420 ]
+509 silly gunzTarPerm extractEntry dist/less-1.6.2.js
+510 silly gunzTarPerm modified mode [ 'dist/less-1.6.2.js', 438, 420 ]
+511 silly lockFile 4bb36d69--node-modules-convert-source-map tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map
+512 silly lockFile 4bb36d69--node-modules-convert-source-map tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map
+513 silly lockFile f59ec894-ert-source-map-0-4-1-package-tgz tar:///Users/Maxime/.npm/convert-source-map/0.4.1/package.tgz
+514 silly lockFile f59ec894-ert-source-map-0-4-1-package-tgz tar:///Users/Maxime/.npm/convert-source-map/0.4.1/package.tgz
+515 info preinstall convert-source-map@0.4.1
+516 verbose readDependencies using package.json deps
+517 verbose readDependencies using package.json deps
+518 silly resolved []
+519 verbose about to build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map
+520 info build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/convert-source-map
+521 verbose linkStuff [ false,
+521 verbose linkStuff   false,
+521 verbose linkStuff   false,
+521 verbose linkStuff   '/Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules' ]
+522 info linkStuff convert-source-map@0.4.1
+523 verbose linkBins convert-source-map@0.4.1
+524 verbose linkMans convert-source-map@0.4.1
+525 verbose rebuildBundles convert-source-map@0.4.1
+526 info install convert-source-map@0.4.1
+527 info postinstall convert-source-map@0.4.1
+528 silly gunzTarPerm extractEntry dist/less-1.6.2.min.js
+529 silly gunzTarPerm modified mode [ 'dist/less-1.6.2.min.js', 438, 420 ]
+530 silly lockFile b4695533-gulp-less-node-modules-gulp-util tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/gulp-util
+531 silly lockFile b4695533-gulp-less-node-modules-gulp-util tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/gulp-util
+532 silly lockFile 2e6e72ea--npm-gulp-util-3-0-1-package-tgz tar:///Users/Maxime/.npm/gulp-util/3.0.1/package.tgz
+533 silly lockFile 2e6e72ea--npm-gulp-util-3-0-1-package-tgz tar:///Users/Maxime/.npm/gulp-util/3.0.1/package.tgz
+534 info preinstall gulp-util@3.0.1
+535 verbose readDependencies using package.json deps
+536 verbose readDependencies using package.json deps
+537 verbose cache add [ 'chalk@^0.5.0', null ]
+538 verbose cache add name=undefined spec="chalk@^0.5.0" args=["chalk@^0.5.0",null]
+539 verbose parsed url { protocol: null,
+539 verbose parsed url   slashes: null,
+539 verbose parsed url   auth: null,
+539 verbose parsed url   host: null,
+539 verbose parsed url   port: null,
+539 verbose parsed url   hostname: null,
+539 verbose parsed url   hash: null,
+539 verbose parsed url   search: null,
+539 verbose parsed url   query: null,
+539 verbose parsed url   pathname: 'chalk@^0.5.0',
+539 verbose parsed url   path: 'chalk@^0.5.0',
+539 verbose parsed url   href: 'chalk@^0.5.0' }
+540 verbose cache add [ 'dateformat@^1.0.7-1.2.3', null ]
+541 verbose cache add name=undefined spec="dateformat@^1.0.7-1.2.3" args=["dateformat@^1.0.7-1.2.3",null]
+542 verbose parsed url { protocol: null,
+542 verbose parsed url   slashes: null,
+542 verbose parsed url   auth: null,
+542 verbose parsed url   host: null,
+542 verbose parsed url   port: null,
+542 verbose parsed url   hostname: null,
+542 verbose parsed url   hash: null,
+542 verbose parsed url   search: null,
+542 verbose parsed url   query: null,
+542 verbose parsed url   pathname: 'dateformat@^1.0.7-1.2.3',
+542 verbose parsed url   path: 'dateformat@^1.0.7-1.2.3',
+542 verbose parsed url   href: 'dateformat@^1.0.7-1.2.3' }
+543 verbose cache add name="chalk" spec="^0.5.0" args=["chalk","^0.5.0"]
+544 verbose parsed url { protocol: null,
+544 verbose parsed url   slashes: null,
+544 verbose parsed url   auth: null,
+544 verbose parsed url   host: null,
+544 verbose parsed url   port: null,
+544 verbose parsed url   hostname: null,
+544 verbose parsed url   hash: null,
+544 verbose parsed url   search: null,
+544 verbose parsed url   query: null,
+544 verbose parsed url   pathname: '^0.5.0',
+544 verbose parsed url   path: '^0.5.0',
+544 verbose parsed url   href: '^0.5.0' }
+545 verbose addNamed [ 'chalk', '^0.5.0' ]
+546 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+547 silly lockFile c513ee84-chalk-0-5-0 chalk@^0.5.0
+548 verbose lock chalk@^0.5.0 /Users/Maxime/.npm/c513ee84-chalk-0-5-0.lock
+549 verbose cache add name="dateformat" spec="^1.0.7-1.2.3" args=["dateformat","^1.0.7-1.2.3"]
+550 verbose parsed url { protocol: null,
+550 verbose parsed url   slashes: null,
+550 verbose parsed url   auth: null,
+550 verbose parsed url   host: null,
+550 verbose parsed url   port: null,
+550 verbose parsed url   hostname: null,
+550 verbose parsed url   hash: null,
+550 verbose parsed url   search: null,
+550 verbose parsed url   query: null,
+550 verbose parsed url   pathname: '^1.0.7-1.2.3',
+550 verbose parsed url   path: '^1.0.7-1.2.3',
+550 verbose parsed url   href: '^1.0.7-1.2.3' }
+551 verbose addNamed [ 'dateformat', '^1.0.7-1.2.3' ]
+552 verbose addNamed [ null, '>=1.0.7-1.2.3 <2.0.0-0' ]
+553 silly lockFile 9c570b30-dateformat-1-0-7-1-2-3 dateformat@^1.0.7-1.2.3
+554 verbose lock dateformat@^1.0.7-1.2.3 /Users/Maxime/.npm/9c570b30-dateformat-1-0-7-1-2-3.lock
+555 verbose cache add [ 'lodash@^2.4.1', null ]
+556 verbose cache add name=undefined spec="lodash@^2.4.1" args=["lodash@^2.4.1",null]
+557 verbose parsed url { protocol: null,
+557 verbose parsed url   slashes: null,
+557 verbose parsed url   auth: null,
+557 verbose parsed url   host: null,
+557 verbose parsed url   port: null,
+557 verbose parsed url   hostname: null,
+557 verbose parsed url   hash: null,
+557 verbose parsed url   search: null,
+557 verbose parsed url   query: null,
+557 verbose parsed url   pathname: 'lodash@^2.4.1',
+557 verbose parsed url   path: 'lodash@^2.4.1',
+557 verbose parsed url   href: 'lodash@^2.4.1' }
+558 verbose cache add [ 'lodash._reinterpolate@^2.4.1', null ]
+559 verbose cache add name=undefined spec="lodash._reinterpolate@^2.4.1" args=["lodash._reinterpolate@^2.4.1",null]
+560 verbose parsed url { protocol: null,
+560 verbose parsed url   slashes: null,
+560 verbose parsed url   auth: null,
+560 verbose parsed url   host: null,
+560 verbose parsed url   port: null,
+560 verbose parsed url   hostname: null,
+560 verbose parsed url   hash: null,
+560 verbose parsed url   search: null,
+560 verbose parsed url   query: null,
+560 verbose parsed url   pathname: 'lodash._reinterpolate@^2.4.1',
+560 verbose parsed url   path: 'lodash._reinterpolate@^2.4.1',
+560 verbose parsed url   href: 'lodash._reinterpolate@^2.4.1' }
+561 verbose cache add name="lodash" spec="^2.4.1" args=["lodash","^2.4.1"]
+562 verbose parsed url { protocol: null,
+562 verbose parsed url   slashes: null,
+562 verbose parsed url   auth: null,
+562 verbose parsed url   host: null,
+562 verbose parsed url   port: null,
+562 verbose parsed url   hostname: null,
+562 verbose parsed url   hash: null,
+562 verbose parsed url   search: null,
+562 verbose parsed url   query: null,
+562 verbose parsed url   pathname: '^2.4.1',
+562 verbose parsed url   path: '^2.4.1',
+562 verbose parsed url   href: '^2.4.1' }
+563 verbose addNamed [ 'lodash', '^2.4.1' ]
+564 verbose addNamed [ null, '>=2.4.1-0 <3.0.0-0' ]
+565 silly lockFile 59759450-lodash-2-4-1 lodash@^2.4.1
+566 verbose lock lodash@^2.4.1 /Users/Maxime/.npm/59759450-lodash-2-4-1.lock
+567 verbose cache add [ 'lodash.template@^2.4.1', null ]
+568 verbose cache add name=undefined spec="lodash.template@^2.4.1" args=["lodash.template@^2.4.1",null]
+569 verbose parsed url { protocol: null,
+569 verbose parsed url   slashes: null,
+569 verbose parsed url   auth: null,
+569 verbose parsed url   host: null,
+569 verbose parsed url   port: null,
+569 verbose parsed url   hostname: null,
+569 verbose parsed url   hash: null,
+569 verbose parsed url   search: null,
+569 verbose parsed url   query: null,
+569 verbose parsed url   pathname: 'lodash.template@^2.4.1',
+569 verbose parsed url   path: 'lodash.template@^2.4.1',
+569 verbose parsed url   href: 'lodash.template@^2.4.1' }
+570 verbose cache add name="lodash._reinterpolate" spec="^2.4.1" args=["lodash._reinterpolate","^2.4.1"]
+571 verbose parsed url { protocol: null,
+571 verbose parsed url   slashes: null,
+571 verbose parsed url   auth: null,
+571 verbose parsed url   host: null,
+571 verbose parsed url   port: null,
+571 verbose parsed url   hostname: null,
+571 verbose parsed url   hash: null,
+571 verbose parsed url   search: null,
+571 verbose parsed url   query: null,
+571 verbose parsed url   pathname: '^2.4.1',
+571 verbose parsed url   path: '^2.4.1',
+571 verbose parsed url   href: '^2.4.1' }
+572 verbose addNamed [ 'lodash._reinterpolate', '^2.4.1' ]
+573 verbose addNamed [ null, '>=2.4.1-0 <3.0.0-0' ]
+574 silly lockFile 5f4ded01-lodash-reinterpolate-2-4-1 lodash._reinterpolate@^2.4.1
+575 verbose lock lodash._reinterpolate@^2.4.1 /Users/Maxime/.npm/5f4ded01-lodash-reinterpolate-2-4-1.lock
+576 silly addNameRange { name: 'chalk', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+577 silly addNameRange { name: 'dateformat',
+577 silly addNameRange   range: '>=1.0.7-1.2.3 <2.0.0-0',
+577 silly addNameRange   hasData: false }
+578 verbose cache add [ 'minimist@^1.1.0', null ]
+579 verbose cache add name=undefined spec="minimist@^1.1.0" args=["minimist@^1.1.0",null]
+580 verbose parsed url { protocol: null,
+580 verbose parsed url   slashes: null,
+580 verbose parsed url   auth: null,
+580 verbose parsed url   host: null,
+580 verbose parsed url   port: null,
+580 verbose parsed url   hostname: null,
+580 verbose parsed url   hash: null,
+580 verbose parsed url   search: null,
+580 verbose parsed url   query: null,
+580 verbose parsed url   pathname: 'minimist@^1.1.0',
+580 verbose parsed url   path: 'minimist@^1.1.0',
+580 verbose parsed url   href: 'minimist@^1.1.0' }
+581 verbose cache add [ 'multipipe@^0.1.0', null ]
+582 verbose cache add name=undefined spec="multipipe@^0.1.0" args=["multipipe@^0.1.0",null]
+583 verbose parsed url { protocol: null,
+583 verbose parsed url   slashes: null,
+583 verbose parsed url   auth: null,
+583 verbose parsed url   host: null,
+583 verbose parsed url   port: null,
+583 verbose parsed url   hostname: null,
+583 verbose parsed url   hash: null,
+583 verbose parsed url   search: null,
+583 verbose parsed url   query: null,
+583 verbose parsed url   pathname: 'multipipe@^0.1.0',
+583 verbose parsed url   path: 'multipipe@^0.1.0',
+583 verbose parsed url   href: 'multipipe@^0.1.0' }
+584 verbose cache add [ 'through2@^0.6.1', null ]
+585 verbose cache add name=undefined spec="through2@^0.6.1" args=["through2@^0.6.1",null]
+586 verbose parsed url { protocol: null,
+586 verbose parsed url   slashes: null,
+586 verbose parsed url   auth: null,
+586 verbose parsed url   host: null,
+586 verbose parsed url   port: null,
+586 verbose parsed url   hostname: null,
+586 verbose parsed url   hash: null,
+586 verbose parsed url   search: null,
+586 verbose parsed url   query: null,
+586 verbose parsed url   pathname: 'through2@^0.6.1',
+586 verbose parsed url   path: 'through2@^0.6.1',
+586 verbose parsed url   href: 'through2@^0.6.1' }
+587 verbose cache add name="lodash.template" spec="^2.4.1" args=["lodash.template","^2.4.1"]
+588 verbose parsed url { protocol: null,
+588 verbose parsed url   slashes: null,
+588 verbose parsed url   auth: null,
+588 verbose parsed url   host: null,
+588 verbose parsed url   port: null,
+588 verbose parsed url   hostname: null,
+588 verbose parsed url   hash: null,
+588 verbose parsed url   search: null,
+588 verbose parsed url   query: null,
+588 verbose parsed url   pathname: '^2.4.1',
+588 verbose parsed url   path: '^2.4.1',
+588 verbose parsed url   href: '^2.4.1' }
+589 verbose addNamed [ 'lodash.template', '^2.4.1' ]
+590 verbose addNamed [ null, '>=2.4.1-0 <3.0.0-0' ]
+591 silly lockFile 308826c1-lodash-template-2-4-1 lodash.template@^2.4.1
+592 verbose lock lodash.template@^2.4.1 /Users/Maxime/.npm/308826c1-lodash-template-2-4-1.lock
+593 silly addNameRange { name: 'lodash', range: '>=2.4.1-0 <3.0.0-0', hasData: false }
+594 verbose cache add name="minimist" spec="^1.1.0" args=["minimist","^1.1.0"]
+595 verbose parsed url { protocol: null,
+595 verbose parsed url   slashes: null,
+595 verbose parsed url   auth: null,
+595 verbose parsed url   host: null,
+595 verbose parsed url   port: null,
+595 verbose parsed url   hostname: null,
+595 verbose parsed url   hash: null,
+595 verbose parsed url   search: null,
+595 verbose parsed url   query: null,
+595 verbose parsed url   pathname: '^1.1.0',
+595 verbose parsed url   path: '^1.1.0',
+595 verbose parsed url   href: '^1.1.0' }
+596 verbose addNamed [ 'minimist', '^1.1.0' ]
+597 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+598 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+599 verbose lock minimist@^1.1.0 /Users/Maxime/.npm/b7cda548-minimist-1-1-0.lock
+600 verbose cache add name="multipipe" spec="^0.1.0" args=["multipipe","^0.1.0"]
+601 verbose parsed url { protocol: null,
+601 verbose parsed url   slashes: null,
+601 verbose parsed url   auth: null,
+601 verbose parsed url   host: null,
+601 verbose parsed url   port: null,
+601 verbose parsed url   hostname: null,
+601 verbose parsed url   hash: null,
+601 verbose parsed url   search: null,
+601 verbose parsed url   query: null,
+601 verbose parsed url   pathname: '^0.1.0',
+601 verbose parsed url   path: '^0.1.0',
+601 verbose parsed url   href: '^0.1.0' }
+602 verbose addNamed [ 'multipipe', '^0.1.0' ]
+603 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+604 silly lockFile 879ba22c-multipipe-0-1-0 multipipe@^0.1.0
+605 verbose lock multipipe@^0.1.0 /Users/Maxime/.npm/879ba22c-multipipe-0-1-0.lock
+606 verbose cache add name="through2" spec="^0.6.1" args=["through2","^0.6.1"]
+607 verbose parsed url { protocol: null,
+607 verbose parsed url   slashes: null,
+607 verbose parsed url   auth: null,
+607 verbose parsed url   host: null,
+607 verbose parsed url   port: null,
+607 verbose parsed url   hostname: null,
+607 verbose parsed url   hash: null,
+607 verbose parsed url   search: null,
+607 verbose parsed url   query: null,
+607 verbose parsed url   pathname: '^0.6.1',
+607 verbose parsed url   path: '^0.6.1',
+607 verbose parsed url   href: '^0.6.1' }
+608 verbose addNamed [ 'through2', '^0.6.1' ]
+609 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+610 silly lockFile ef970176-through2-0-6-1 through2@^0.6.1
+611 verbose lock through2@^0.6.1 /Users/Maxime/.npm/ef970176-through2-0-6-1.lock
+612 verbose cache add [ 'vinyl@^0.4.0', null ]
+613 verbose cache add name=undefined spec="vinyl@^0.4.0" args=["vinyl@^0.4.0",null]
+614 verbose parsed url { protocol: null,
+614 verbose parsed url   slashes: null,
+614 verbose parsed url   auth: null,
+614 verbose parsed url   host: null,
+614 verbose parsed url   port: null,
+614 verbose parsed url   hostname: null,
+614 verbose parsed url   hash: null,
+614 verbose parsed url   search: null,
+614 verbose parsed url   query: null,
+614 verbose parsed url   pathname: 'vinyl@^0.4.0',
+614 verbose parsed url   path: 'vinyl@^0.4.0',
+614 verbose parsed url   href: 'vinyl@^0.4.0' }
+615 silly addNameRange { name: 'lodash._reinterpolate',
+615 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+615 silly addNameRange   hasData: false }
+616 verbose cache add name="vinyl" spec="^0.4.0" args=["vinyl","^0.4.0"]
+617 verbose parsed url { protocol: null,
+617 verbose parsed url   slashes: null,
+617 verbose parsed url   auth: null,
+617 verbose parsed url   host: null,
+617 verbose parsed url   port: null,
+617 verbose parsed url   hostname: null,
+617 verbose parsed url   hash: null,
+617 verbose parsed url   search: null,
+617 verbose parsed url   query: null,
+617 verbose parsed url   pathname: '^0.4.0',
+617 verbose parsed url   path: '^0.4.0',
+617 verbose parsed url   href: '^0.4.0' }
+618 verbose addNamed [ 'vinyl', '^0.4.0' ]
+619 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+620 silly lockFile 0cf96550-vinyl-0-4-0 vinyl@^0.4.0
+621 verbose lock vinyl@^0.4.0 /Users/Maxime/.npm/0cf96550-vinyl-0-4-0.lock
+622 silly addNameRange { name: 'lodash.template',
+622 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+622 silly addNameRange   hasData: false }
+623 silly addNameRange { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: false }
+624 silly addNameRange { name: 'multipipe',
+624 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+624 silly addNameRange   hasData: false }
+625 silly addNameRange { name: 'through2', range: '>=0.6.1-0 <0.7.0-0', hasData: false }
+626 silly addNameRange { name: 'vinyl', range: '>=0.4.0-0 <0.5.0-0', hasData: false }
+627 verbose request where is /dateformat
+628 verbose request registry https://registry.npmjs.org/
+629 verbose url raw /dateformat
+630 verbose url resolving [ 'https://registry.npmjs.org/', './dateformat' ]
+631 verbose url resolved https://registry.npmjs.org/dateformat
+632 verbose request where is https://registry.npmjs.org/dateformat
+633 info trying registry request attempt 1 at 20:42:19
+634 verbose etag "4D6Y46B2EGQ8PN6W3CYO08WU5"
+635 http GET https://registry.npmjs.org/dateformat
+636 verbose request where is /chalk
+637 verbose request registry https://registry.npmjs.org/
+638 verbose url raw /chalk
+639 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+640 verbose url resolved https://registry.npmjs.org/chalk
+641 verbose request where is https://registry.npmjs.org/chalk
+642 info trying registry request attempt 1 at 20:42:19
+643 verbose etag "37HITIDNUW48LFQMIHIM3E5Y5"
+644 http GET https://registry.npmjs.org/chalk
+645 verbose request where is /lodash
+646 verbose request registry https://registry.npmjs.org/
+647 verbose url raw /lodash
+648 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+649 verbose url resolved https://registry.npmjs.org/lodash
+650 verbose request where is https://registry.npmjs.org/lodash
+651 info trying registry request attempt 1 at 20:42:19
+652 verbose etag "4M2A91O7EF4VFSW3AGWA4S9NX"
+653 http GET https://registry.npmjs.org/lodash
+654 verbose request where is /lodash._reinterpolate
+655 verbose request registry https://registry.npmjs.org/
+656 verbose url raw /lodash._reinterpolate
+657 verbose url resolving [ 'https://registry.npmjs.org/', './lodash._reinterpolate' ]
+658 verbose url resolved https://registry.npmjs.org/lodash._reinterpolate
+659 verbose request where is https://registry.npmjs.org/lodash._reinterpolate
+660 info trying registry request attempt 1 at 20:42:19
+661 verbose etag "9GK7566A6AWBHJLT4PCX6D7P7"
+662 http GET https://registry.npmjs.org/lodash._reinterpolate
+663 verbose request where is /lodash.template
+664 verbose request registry https://registry.npmjs.org/
+665 verbose url raw /lodash.template
+666 verbose url resolving [ 'https://registry.npmjs.org/', './lodash.template' ]
+667 verbose url resolved https://registry.npmjs.org/lodash.template
+668 verbose request where is https://registry.npmjs.org/lodash.template
+669 info trying registry request attempt 1 at 20:42:19
+670 verbose etag "7YL2SI0M3XIAJIU2K4KKG8IO7"
+671 http GET https://registry.npmjs.org/lodash.template
+672 verbose request where is /minimist
+673 verbose request registry https://registry.npmjs.org/
+674 verbose url raw /minimist
+675 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+676 verbose url resolved https://registry.npmjs.org/minimist
+677 verbose request where is https://registry.npmjs.org/minimist
+678 info trying registry request attempt 1 at 20:42:19
+679 verbose etag "AHII70P6K2F5XHCZ6RO4Y7WMM"
+680 http GET https://registry.npmjs.org/minimist
+681 verbose request where is /multipipe
+682 verbose request registry https://registry.npmjs.org/
+683 verbose url raw /multipipe
+684 verbose url resolving [ 'https://registry.npmjs.org/', './multipipe' ]
+685 verbose url resolved https://registry.npmjs.org/multipipe
+686 verbose request where is https://registry.npmjs.org/multipipe
+687 info trying registry request attempt 1 at 20:42:19
+688 verbose etag "8N0M7FPGKTSDHPMXC6OORL1WX"
+689 http GET https://registry.npmjs.org/multipipe
+690 verbose registry.get https://registry.npmjs.org/through2 not expired, no request
+691 silly addNameRange number 2 { name: 'through2', range: '>=0.6.1-0 <0.7.0-0', hasData: true }
+692 silly addNameRange versions [ 'through2',
+692 silly addNameRange   [ '0.0.0',
+692 silly addNameRange     '0.0.1',
+692 silly addNameRange     '0.0.2',
+692 silly addNameRange     '0.0.3',
+692 silly addNameRange     '0.0.4',
+692 silly addNameRange     '0.0.5',
+692 silly addNameRange     '0.1.0',
+692 silly addNameRange     '0.2.0',
+692 silly addNameRange     '0.2.1',
+692 silly addNameRange     '0.2.2',
+692 silly addNameRange     '0.2.3',
+692 silly addNameRange     '0.3.0',
+692 silly addNameRange     '0.4.0',
+692 silly addNameRange     '0.4.1',
+692 silly addNameRange     '1.0.0',
+692 silly addNameRange     '0.4.2',
+692 silly addNameRange     '0.5.0',
+692 silly addNameRange     '0.5.1',
+692 silly addNameRange     '0.6.0',
+692 silly addNameRange     '1.1.0',
+692 silly addNameRange     '0.6.1',
+692 silly addNameRange     '1.1.1' ] ]
+693 verbose addNamed [ 'through2', '0.6.1' ]
+694 verbose addNamed [ '0.6.1', '0.6.1' ]
+695 silly lockFile b0300709-through2-0-6-1 through2@0.6.1
+696 verbose lock through2@0.6.1 /Users/Maxime/.npm/b0300709-through2-0-6-1.lock
+697 verbose request where is /vinyl
+698 verbose request registry https://registry.npmjs.org/
+699 verbose url raw /vinyl
+700 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl' ]
+701 verbose url resolved https://registry.npmjs.org/vinyl
+702 verbose request where is https://registry.npmjs.org/vinyl
+703 info trying registry request attempt 1 at 20:42:19
+704 verbose etag "15PWZQZF1L1K8GVDRTSK6IGMU"
+705 http GET https://registry.npmjs.org/vinyl
+706 silly gunzTarPerm extractEntry dist/less-1.6.3.js
+707 silly gunzTarPerm modified mode [ 'dist/less-1.6.3.js', 438, 420 ]
+708 silly lockFile b0300709-through2-0-6-1 through2@0.6.1
+709 silly lockFile b0300709-through2-0-6-1 through2@0.6.1
+710 silly lockFile ef970176-through2-0-6-1 through2@^0.6.1
+711 silly lockFile ef970176-through2-0-6-1 through2@^0.6.1
+712 silly gunzTarPerm extractEntry dist/less-1.5.0.js
+713 silly gunzTarPerm modified mode [ 'dist/less-1.5.0.js', 438, 420 ]
+714 http 304 https://registry.npmjs.org/lodash.keys
+715 silly registry.get cb [ 304,
+715 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+715 silly registry.get     server: 'Apache',
+715 silly registry.get     via: '1.1 varnish',
+715 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:07 GMT',
+715 silly registry.get     'cache-control': 'max-age=60',
+715 silly registry.get     etag: '"6D9Z1VOB8YX1GSSH2JOMRAG48"',
+715 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+715 silly registry.get     'x-cache': 'HIT',
+715 silly registry.get     'x-cache-hits': '2',
+715 silly registry.get     'x-timer': 'S1410914540.012220,VS0,VE0',
+715 silly registry.get     vary: 'Accept',
+715 silly registry.get     'content-length': '0',
+715 silly registry.get     'keep-alive': 'timeout=10, max=50',
+715 silly registry.get     connection: 'Keep-Alive' } ]
+716 verbose etag https://registry.npmjs.org/lodash.keys from cache
+717 silly addNameRange number 2 { name: 'lodash.keys',
+717 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+717 silly addNameRange   hasData: true }
+718 silly addNameRange versions [ 'lodash.keys',
+718 silly addNameRange   [ '2.0.0', '2.1.0', '2.2.0', '2.2.1', '2.3.0', '2.4.0', '2.4.1' ] ]
+719 verbose addNamed [ 'lodash.keys', '2.4.1' ]
+720 verbose addNamed [ '2.4.1', '2.4.1' ]
+721 silly lockFile 91161ba5-lodash-keys-2-4-1 lodash.keys@2.4.1
+722 verbose lock lodash.keys@2.4.1 /Users/Maxime/.npm/91161ba5-lodash-keys-2-4-1.lock
+723 silly lockFile 91161ba5-lodash-keys-2-4-1 lodash.keys@2.4.1
+724 silly lockFile 91161ba5-lodash-keys-2-4-1 lodash.keys@2.4.1
+725 silly lockFile 5d1944a4-lodash-keys-2-4-1 lodash.keys@~2.4.1
+726 silly lockFile 5d1944a4-lodash-keys-2-4-1 lodash.keys@~2.4.1
+727 silly gunzTarPerm extractEntry dist/less-1.6.3.min.js
+728 silly gunzTarPerm modified mode [ 'dist/less-1.6.3.min.js', 438, 420 ]
+729 http 304 https://registry.npmjs.org/lodash._objecttypes
+730 silly registry.get cb [ 304,
+730 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+730 silly registry.get     server: 'Apache',
+730 silly registry.get     via: '1.1 varnish',
+730 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:04 GMT',
+730 silly registry.get     'cache-control': 'max-age=60',
+730 silly registry.get     etag: '"DIAAMZ7AMGV21Y2G9M3A2XDJ"',
+730 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+730 silly registry.get     'x-cache': 'HIT',
+730 silly registry.get     'x-cache-hits': '2',
+730 silly registry.get     'x-timer': 'S1410914540.024220,VS0,VE0',
+730 silly registry.get     vary: 'Accept',
+730 silly registry.get     'content-length': '0',
+730 silly registry.get     'keep-alive': 'timeout=10, max=50',
+730 silly registry.get     connection: 'Keep-Alive' } ]
+731 verbose etag https://registry.npmjs.org/lodash._objecttypes from cache
+732 silly gunzTarPerm extractEntry dist/less-1.4.2.min.js
+733 silly gunzTarPerm modified mode [ 'dist/less-1.4.2.min.js', 438, 420 ]
+734 http 304 https://registry.npmjs.org/readable-stream
+735 silly registry.get cb [ 304,
+735 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+735 silly registry.get     server: 'Apache',
+735 silly registry.get     via: '1.1 varnish',
+735 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:41:26 GMT',
+735 silly registry.get     'cache-control': 'max-age=60',
+735 silly registry.get     etag: '"64HWPM9QDWFPRSQQO5XG0WJFK"',
+735 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+735 silly registry.get     'x-cache': 'HIT',
+735 silly registry.get     'x-cache-hits': '6',
+735 silly registry.get     'x-timer': 'S1410914540.028562,VS0,VE0',
+735 silly registry.get     vary: 'Accept',
+735 silly registry.get     'content-length': '0',
+735 silly registry.get     'keep-alive': 'timeout=10, max=50',
+735 silly registry.get     connection: 'Keep-Alive' } ]
+736 verbose etag https://registry.npmjs.org/readable-stream from cache
+737 http 304 https://registry.npmjs.org/source-map
+738 silly registry.get cb [ 304,
+738 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+738 silly registry.get     server: 'Apache',
+738 silly registry.get     via: '1.1 varnish',
+738 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+738 silly registry.get     'cache-control': 'max-age=60',
+738 silly registry.get     etag: '"CTPHW9RYNF1ANEGGAB0F3ETOU"',
+738 silly registry.get     'x-served-by': 'cache-jfk1028-JFK',
+738 silly registry.get     'x-cache': 'HIT',
+738 silly registry.get     'x-cache-hits': '1',
+738 silly registry.get     'x-timer': 'S1410914540.028466,VS0,VE1',
+738 silly registry.get     vary: 'Accept',
+738 silly registry.get     'content-length': '0',
+738 silly registry.get     'keep-alive': 'timeout=10, max=50',
+738 silly registry.get     connection: 'Keep-Alive' } ]
+739 verbose etag https://registry.npmjs.org/source-map from cache
+740 http 304 https://registry.npmjs.org/xtend
+741 silly registry.get cb [ 304,
+741 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+741 silly registry.get     server: 'Apache',
+741 silly registry.get     via: '1.1 varnish',
+741 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:40:04 GMT',
+741 silly registry.get     'cache-control': 'max-age=60',
+741 silly registry.get     etag: '"EH3R312FP6OSMQ68B1JMMTPY6"',
+741 silly registry.get     'x-served-by': 'cache-jfk1029-JFK',
+741 silly registry.get     'x-cache': 'HIT',
+741 silly registry.get     'x-cache-hits': '3',
+741 silly registry.get     'x-timer': 'S1410914540.034304,VS0,VE0',
+741 silly registry.get     vary: 'Accept',
+741 silly registry.get     'content-length': '0',
+741 silly registry.get     'keep-alive': 'timeout=10, max=50',
+741 silly registry.get     connection: 'Keep-Alive' } ]
+742 verbose etag https://registry.npmjs.org/xtend from cache
+743 silly addNameRange number 2 { name: 'lodash._objecttypes',
+743 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+743 silly addNameRange   hasData: true }
+744 silly addNameRange versions [ 'lodash._objecttypes',
+744 silly addNameRange   [ '2.0.0', '2.1.0', '2.2.0', '2.2.1', '2.3.0', '2.4.0', '2.4.1' ] ]
+745 verbose addNamed [ 'lodash._objecttypes', '2.4.1' ]
+746 verbose addNamed [ '2.4.1', '2.4.1' ]
+747 silly lockFile a828c658-lodash-objecttypes-2-4-1 lodash._objecttypes@2.4.1
+748 verbose lock lodash._objecttypes@2.4.1 /Users/Maxime/.npm/a828c658-lodash-objecttypes-2-4-1.lock
+749 silly addNameRange number 2 { name: 'source-map',
+749 silly addNameRange   range: '>=0.1.33-0 <0.2.0-0',
+749 silly addNameRange   hasData: true }
+750 silly addNameRange versions [ 'source-map',
+750 silly addNameRange   [ '0.0.0',
+750 silly addNameRange     '0.1.0',
+750 silly addNameRange     '0.1.1',
+750 silly addNameRange     '0.1.2',
+750 silly addNameRange     '0.1.3',
+750 silly addNameRange     '0.1.4',
+750 silly addNameRange     '0.1.5',
+750 silly addNameRange     '0.1.6',
+750 silly addNameRange     '0.1.7',
+750 silly addNameRange     '0.1.8',
+750 silly addNameRange     '0.1.9',
+750 silly addNameRange     '0.1.10',
+750 silly addNameRange     '0.1.11',
+750 silly addNameRange     '0.1.12',
+750 silly addNameRange     '0.1.13',
+750 silly addNameRange     '0.1.14',
+750 silly addNameRange     '0.1.15',
+750 silly addNameRange     '0.1.16',
+750 silly addNameRange     '0.1.17',
+750 silly addNameRange     '0.1.18',
+750 silly addNameRange     '0.1.19',
+750 silly addNameRange     '0.1.20',
+750 silly addNameRange     '0.1.21',
+750 silly addNameRange     '0.1.22',
+750 silly addNameRange     '0.1.23',
+750 silly addNameRange     '0.1.24',
+750 silly addNameRange     '0.1.25',
+750 silly addNameRange     '0.1.26',
+750 silly addNameRange     '0.1.27',
+750 silly addNameRange     '0.1.28',
+750 silly addNameRange     '0.1.29',
+750 silly addNameRange     '0.1.30',
+750 silly addNameRange     '0.1.31',
+750 silly addNameRange     '0.1.32',
+750 silly addNameRange     '0.1.33',
+750 silly addNameRange     '0.1.34',
+750 silly addNameRange     '0.1.35',
+750 silly addNameRange     '0.1.36',
+750 silly addNameRange     '0.1.37',
+750 silly addNameRange     '0.1.38',
+750 silly addNameRange     '0.1.39' ] ]
+751 verbose addNamed [ 'source-map', '0.1.39' ]
+752 verbose addNamed [ '0.1.39', '0.1.39' ]
+753 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+754 verbose lock source-map@0.1.39 /Users/Maxime/.npm/53b17ed8-source-map-0-1-39.lock
+755 silly addNameRange number 2 { name: 'readable-stream',
+755 silly addNameRange   range: '>=1.0.17-0 <1.1.0-0',
+755 silly addNameRange   hasData: true }
+756 silly addNameRange versions [ 'readable-stream',
+756 silly addNameRange   [ '0.0.1',
+756 silly addNameRange     '0.0.2',
+756 silly addNameRange     '0.0.3',
+756 silly addNameRange     '0.0.4',
+756 silly addNameRange     '0.1.0',
+756 silly addNameRange     '0.2.0',
+756 silly addNameRange     '0.3.0',
+756 silly addNameRange     '0.3.1',
+756 silly addNameRange     '1.0.0',
+756 silly addNameRange     '1.0.1',
+756 silly addNameRange     '1.0.2',
+756 silly addNameRange     '1.0.15',
+756 silly addNameRange     '1.0.17',
+756 silly addNameRange     '1.1.7',
+756 silly addNameRange     '1.1.8',
+756 silly addNameRange     '1.1.9',
+756 silly addNameRange     '1.0.24',
+756 silly addNameRange     '1.0.25',
+756 silly addNameRange     '1.1.10',
+756 silly addNameRange     '1.0.25-1',
+756 silly addNameRange     '1.1.11',
+756 silly addNameRange     '1.0.26',
+756 silly addNameRange     '1.0.26-1',
+756 silly addNameRange     '1.1.11-1',
+756 silly addNameRange     '1.0.26-2',
+756 silly addNameRange     '1.1.12',
+756 silly addNameRange     '1.0.26-3',
+756 silly addNameRange     '1.0.26-4',
+756 silly addNameRange     '1.1.12-1',
+756 silly addNameRange     '1.0.27-1',
+756 silly addNameRange     '1.1.13-1',
+756 silly addNameRange     '1.0.31',
+756 silly addNameRange     '1.1.13' ] ]
+757 verbose addNamed [ 'readable-stream', '1.0.31' ]
+758 verbose addNamed [ '1.0.31', '1.0.31' ]
+759 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+760 verbose lock readable-stream@1.0.31 /Users/Maxime/.npm/5c814a69-readable-stream-1-0-31.lock
+761 silly addNameRange number 2 { name: 'xtend', range: '>=3.0.0-0 <3.1.0-0', hasData: true }
+762 silly addNameRange versions [ 'xtend',
+762 silly addNameRange   [ '1.0.0',
+762 silly addNameRange     '1.0.1',
+762 silly addNameRange     '1.0.2',
+762 silly addNameRange     '1.0.3',
+762 silly addNameRange     '2.0.1',
+762 silly addNameRange     '2.0.2',
+762 silly addNameRange     '2.0.3',
+762 silly addNameRange     '2.0.4',
+762 silly addNameRange     '2.0.5',
+762 silly addNameRange     '2.0.6',
+762 silly addNameRange     '2.1.1',
+762 silly addNameRange     '2.1.2',
+762 silly addNameRange     '2.2.0',
+762 silly addNameRange     '3.0.0',
+762 silly addNameRange     '4.0.0' ] ]
+763 verbose addNamed [ 'xtend', '3.0.0' ]
+764 verbose addNamed [ '3.0.0', '3.0.0' ]
+765 silly lockFile 515ed737-xtend-3-0-0 xtend@3.0.0
+766 verbose lock xtend@3.0.0 /Users/Maxime/.npm/515ed737-xtend-3-0-0.lock
+767 http 304 https://registry.npmjs.org/dateformat
+768 silly registry.get cb [ 304,
+768 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+768 silly registry.get     server: 'Apache',
+768 silly registry.get     via: '1.1 varnish',
+768 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+768 silly registry.get     'cache-control': 'max-age=60',
+768 silly registry.get     etag: '"4D6Y46B2EGQ8PN6W3CYO08WU5"',
+768 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+768 silly registry.get     'x-cache': 'HIT',
+768 silly registry.get     'x-cache-hits': '1',
+768 silly registry.get     'x-timer': 'S1410914540.050345,VS0,VE0',
+768 silly registry.get     vary: 'Accept',
+768 silly registry.get     'content-length': '0',
+768 silly registry.get     'keep-alive': 'timeout=10, max=49',
+768 silly registry.get     connection: 'Keep-Alive' } ]
+769 verbose etag https://registry.npmjs.org/dateformat from cache
+770 silly lockFile a828c658-lodash-objecttypes-2-4-1 lodash._objecttypes@2.4.1
+771 silly lockFile a828c658-lodash-objecttypes-2-4-1 lodash._objecttypes@2.4.1
+772 silly lockFile c7e1c067-lodash-objecttypes-2-4-1 lodash._objecttypes@~2.4.1
+773 silly lockFile c7e1c067-lodash-objecttypes-2-4-1 lodash._objecttypes@~2.4.1
+774 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+775 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+776 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+777 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+778 silly lockFile 1e7dafd7-source-map-0-1-33 source-map@^0.1.33
+779 silly lockFile 1e7dafd7-source-map-0-1-33 source-map@^0.1.33
+780 silly addNameRange number 2 { name: 'dateformat',
+780 silly addNameRange   range: '>=1.0.7-1.2.3 <2.0.0-0',
+780 silly addNameRange   hasData: true }
+781 silly addNameRange versions [ 'dateformat',
+781 silly addNameRange   [ '0.9.0-1.2.3',
+781 silly addNameRange     '1.0.0-1.2.3',
+781 silly addNameRange     '1.0.1-1.2.3',
+781 silly addNameRange     '1.0.2-1.2.3',
+781 silly addNameRange     '1.0.3-1.2.3',
+781 silly addNameRange     '1.0.4-1.2.3',
+781 silly addNameRange     '1.0.5-1.2.3',
+781 silly addNameRange     '1.0.6-1.2.3',
+781 silly addNameRange     '1.0.7-1.2.3',
+781 silly addNameRange     '1.0.8-1.2.3',
+781 silly addNameRange     '1.0.8' ] ]
+782 verbose addNamed [ 'dateformat', '1.0.8' ]
+783 verbose addNamed [ '1.0.8', '1.0.8' ]
+784 silly lockFile 25657613-dateformat-1-0-8 dateformat@1.0.8
+785 verbose lock dateformat@1.0.8 /Users/Maxime/.npm/25657613-dateformat-1-0-8.lock
+786 silly lockFile be40b10f-readable-stream-1-0-17 readable-stream@~1.0.17
+787 silly lockFile be40b10f-readable-stream-1-0-17 readable-stream@~1.0.17
+788 silly lockFile 515ed737-xtend-3-0-0 xtend@3.0.0
+789 silly lockFile 515ed737-xtend-3-0-0 xtend@3.0.0
+790 silly lockFile 25b42cb1-xtend-3-0-0 xtend@~3.0.0
+791 silly lockFile 25b42cb1-xtend-3-0-0 xtend@~3.0.0
+792 silly lockFile f6179158--dateformat-dateformat-1-0-8-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+793 verbose lock https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz /Users/Maxime/.npm/f6179158--dateformat-dateformat-1-0-8-tgz.lock
+794 http 304 https://registry.npmjs.org/chalk
+795 silly registry.get cb [ 304,
+795 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+795 silly registry.get     server: 'Apache',
+795 silly registry.get     via: '1.1 varnish',
+795 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+795 silly registry.get     'cache-control': 'max-age=60',
+795 silly registry.get     etag: '"37HITIDNUW48LFQMIHIM3E5Y5"',
+795 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+795 silly registry.get     'x-cache': 'HIT',
+795 silly registry.get     'x-cache-hits': '1',
+795 silly registry.get     'x-timer': 'S1410914540.064034,VS0,VE0',
+795 silly registry.get     vary: 'Accept',
+795 silly registry.get     'content-length': '0',
+795 silly registry.get     'keep-alive': 'timeout=10, max=49',
+795 silly registry.get     connection: 'Keep-Alive' } ]
+796 verbose etag https://registry.npmjs.org/chalk from cache
+797 verbose addRemoteTarball [ 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz',
+797 verbose addRemoteTarball   '87799a3de21bffbf028bdd7ad044981327ac0a26' ]
+798 silly resolved [ { name: 'lodash.keys',
+798 silly resolved     version: '2.4.1',
+798 silly resolved     description: 'The Lo-Dash function `_.keys` as a Node.js module generated by lodash-cli.',
+798 silly resolved     homepage: 'http://lodash.com/custom-builds',
+798 silly resolved     license: 'MIT',
+798 silly resolved     keywords: [ 'functional', 'lodash', 'lodash-modularized', 'server', 'util' ],
+798 silly resolved     author:
+798 silly resolved      { name: 'John-David Dalton',
+798 silly resolved        email: 'john.david.dalton@gmail.com',
+798 silly resolved        url: 'http://allyoucanleet.com/' },
+798 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+798 silly resolved     bugs: { url: 'https://github.com/lodash/lodash-cli/issues' },
+798 silly resolved     repository: { type: 'git', url: 'https://github.com/lodash/lodash-cli.git' },
+798 silly resolved     dependencies:
+798 silly resolved      { 'lodash._isnative': '~2.4.1',
+798 silly resolved        'lodash.isobject': '~2.4.1',
+798 silly resolved        'lodash._shimkeys': '~2.4.1' },
+798 silly resolved     readme: '# lodash.keys v2.4.1\n\nThe [Lo-Dash](http://lodash.com/) function [`_.keys`](http://lodash.com/docs#keys) as a [Node.js](http://nodejs.org/) module generated by [lodash-cli](https://npmjs.org/package/lodash-cli).\n\n## Author\n\n| [![twitter/jdalton](http://gravatar.com/avatar/299a3d891ff1920b69c364d061007043?s=70)](https://twitter.com/jdalton "Follow @jdalton on Twitter") |\n|---|\n| [John-David Dalton](http://allyoucanleet.com/) |\n\n## Contributors\n\n| [![twitter/blainebublitz](http://gravatar.com/avatar/ac1c67fd906c9fecd823ce302283b4c1?s=70)](https://twitter.com/blainebublitz "Follow @BlaineBublitz on Twitter") | [![twitter/kitcambridge](http://gravatar.com/avatar/6662a1d02f351b5ef2f8b4d815804661?s=70)](https://twitter.com/kitcambridge "Follow @kitcambridge on Twitter") | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |\n|---|---|---|\n| [Blaine Bublitz](http://www.iceddev.com/) | [Kit Cambridge](http://kitcambridge.be/) | [Mathias Bynens](http://mathiasbynens.be/) |\n',
+798 silly resolved     readmeFilename: 'README.md',
+798 silly resolved     _id: 'lodash.keys@2.4.1',
+798 silly resolved     dist:
+798 silly resolved      { shasum: '48dea46df8ff7632b10d706b8acb26591e2b3727',
+798 silly resolved        tarball: 'http://registry.npmjs.org/lodash.keys/-/lodash.keys-2.4.1.tgz' },
+798 silly resolved     _from: 'lodash.keys@~2.4.1',
+798 silly resolved     _npmVersion: '1.3.14',
+798 silly resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+798 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+798 silly resolved     directories: {},
+798 silly resolved     _shasum: '48dea46df8ff7632b10d706b8acb26591e2b3727',
+798 silly resolved     _resolved: 'https://registry.npmjs.org/lodash.keys/-/lodash.keys-2.4.1.tgz',
+798 silly resolved     scripts: {} },
+798 silly resolved   { name: 'lodash._objecttypes',
+798 silly resolved     version: '2.4.1',
+798 silly resolved     description: 'The internal Lo-Dash variable `objectTypes` as a Node.js module generated by lodash-cli.',
+798 silly resolved     homepage: 'http://lodash.com/custom-builds',
+798 silly resolved     license: 'MIT',
+798 silly resolved     author:
+798 silly resolved      { name: 'John-David Dalton',
+798 silly resolved        email: 'john.david.dalton@gmail.com',
+798 silly resolved        url: 'http://allyoucanleet.com/' },
+798 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+798 silly resolved     bugs: { url: 'https://github.com/lodash/lodash-cli/issues' },
+798 silly resolved     repository: { type: 'git', url: 'https://github.com/lodash/lodash-cli.git' },
+798 silly resolved     readme: '# lodash._objecttypes v2.4.1\n\nThe internal [Lo-Dash](http://lodash.com/) variable `objectTypes` as a [Node.js](http://nodejs.org/) module generated by [lodash-cli](https://npmjs.org/package/lodash-cli).\n\n## Author\n\n| [![twitter/jdalton](http://gravatar.com/avatar/299a3d891ff1920b69c364d061007043?s=70)](https://twitter.com/jdalton "Follow @jdalton on Twitter") |\n|---|\n| [John-David Dalton](http://allyoucanleet.com/) |\n\n## Contributors\n\n| [![twitter/blainebublitz](http://gravatar.com/avatar/ac1c67fd906c9fecd823ce302283b4c1?s=70)](https://twitter.com/blainebublitz "Follow @BlaineBublitz on Twitter") | [![twitter/kitcambridge](http://gravatar.com/avatar/6662a1d02f351b5ef2f8b4d815804661?s=70)](https://twitter.com/kitcambridge "Follow @kitcambridge on Twitter") | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |\n|---|---|---|\n| [Blaine Bublitz](http://www.iceddev.com/) | [Kit Cambridge](http://kitcambridge.be/) | [Mathias Bynens](http://mathiasbynens.be/) |\n',
+798 silly resolved     readmeFilename: 'README.md',
+798 silly resolved     _id: 'lodash._objecttypes@2.4.1',
+798 silly resolved     dist:
+798 silly resolved      { shasum: '7c0b7f69d98a1f76529f890b0cdb1b4dfec11c11',
+798 silly resolved        tarball: 'http://registry.npmjs.org/lodash._objecttypes/-/lodash._objecttypes-2.4.1.tgz' },
+798 silly resolved     _from: 'lodash._objecttypes@~2.4.1',
+798 silly resolved     _npmVersion: '1.3.14',
+798 silly resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+798 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+798 silly resolved     directories: {},
+798 silly resolved     _shasum: '7c0b7f69d98a1f76529f890b0cdb1b4dfec11c11',
+798 silly resolved     _resolved: 'https://registry.npmjs.org/lodash._objecttypes/-/lodash._objecttypes-2.4.1.tgz',
+798 silly resolved     scripts: {} } ]
+799 info install lodash.keys@2.4.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults
+800 info install lodash._objecttypes@2.4.1 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults
+801 info installOne lodash.keys@2.4.1
+802 info installOne lodash._objecttypes@2.4.1
+803 verbose node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash.keys unbuild
+804 verbose node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes unbuild
+805 silly addNameRange number 2 { name: 'chalk', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+806 silly addNameRange versions [ 'chalk',
+806 silly addNameRange   [ '0.1.0',
+806 silly addNameRange     '0.1.1',
+806 silly addNameRange     '0.2.0',
+806 silly addNameRange     '0.2.1',
+806 silly addNameRange     '0.3.0',
+806 silly addNameRange     '0.4.0',
+806 silly addNameRange     '0.5.0',
+806 silly addNameRange     '0.5.1' ] ]
+807 verbose addNamed [ 'chalk', '0.5.1' ]
+808 verbose addNamed [ '0.5.1', '0.5.1' ]
+809 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+810 verbose lock chalk@0.5.1 /Users/Maxime/.npm/c28973bb-chalk-0-5-1.lock
+811 silly resolved [ { name: 'source-map',
+811 silly resolved     description: 'Generates and consumes source maps',
+811 silly resolved     version: '0.1.39',
+811 silly resolved     homepage: 'https://github.com/mozilla/source-map',
+811 silly resolved     author: { name: 'Nick Fitzgerald', email: 'nfitzgerald@mozilla.com' },
+811 silly resolved     contributors:
+811 silly resolved      [ [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object],
+811 silly resolved        [Object] ],
+811 silly resolved     repository: { type: 'git', url: 'http://github.com/mozilla/source-map.git' },
+811 silly resolved     directories: { lib: './lib' },
+811 silly resolved     main: './lib/source-map.js',
+811 silly resolved     engines: { node: '>=0.8.0' },
+811 silly resolved     licenses: [ [Object] ],
+811 silly resolved     dependencies: { amdefine: '>=0.0.4' },
+811 silly resolved     devDependencies: { dryice: '>=0.4.8' },
+811 silly resolved     scripts:
+811 silly resolved      { test: 'node test/run-tests.js',
+811 silly resolved        build: 'node Makefile.dryice.js' },
+811 silly resolved     bugs: { url: 'https://github.com/mozilla/source-map/issues' },
+811 silly resolved     _id: 'source-map@0.1.39',
+811 silly resolved     _shasum: '64ad329c4761ab956ff7d011c6b205aeb66a2d4a',
+811 silly resolved     _from: 'source-map@^0.1.33',
+811 silly resolved     _npmVersion: '1.4.9',
+811 silly resolved     _npmUser: { name: 'nickfitzgerald', email: 'fitzgen@gmail.com' },
+811 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+811 silly resolved     dist:
+811 silly resolved      { shasum: '64ad329c4761ab956ff7d011c6b205aeb66a2d4a',
+811 silly resolved        tarball: 'http://registry.npmjs.org/source-map/-/source-map-0.1.39.tgz' },
+811 silly resolved     _resolved: 'https://registry.npmjs.org/source-map/-/source-map-0.1.39.tgz',
+811 silly resolved     readme: 'ERROR: No README data found!' } ]
+812 info install source-map@0.1.39 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply
+813 info installOne source-map@0.1.39
+814 silly resolved [ { name: 'readable-stream',
+814 silly resolved     version: '1.0.31',
+814 silly resolved     description: 'Streams2, a user-land copy of the stream library from Node.js v0.10.x',
+814 silly resolved     main: 'readable.js',
+814 silly resolved     dependencies:
+814 silly resolved      { 'core-util-is': '~1.0.0',
+814 silly resolved        isarray: '0.0.1',
+814 silly resolved        string_decoder: '~0.10.x',
+814 silly resolved        inherits: '~2.0.1' },
+814 silly resolved     devDependencies: { tap: '~0.2.6' },
+814 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+814 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/readable-stream' },
+814 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+814 silly resolved     browser: { util: false },
+814 silly resolved     author:
+814 silly resolved      { name: 'Isaac Z. Schlueter',
+814 silly resolved        email: 'i@izs.me',
+814 silly resolved        url: 'http://blog.izs.me/' },
+814 silly resolved     license: 'MIT',
+814 silly resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+814 silly resolved     homepage: 'https://github.com/isaacs/readable-stream',
+814 silly resolved     _id: 'readable-stream@1.0.31',
+814 silly resolved     _shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+814 silly resolved     _from: 'readable-stream@~1.0.17',
+814 silly resolved     _npmVersion: '1.4.9',
+814 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+814 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+814 silly resolved     dist:
+814 silly resolved      { shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+814 silly resolved        tarball: 'http://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz' },
+814 silly resolved     directories: {},
+814 silly resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz',
+814 silly resolved     readme: 'ERROR: No README data found!' },
+814 silly resolved   { name: 'xtend',
+814 silly resolved     version: '3.0.0',
+814 silly resolved     description: 'extend like a boss',
+814 silly resolved     keywords: [ 'extend', 'merge', 'options', 'opts', 'object', 'array' ],
+814 silly resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+814 silly resolved     repository: { type: 'git', url: 'git://github.com/Raynos/xtend.git' },
+814 silly resolved     main: 'index',
+814 silly resolved     scripts: { test: 'node test' },
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { tape: '~1.1.0' },
+814 silly resolved     homepage: 'https://github.com/Raynos/xtend',
+814 silly resolved     contributors: [ [Object], [Object] ],
+814 silly resolved     bugs:
+814 silly resolved      { url: 'https://github.com/Raynos/xtend/issues',
+814 silly resolved        email: 'raynos2@gmail.com' },
+814 silly resolved     licenses: [ [Object] ],
+814 silly resolved     testling: { files: 'test.js', browsers: [Object] },
+814 silly resolved     engines: { node: '>=0.4' },
+814 silly resolved     _id: 'xtend@3.0.0',
+814 silly resolved     dist:
+814 silly resolved      { shasum: '5cce7407baf642cba7becda568111c493f59665a',
+814 silly resolved        tarball: 'http://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz' },
+814 silly resolved     _from: 'xtend@~3.0.0',
+814 silly resolved     _npmVersion: '1.4.6',
+814 silly resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+814 silly resolved     maintainers: [ [Object] ],
+814 silly resolved     directories: {},
+814 silly resolved     _shasum: '5cce7407baf642cba7becda568111c493f59665a',
+814 silly resolved     _resolved: 'https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz',
+814 silly resolved     readme: 'ERROR: No README data found!' } ]
+815 info install readable-stream@1.0.31 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2
+816 info install xtend@3.0.0 into /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2
+817 info installOne readable-stream@1.0.31
+818 info installOne xtend@3.0.0
+819 verbose node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply/node_modules/source-map unbuild
+820 verbose node_modules/gulp-less/node_modules/through2/node_modules/readable-stream unbuild
+821 verbose node_modules/gulp-less/node_modules/through2/node_modules/xtend unbuild
+822 http 304 https://registry.npmjs.org/lodash
+823 silly registry.get cb [ 304,
+823 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+823 silly registry.get     server: 'Apache',
+823 silly registry.get     via: '1.1 varnish',
+823 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:29:45 GMT',
+823 silly registry.get     'cache-control': 'max-age=60',
+823 silly registry.get     etag: '"4M2A91O7EF4VFSW3AGWA4S9NX"',
+823 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+823 silly registry.get     'x-cache': 'HIT',
+823 silly registry.get     'x-cache-hits': '169',
+823 silly registry.get     'x-timer': 'S1410914540.078220,VS0,VE0',
+823 silly registry.get     vary: 'Accept',
+823 silly registry.get     'content-length': '0',
+823 silly registry.get     'keep-alive': 'timeout=10, max=49',
+823 silly registry.get     connection: 'Keep-Alive' } ]
+824 verbose etag https://registry.npmjs.org/lodash from cache
+825 info retry fetch attempt 1 at 20:42:19
+826 verbose fetch to= /var/folders/x4/3thhwb554mzdbqw2tr82l3rr0000gn/T/npm-1043-RmHU4IE8/registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+827 verbose tar unpack /Users/Maxime/.npm/lodash.keys/2.4.1/package.tgz
+828 silly lockFile 729b7533-efaults-node-modules-lodash-keys tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash.keys
+829 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash.keys /Users/Maxime/.npm/729b7533-efaults-node-modules-lodash-keys.lock
+830 silly lockFile c9fb42c8-pm-lodash-keys-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.keys/2.4.1/package.tgz
+831 verbose lock tar:///Users/Maxime/.npm/lodash.keys/2.4.1/package.tgz /Users/Maxime/.npm/c9fb42c8-pm-lodash-keys-2-4-1-package-tgz.lock
+832 verbose tar unpack /Users/Maxime/.npm/lodash._objecttypes/2.4.1/package.tgz
+833 silly lockFile a7983d92--node-modules-lodash-objecttypes tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes
+834 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes /Users/Maxime/.npm/a7983d92--node-modules-lodash-objecttypes.lock
+835 silly lockFile fd841e01-sh-objecttypes-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash._objecttypes/2.4.1/package.tgz
+836 verbose lock tar:///Users/Maxime/.npm/lodash._objecttypes/2.4.1/package.tgz /Users/Maxime/.npm/fd841e01-sh-objecttypes-2-4-1-package-tgz.lock
+837 http 304 https://registry.npmjs.org/minimist
+838 silly registry.get cb [ 304,
+838 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+838 silly registry.get     server: 'Apache',
+838 silly registry.get     via: '1.1 varnish',
+838 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:06 GMT',
+838 silly registry.get     'cache-control': 'max-age=60',
+838 silly registry.get     etag: '"AHII70P6K2F5XHCZ6RO4Y7WMM"',
+838 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+838 silly registry.get     'x-cache': 'HIT',
+838 silly registry.get     'x-cache-hits': '2',
+838 silly registry.get     'x-timer': 'S1410914540.091021,VS0,VE0',
+838 silly registry.get     vary: 'Accept',
+838 silly registry.get     'content-length': '0',
+838 silly registry.get     'keep-alive': 'timeout=10, max=48',
+838 silly registry.get     connection: 'Keep-Alive' } ]
+839 verbose etag https://registry.npmjs.org/minimist from cache
+840 verbose tar unpack /Users/Maxime/.npm/source-map/0.1.39/package.tgz
+841 silly lockFile 6e775cfd-ps-apply-node-modules-source-map tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply/node_modules/source-map
+842 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/vinyl-sourcemaps-apply/node_modules/source-map /Users/Maxime/.npm/6e775cfd-ps-apply-node-modules-source-map.lock
+843 silly lockFile 582f33db-pm-source-map-0-1-39-package-tgz tar:///Users/Maxime/.npm/source-map/0.1.39/package.tgz
+844 verbose lock tar:///Users/Maxime/.npm/source-map/0.1.39/package.tgz /Users/Maxime/.npm/582f33db-pm-source-map-0-1-39-package-tgz.lock
+845 http GET https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+846 verbose tar unpack /Users/Maxime/.npm/readable-stream/1.0.31/package.tgz
+847 silly lockFile 586ce794-gh2-node-modules-readable-stream tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/readable-stream
+848 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/readable-stream /Users/Maxime/.npm/586ce794-gh2-node-modules-readable-stream.lock
+849 silly lockFile 4ef25db9-adable-stream-1-0-31-package-tgz tar:///Users/Maxime/.npm/readable-stream/1.0.31/package.tgz
+850 verbose lock tar:///Users/Maxime/.npm/readable-stream/1.0.31/package.tgz /Users/Maxime/.npm/4ef25db9-adable-stream-1-0-31-package-tgz.lock
+851 verbose tar unpack /Users/Maxime/.npm/xtend/3.0.0/package.tgz
+852 silly lockFile 7f2dac55-ules-through2-node-modules-xtend tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend
+853 verbose lock tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend /Users/Maxime/.npm/7f2dac55-ules-through2-node-modules-xtend.lock
+854 silly lockFile d9de59d7-xime-npm-xtend-3-0-0-package-tgz tar:///Users/Maxime/.npm/xtend/3.0.0/package.tgz
+855 verbose lock tar:///Users/Maxime/.npm/xtend/3.0.0/package.tgz /Users/Maxime/.npm/d9de59d7-xime-npm-xtend-3-0-0-package-tgz.lock
+856 silly gunzTarPerm modes [ '755', '644' ]
+857 silly gunzTarPerm modes [ '755', '644' ]
+858 silly gunzTarPerm modes [ '755', '644' ]
+859 silly gunzTarPerm modes [ '755', '644' ]
+860 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+861 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+862 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1-0 <3.0.0-0', hasData: true }
+863 silly addNameRange versions [ 'lodash',
+863 silly addNameRange   [ '0.1.0',
+863 silly addNameRange     '0.2.0',
+863 silly addNameRange     '0.2.1',
+863 silly addNameRange     '0.2.2',
+863 silly addNameRange     '0.3.0',
+863 silly addNameRange     '0.3.1',
+863 silly addNameRange     '0.3.2',
+863 silly addNameRange     '0.4.0',
+863 silly addNameRange     '0.4.1',
+863 silly addNameRange     '0.4.2',
+863 silly addNameRange     '0.5.0-rc.1',
+863 silly addNameRange     '0.5.0',
+863 silly addNameRange     '0.5.1',
+863 silly addNameRange     '0.5.2',
+863 silly addNameRange     '0.6.0',
+863 silly addNameRange     '0.6.1',
+863 silly addNameRange     '0.7.0',
+863 silly addNameRange     '0.8.0',
+863 silly addNameRange     '0.8.1',
+863 silly addNameRange     '0.8.2',
+863 silly addNameRange     '0.9.0',
+863 silly addNameRange     '0.9.1',
+863 silly addNameRange     '0.9.2',
+863 silly addNameRange     '0.10.0',
+863 silly addNameRange     '1.0.0-rc.1',
+863 silly addNameRange     '1.0.0-rc.2',
+863 silly addNameRange     '1.0.0-rc.3',
+863 silly addNameRange     '1.0.0',
+863 silly addNameRange     '1.0.1',
+863 silly addNameRange     '1.1.0',
+863 silly addNameRange     '1.1.1',
+863 silly addNameRange     '1.2.0',
+863 silly addNameRange     '1.2.1',
+863 silly addNameRange     '1.3.0',
+863 silly addNameRange     '1.3.1',
+863 silly addNameRange     '2.0.0',
+863 silly addNameRange     '2.1.0',
+863 silly addNameRange     '2.2.0',
+863 silly addNameRange     '2.2.1',
+863 silly addNameRange     '2.3.0',
+863 silly addNameRange     '2.4.0',
+863 silly addNameRange     '2.4.1' ] ]
+864 verbose addNamed [ 'lodash', '2.4.1' ]
+865 verbose addNamed [ '2.4.1', '2.4.1' ]
+866 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+867 verbose lock lodash@2.4.1 /Users/Maxime/.npm/8502be2a-lodash-2-4-1.lock
+868 silly lockFile c513ee84-chalk-0-5-0 chalk@^0.5.0
+869 silly lockFile c513ee84-chalk-0-5-0 chalk@^0.5.0
+870 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: true }
+871 silly addNameRange versions [ 'minimist',
+871 silly addNameRange   [ '0.0.0',
+871 silly addNameRange     '0.0.1',
+871 silly addNameRange     '0.0.2',
+871 silly addNameRange     '0.0.3',
+871 silly addNameRange     '0.0.4',
+871 silly addNameRange     '0.0.5',
+871 silly addNameRange     '0.0.6',
+871 silly addNameRange     '0.0.7',
+871 silly addNameRange     '0.0.8',
+871 silly addNameRange     '0.0.9',
+871 silly addNameRange     '0.0.10',
+871 silly addNameRange     '0.1.0',
+871 silly addNameRange     '0.2.0',
+871 silly addNameRange     '1.0.0',
+871 silly addNameRange     '1.1.0' ] ]
+872 verbose addNamed [ 'minimist', '1.1.0' ]
+873 verbose addNamed [ '1.1.0', '1.1.0' ]
+874 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+875 verbose lock minimist@1.1.0 /Users/Maxime/.npm/f1c95b3a-minimist-1-1-0.lock
+876 http 304 https://registry.npmjs.org/multipipe
+877 silly registry.get cb [ 304,
+877 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+877 silly registry.get     server: 'Apache',
+877 silly registry.get     via: '1.1 varnish',
+877 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+877 silly registry.get     'cache-control': 'max-age=60',
+877 silly registry.get     etag: '"8N0M7FPGKTSDHPMXC6OORL1WX"',
+877 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+877 silly registry.get     'x-cache': 'HIT',
+877 silly registry.get     'x-cache-hits': '1',
+877 silly registry.get     'x-timer': 'S1410914540.104261,VS0,VE13',
+877 silly registry.get     vary: 'Accept',
+877 silly registry.get     'content-length': '0',
+877 silly registry.get     'keep-alive': 'timeout=10, max=48',
+877 silly registry.get     connection: 'Keep-Alive' } ]
+878 verbose etag https://registry.npmjs.org/multipipe from cache
+879 silly gunzTarPerm extractEntry package.json
+880 silly gunzTarPerm extractEntry package.json
+881 silly gunzTarPerm extractEntry package.json
+882 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+883 silly gunzTarPerm modes [ '755', '644' ]
+884 silly gunzTarPerm extractEntry package.json
+885 silly gunzTarPerm extractEntry README.md
+886 silly gunzTarPerm extractEntry index.js
+887 silly gunzTarPerm extractEntry .npmignore
+888 silly gunzTarPerm extractEntry README.md
+889 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+890 silly gunzTarPerm extractEntry README.md
+891 silly gunzTarPerm extractEntry index.js
+892 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+893 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+894 silly addNameRange number 2 { name: 'multipipe', range: '>=0.1.0-0 <0.2.0-0', hasData: true }
+895 silly addNameRange versions [ 'multipipe', [ '0.0.0', '0.0.1', '0.0.2', '0.1.0', '0.1.1' ] ]
+896 verbose addNamed [ 'multipipe', '0.1.1' ]
+897 verbose addNamed [ '0.1.1', '0.1.1' ]
+898 silly lockFile 599a5fda-multipipe-0-1-1 multipipe@0.1.1
+899 verbose lock multipipe@0.1.1 /Users/Maxime/.npm/599a5fda-multipipe-0-1-1.lock
+900 http 304 https://registry.npmjs.org/vinyl
+901 silly registry.get cb [ 304,
+901 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+901 silly registry.get     server: 'Apache',
+901 silly registry.get     via: '1.1 varnish',
+901 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+901 silly registry.get     'cache-control': 'max-age=60',
+901 silly registry.get     etag: '"15PWZQZF1L1K8GVDRTSK6IGMU"',
+901 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+901 silly registry.get     'x-cache': 'HIT',
+901 silly registry.get     'x-cache-hits': '1',
+901 silly registry.get     'x-timer': 'S1410914540.130376,VS0,VE0',
+901 silly registry.get     vary: 'Accept',
+901 silly registry.get     'content-length': '0',
+901 silly registry.get     'keep-alive': 'timeout=10, max=48',
+901 silly registry.get     connection: 'Keep-Alive' } ]
+902 verbose etag https://registry.npmjs.org/vinyl from cache
+903 silly lockFile 59759450-lodash-2-4-1 lodash@^2.4.1
+904 silly lockFile 59759450-lodash-2-4-1 lodash@^2.4.1
+905 silly gunzTarPerm extractEntry .npmignore
+906 silly gunzTarPerm extractEntry README.md
+907 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+908 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+909 silly gunzTarPerm extractEntry package.json
+910 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+911 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+912 silly gunzTarPerm extractEntry .npmignore
+913 silly gunzTarPerm extractEntry README.md
+914 silly gunzTarPerm extractEntry LICENSE.txt
+915 silly addNameRange number 2 { name: 'vinyl', range: '>=0.4.0-0 <0.5.0-0', hasData: true }
+916 silly addNameRange versions [ 'vinyl',
+916 silly addNameRange   [ '0.1.0',
+916 silly addNameRange     '0.2.0',
+916 silly addNameRange     '0.2.1',
+916 silly addNameRange     '0.2.2',
+916 silly addNameRange     '0.2.3',
+916 silly addNameRange     '0.3.0',
+916 silly addNameRange     '0.3.1',
+916 silly addNameRange     '0.3.2',
+916 silly addNameRange     '0.3.3',
+916 silly addNameRange     '0.4.0',
+916 silly addNameRange     '0.4.1',
+916 silly addNameRange     '0.4.2',
+916 silly addNameRange     '0.4.3' ] ]
+917 verbose addNamed [ 'vinyl', '0.4.3' ]
+918 verbose addNamed [ '0.4.3', '0.4.3' ]
+919 silly lockFile 0ccd6bce-vinyl-0-4-3 vinyl@0.4.3
+920 verbose lock vinyl@0.4.3 /Users/Maxime/.npm/0ccd6bce-vinyl-0-4-3.lock
+921 silly gunzTarPerm extractEntry LICENSE
+922 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+923 silly gunzTarPerm extractEntry transform.js
+924 silly lockFile 599a5fda-multipipe-0-1-1 multipipe@0.1.1
+925 silly lockFile 599a5fda-multipipe-0-1-1 multipipe@0.1.1
+926 silly gunzTarPerm extractEntry LICENSE.txt
+927 silly lockFile 879ba22c-multipipe-0-1-0 multipipe@^0.1.0
+928 silly lockFile 879ba22c-multipipe-0-1-0 multipipe@^0.1.0
+929 silly gunzTarPerm extractEntry LICENCE
+930 silly gunzTarPerm extractEntry index.js
+931 http 304 https://registry.npmjs.org/lodash.template
+932 silly registry.get cb [ 304,
+932 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+932 silly registry.get     server: 'Apache',
+932 silly registry.get     via: '1.1 varnish',
+932 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+932 silly registry.get     'cache-control': 'max-age=60',
+932 silly registry.get     etag: '"7YL2SI0M3XIAJIU2K4KKG8IO7"',
+932 silly registry.get     'x-served-by': 'cache-jfk1029-JFK',
+932 silly registry.get     'x-cache': 'HIT',
+932 silly registry.get     'x-cache-hits': '1',
+932 silly registry.get     'x-timer': 'S1410914540.080881,VS0,VE74',
+932 silly registry.get     vary: 'Accept',
+932 silly registry.get     'content-length': '0',
+932 silly registry.get     'keep-alive': 'timeout=10, max=49',
+932 silly registry.get     connection: 'Keep-Alive' } ]
+933 verbose etag https://registry.npmjs.org/lodash.template from cache
+934 silly lockFile 0ccd6bce-vinyl-0-4-3 vinyl@0.4.3
+935 silly lockFile 0ccd6bce-vinyl-0-4-3 vinyl@0.4.3
+936 silly gunzTarPerm extractEntry duplex.js
+937 silly gunzTarPerm extractEntry readable.js
+938 silly gunzTarPerm modified mode [ 'readable.js', 436, 420 ]
+939 silly gunzTarPerm extractEntry LICENSE
+940 silly gunzTarPerm extractEntry dist/less-1.7.0.js
+941 silly gunzTarPerm modified mode [ 'dist/less-1.7.0.js', 438, 420 ]
+942 silly lockFile 0cf96550-vinyl-0-4-0 vinyl@^0.4.0
+943 silly lockFile 0cf96550-vinyl-0-4-0 vinyl@^0.4.0
+944 silly gunzTarPerm extractEntry mutable.js
+945 silly gunzTarPerm extractEntry test.js
+946 silly addNameRange number 2 { name: 'lodash.template',
+946 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+946 silly addNameRange   hasData: true }
+947 silly addNameRange versions [ 'lodash.template',
+947 silly addNameRange   [ '2.0.0', '2.1.0', '2.2.0', '2.2.1', '2.3.0', '2.4.0', '2.4.1' ] ]
+948 verbose addNamed [ 'lodash.template', '2.4.1' ]
+949 verbose addNamed [ '2.4.1', '2.4.1' ]
+950 silly lockFile e1f85caf-lodash-template-2-4-1 lodash.template@2.4.1
+951 verbose lock lodash.template@2.4.1 /Users/Maxime/.npm/e1f85caf-lodash-template-2-4-1.lock
+952 http 304 https://registry.npmjs.org/lodash._reinterpolate
+953 silly registry.get cb [ 304,
+953 silly registry.get   { date: 'Wed, 17 Sep 2014 00:42:20 GMT',
+953 silly registry.get     server: 'Apache',
+953 silly registry.get     via: '1.1 varnish',
+953 silly registry.get     'last-modified': 'Wed, 17 Sep 2014 00:42:20 GMT',
+953 silly registry.get     'cache-control': 'max-age=60',
+953 silly registry.get     etag: '"9GK7566A6AWBHJLT4PCX6D7P7"',
+953 silly registry.get     'x-served-by': 'cache-jfk1028-JFK',
+953 silly registry.get     'x-cache': 'HIT',
+953 silly registry.get     'x-cache-hits': '1',
+953 silly registry.get     'x-timer': 'S1410914540.078503,VS0,VE83',
+953 silly registry.get     vary: 'Accept',
+953 silly registry.get     'content-length': '0',
+953 silly registry.get     'keep-alive': 'timeout=10, max=49',
+953 silly registry.get     connection: 'Keep-Alive' } ]
+954 verbose etag https://registry.npmjs.org/lodash._reinterpolate from cache
+955 silly gunzTarPerm extractEntry Makefile.dryice.js
+956 silly gunzTarPerm extractEntry CHANGELOG.md
+957 silly gunzTarPerm extractEntry passthrough.js
+958 silly gunzTarPerm extractEntry writable.js
+959 silly gunzTarPerm extractEntry .jshintrc
+960 silly gunzTarPerm extractEntry Makefile
+961 silly lockFile e1f85caf-lodash-template-2-4-1 lodash.template@2.4.1
+962 silly lockFile e1f85caf-lodash-template-2-4-1 lodash.template@2.4.1
+963 silly lockFile 308826c1-lodash-template-2-4-1 lodash.template@^2.4.1
+964 silly lockFile 308826c1-lodash-template-2-4-1 lodash.template@^2.4.1
+965 silly addNameRange number 2 { name: 'lodash._reinterpolate',
+965 silly addNameRange   range: '>=2.4.1-0 <3.0.0-0',
+965 silly addNameRange   hasData: true }
+966 silly addNameRange versions [ 'lodash._reinterpolate',
+966 silly addNameRange   [ '2.0.0', '2.1.0', '2.2.0', '2.2.1', '2.3.0', '2.4.0', '2.4.1' ] ]
+967 verbose addNamed [ 'lodash._reinterpolate', '2.4.1' ]
+968 verbose addNamed [ '2.4.1', '2.4.1' ]
+969 silly lockFile 596be929-lodash-reinterpolate-2-4-1 lodash._reinterpolate@2.4.1
+970 verbose lock lodash._reinterpolate@2.4.1 /Users/Maxime/.npm/596be929-lodash-reinterpolate-2-4-1.lock
+971 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+972 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 436, 420 ]
+973 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+974 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 436, 420 ]
+975 silly lockFile 596be929-lodash-reinterpolate-2-4-1 lodash._reinterpolate@2.4.1
+976 silly lockFile 596be929-lodash-reinterpolate-2-4-1 lodash._reinterpolate@2.4.1
+977 silly lockFile 5f4ded01-lodash-reinterpolate-2-4-1 lodash._reinterpolate@^2.4.1
+978 silly lockFile 5f4ded01-lodash-reinterpolate-2-4-1 lodash._reinterpolate@^2.4.1
+979 silly lockFile a7983d92--node-modules-lodash-objecttypes tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes
+980 silly lockFile a7983d92--node-modules-lodash-objecttypes tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes
+981 silly lockFile 729b7533-efaults-node-modules-lodash-keys tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash.keys
+982 silly lockFile 729b7533-efaults-node-modules-lodash-keys tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash.keys
+983 silly gunzTarPerm extractEntry lib/_stream_readable.js
+984 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 436, 420 ]
+985 silly lockFile fd841e01-sh-objecttypes-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash._objecttypes/2.4.1/package.tgz
+986 silly lockFile fd841e01-sh-objecttypes-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash._objecttypes/2.4.1/package.tgz
+987 silly lockFile c9fb42c8-pm-lodash-keys-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.keys/2.4.1/package.tgz
+988 silly lockFile c9fb42c8-pm-lodash-keys-2-4-1-package-tgz tar:///Users/Maxime/.npm/lodash.keys/2.4.1/package.tgz
+989 info preinstall lodash._objecttypes@2.4.1
+990 info preinstall lodash.keys@2.4.1
+991 verbose readDependencies using package.json deps
+992 verbose readDependencies using package.json deps
+993 silly gunzTarPerm extractEntry lib/_stream_transform.js
+994 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 436, 420 ]
+995 silly gunzTarPerm extractEntry lib/_stream_writable.js
+996 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 436, 420 ]
+997 verbose readDependencies using package.json deps
+998 silly resolved []
+999 verbose about to build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes
+1000 info build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules/lodash._objecttypes
+1001 verbose linkStuff [ false,
+1001 verbose linkStuff   false,
+1001 verbose linkStuff   false,
+1001 verbose linkStuff   '/Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/lodash.defaults/node_modules' ]
+1002 info linkStuff lodash._objecttypes@2.4.1
+1003 verbose linkBins lodash._objecttypes@2.4.1
+1004 verbose linkMans lodash._objecttypes@2.4.1
+1005 verbose rebuildBundles lodash._objecttypes@2.4.1
+1006 verbose readDependencies using package.json deps
+1007 info install lodash._objecttypes@2.4.1
+1008 verbose cache add [ 'lodash._shimkeys@~2.4.1', null ]
+1009 verbose cache add name=undefined spec="lodash._shimkeys@~2.4.1" args=["lodash._shimkeys@~2.4.1",null]
+1010 verbose parsed url { protocol: null,
+1010 verbose parsed url   slashes: null,
+1010 verbose parsed url   auth: null,
+1010 verbose parsed url   host: null,
+1010 verbose parsed url   port: null,
+1010 verbose parsed url   hostname: null,
+1010 verbose parsed url   hash: null,
+1010 verbose parsed url   search: null,
+1010 verbose parsed url   query: null,
+1010 verbose parsed url   pathname: 'lodash._shimkeys@~2.4.1',
+1010 verbose parsed url   path: 'lodash._shimkeys@~2.4.1',
+1010 verbose parsed url   href: 'lodash._shimkeys@~2.4.1' }
+1011 verbose cache add name="lodash._shimkeys" spec="~2.4.1" args=["lodash._shimkeys","~2.4.1"]
+1012 verbose parsed url { protocol: null,
+1012 verbose parsed url   slashes: null,
+1012 verbose parsed url   auth: null,
+1012 verbose parsed url   host: null,
+1012 verbose parsed url   port: null,
+1012 verbose parsed url   hostname: null,
+1012 verbose parsed url   hash: null,
+1012 verbose parsed url   search: null,
+1012 verbose parsed url   query: null,
+1012 verbose parsed url   pathname: '~2.4.1',
+1012 verbose parsed url   path: '~2.4.1',
+1012 verbose parsed url   href: '~2.4.1' }
+1013 verbose addNamed [ 'lodash._shimkeys', '~2.4.1' ]
+1014 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+1015 silly lockFile 94114e14-lodash-shimkeys-2-4-1 lodash._shimkeys@~2.4.1
+1016 verbose lock lodash._shimkeys@~2.4.1 /Users/Maxime/.npm/94114e14-lodash-shimkeys-2-4-1.lock
+1017 info postinstall lodash._objecttypes@2.4.1
+1018 verbose cache add [ 'lodash._isnative@~2.4.1', null ]
+1019 verbose cache add name=undefined spec="lodash._isnative@~2.4.1" args=["lodash._isnative@~2.4.1",null]
+1020 verbose parsed url { protocol: null,
+1020 verbose parsed url   slashes: null,
+1020 verbose parsed url   auth: null,
+1020 verbose parsed url   host: null,
+1020 verbose parsed url   port: null,
+1020 verbose parsed url   hostname: null,
+1020 verbose parsed url   hash: null,
+1020 verbose parsed url   search: null,
+1020 verbose parsed url   query: null,
+1020 verbose parsed url   pathname: 'lodash._isnative@~2.4.1',
+1020 verbose parsed url   path: 'lodash._isnative@~2.4.1',
+1020 verbose parsed url   href: 'lodash._isnative@~2.4.1' }
+1021 silly addNameRange { name: 'lodash._shimkeys',
+1021 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+1021 silly addNameRange   hasData: false }
+1022 verbose cache add [ 'lodash.isobject@~2.4.1', null ]
+1023 verbose cache add name=undefined spec="lodash.isobject@~2.4.1" args=["lodash.isobject@~2.4.1",null]
+1024 verbose parsed url { protocol: null,
+1024 verbose parsed url   slashes: null,
+1024 verbose parsed url   auth: null,
+1024 verbose parsed url   host: null,
+1024 verbose parsed url   port: null,
+1024 verbose parsed url   hostname: null,
+1024 verbose parsed url   hash: null,
+1024 verbose parsed url   search: null,
+1024 verbose parsed url   query: null,
+1024 verbose parsed url   pathname: 'lodash.isobject@~2.4.1',
+1024 verbose parsed url   path: 'lodash.isobject@~2.4.1',
+1024 verbose parsed url   href: 'lodash.isobject@~2.4.1' }
+1025 verbose cache add name="lodash._isnative" spec="~2.4.1" args=["lodash._isnative","~2.4.1"]
+1026 verbose parsed url { protocol: null,
+1026 verbose parsed url   slashes: null,
+1026 verbose parsed url   auth: null,
+1026 verbose parsed url   host: null,
+1026 verbose parsed url   port: null,
+1026 verbose parsed url   hostname: null,
+1026 verbose parsed url   hash: null,
+1026 verbose parsed url   search: null,
+1026 verbose parsed url   query: null,
+1026 verbose parsed url   pathname: '~2.4.1',
+1026 verbose parsed url   path: '~2.4.1',
+1026 verbose parsed url   href: '~2.4.1' }
+1027 verbose addNamed [ 'lodash._isnative', '~2.4.1' ]
+1028 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+1029 silly lockFile 884d3657-lodash-isnative-2-4-1 lodash._isnative@~2.4.1
+1030 verbose lock lodash._isnative@~2.4.1 /Users/Maxime/.npm/884d3657-lodash-isnative-2-4-1.lock
+1031 verbose cache add name="lodash.isobject" spec="~2.4.1" args=["lodash.isobject","~2.4.1"]
+1032 verbose parsed url { protocol: null,
+1032 verbose parsed url   slashes: null,
+1032 verbose parsed url   auth: null,
+1032 verbose parsed url   host: null,
+1032 verbose parsed url   port: null,
+1032 verbose parsed url   hostname: null,
+1032 verbose parsed url   hash: null,
+1032 verbose parsed url   search: null,
+1032 verbose parsed url   query: null,
+1032 verbose parsed url   pathname: '~2.4.1',
+1032 verbose parsed url   path: '~2.4.1',
+1032 verbose parsed url   href: '~2.4.1' }
+1033 verbose addNamed [ 'lodash.isobject', '~2.4.1' ]
+1034 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+1035 silly lockFile 4018abef-lodash-isobject-2-4-1 lodash.isobject@~2.4.1
+1036 verbose lock lodash.isobject@~2.4.1 /Users/Maxime/.npm/4018abef-lodash-isobject-2-4-1.lock
+1037 silly gunzTarPerm extractEntry .tern-port
+1038 silly gunzTarPerm extractEntry build/assert-shim.js
+1039 silly addNameRange { name: 'lodash._isnative',
+1039 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+1039 silly addNameRange   hasData: false }
+1040 silly addNameRange { name: 'lodash.isobject',
+1040 silly addNameRange   range: '>=2.4.1-0 <2.5.0-0',
+1040 silly addNameRange   hasData: false }
+1041 verbose request where is /lodash._shimkeys
+1042 verbose request registry https://registry.npmjs.org/
+1043 verbose url raw /lodash._shimkeys
+1044 verbose url resolving [ 'https://registry.npmjs.org/', './lodash._shimkeys' ]
+1045 verbose url resolved https://registry.npmjs.org/lodash._shimkeys
+1046 verbose request where is https://registry.npmjs.org/lodash._shimkeys
+1047 info trying registry request attempt 1 at 20:42:19
+1048 verbose etag "6OXSRDJW5ZP6TAF3WUV8DTFZ2"
+1049 http GET https://registry.npmjs.org/lodash._shimkeys
+1050 verbose request where is /lodash._isnative
+1051 verbose request registry https://registry.npmjs.org/
+1052 verbose url raw /lodash._isnative
+1053 verbose url resolving [ 'https://registry.npmjs.org/', './lodash._isnative' ]
+1054 verbose url resolved https://registry.npmjs.org/lodash._isnative
+1055 verbose request where is https://registry.npmjs.org/lodash._isnative
+1056 info trying registry request attempt 1 at 20:42:19
+1057 verbose etag "7ZM2TTX39QXURD1RXC18NZO37"
+1058 http GET https://registry.npmjs.org/lodash._isnative
+1059 verbose request where is /lodash.isobject
+1060 verbose request registry https://registry.npmjs.org/
+1061 verbose url raw /lodash.isobject
+1062 verbose url resolving [ 'https://registry.npmjs.org/', './lodash.isobject' ]
+1063 verbose url resolved https://registry.npmjs.org/lodash.isobject
+1064 verbose request where is https://registry.npmjs.org/lodash.isobject
+1065 info trying registry request attempt 1 at 20:42:19
+1066 verbose etag "CYNSJ5NS40RKOKRHD370OSF7U"
+1067 http GET https://registry.npmjs.org/lodash.isobject
+1068 silly gunzTarPerm extractEntry build/mini-require.js
+1069 silly gunzTarPerm extractEntry build/suffix-browser.js
+1070 silly gunzTarPerm extractEntry dist/less-1.4.2.js
+1071 silly gunzTarPerm modified mode [ 'dist/less-1.4.2.js', 438, 420 ]
+1072 silly gunzTarPerm extractEntry build/test-prefix.js
+1073 silly gunzTarPerm extractEntry build/test-suffix.js
+1074 silly lockFile 7f2dac55-ules-through2-node-modules-xtend tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend
+1075 silly lockFile 7f2dac55-ules-through2-node-modules-xtend tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend
+1076 silly lockFile d9de59d7-xime-npm-xtend-3-0-0-package-tgz tar:///Users/Maxime/.npm/xtend/3.0.0/package.tgz
+1077 silly lockFile d9de59d7-xime-npm-xtend-3-0-0-package-tgz tar:///Users/Maxime/.npm/xtend/3.0.0/package.tgz
+1078 info preinstall xtend@3.0.0
+1079 verbose readDependencies using package.json deps
+1080 verbose readDependencies using package.json deps
+1081 silly resolved []
+1082 verbose about to build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend
+1083 info build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/xtend
+1084 verbose linkStuff [ false,
+1084 verbose linkStuff   false,
+1084 verbose linkStuff   false,
+1084 verbose linkStuff   '/Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules' ]
+1085 info linkStuff xtend@3.0.0
+1086 verbose linkBins xtend@3.0.0
+1087 verbose linkMans xtend@3.0.0
+1088 verbose rebuildBundles xtend@3.0.0
+1089 silly gunzTarPerm extractEntry build/prefix-source-map.jsm
+1090 silly gunzTarPerm extractEntry build/prefix-utils.jsm
+1091 info install xtend@3.0.0
+1092 info postinstall xtend@3.0.0
+1093 silly gunzTarPerm extractEntry build/suffix-source-map.jsm
+1094 silly gunzTarPerm extractEntry build/suffix-utils.jsm
+1095 silly gunzTarPerm extractEntry dist/less-1.7.0.min.js
+1096 silly gunzTarPerm modified mode [ 'dist/less-1.7.0.min.js', 438, 420 ]
+1097 silly gunzTarPerm extractEntry lib/source-map.js
+1098 silly gunzTarPerm extractEntry lib/source-map/array-set.js
+1099 silly gunzTarPerm extractEntry lib/source-map/base64-vlq.js
+1100 silly gunzTarPerm extractEntry lib/source-map/base64.js
+1101 silly gunzTarPerm extractEntry lib/source-map/binary-search.js
+1102 silly gunzTarPerm extractEntry lib/source-map/source-map-consumer.js
+1103 silly gunzTarPerm extractEntry lib/source-map/source-map-generator.js
+1104 silly gunzTarPerm extractEntry lib/source-map/source-node.js
+1105 silly gunzTarPerm extractEntry lib/source-map/util.js
+1106 silly gunzTarPerm extractEntry .travis.yml
+1107 silly gunzTarPerm extractEntry dist/less-1.4.1.min.js
+1108 silly gunzTarPerm modified mode [ 'dist/less-1.4.1.min.js', 438, 420 ]
+1109 silly gunzTarPerm extractEntry test/run-tests.js
+1110 silly gunzTarPerm extractEntry test/source-map/test-api.js
+1111 silly gunzTarPerm extractEntry test/source-map/test-base64-vlq.js
+1112 silly gunzTarPerm extractEntry test/source-map/test-base64.js
+1113 silly gunzTarPerm extractEntry test/source-map/test-binary-search.js
+1114 silly gunzTarPerm extractEntry test/source-map/test-array-set.js
+1115 silly gunzTarPerm extractEntry dist/less-1.7.1.js
+1116 silly gunzTarPerm modified mode [ 'dist/less-1.7.1.js', 438, 420 ]
+1117 silly gunzTarPerm extractEntry test/source-map/test-source-map-consumer.js
+1118 silly gunzTarPerm extractEntry test/source-map/test-source-map-generator.js
+1119 silly gunzTarPerm extractEntry test/source-map/test-source-node.js
+1120 silly gunzTarPerm extractEntry test/source-map/test-util.js
+1121 silly lockFile 586ce794-gh2-node-modules-readable-stream tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/readable-stream
+1122 silly lockFile 586ce794-gh2-node-modules-readable-stream tar:///Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/through2/node_modules/readable-stream
+1123 silly lockFile 4ef25db9-adable-stream-1-0-31-package-tgz tar:///Users/Maxime/.npm/readable-stream/1.0.31/package.tgz
+1124 silly lockFile 4ef25db9-adable-stream-1-0-31-package-tgz tar:///Users/Maxime/.npm/readable-stream/1.0.31/package.tgz
+1125 info preinstall readable-stream@1.0.31
+1126 verbose readDependencies using package.json deps
+1127 http 200 https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+1128 verbose readDependencies using package.json deps
+1129 silly gunzTarPerm extractEntry test/source-map/util.js
+1130 silly gunzTarPerm extractEntry test/source-map/test-dog-fooding.js
+1131 verbose cache add [ 'core-util-is@~1.0.0', null ]
+1132 verbose cache add name=undefined spec="core-util-is@~1.0.0" args=["core-util-is@~1.0.0",null]
+1133 verbose parsed url { protocol: null,
+1133 verbose parsed url   slashes: null,
+1133 verbose parsed url   auth: null,
+1133 verbose parsed url   host: null,
+1133 verbose parsed url   port: null,
+1133 verbose parsed url   hostname: null,
+1133 verbose parsed url   hash: null,
+1133 verbose parsed url   search: null,
+1133 verbose parsed url   query: null,
+1133 verbose parsed url   pathname: 'core-util-is@~1.0.0',
+1133 verbose parsed url   path: 'core-util-is@~1.0.0',
+1133 verbose parsed url   href: 'core-util-is@~1.0.0' }
+1134 verbose cache add name="core-util-is" spec="~1.0.0" args=["core-util-is","~1.0.0"]
+1135 verbose parsed url { protocol: null,
+1135 verbose parsed url   slashes: null,
+1135 verbose parsed url   auth: null,
+1135 verbose parsed url   host: null,
+1135 verbose parsed url   port: null,
+1135 verbose parsed url   hostname: null,
+1135 verbose parsed url   hash: null,
+1135 verbose parsed url   search: null,
+1135 verbose parsed url   query: null,
+1135 verbose parsed url   pathname: '~1.0.0',
+1135 verbose parsed url   path: '~1.0.0',
+1135 verbose parsed url   href: '~1.0.0' }
+1136 verbose addNamed [ 'core-util-is', '~1.0.0' ]
+1137 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+1138 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+1139 verbose lock core-util-is@~1.0.0 /Users/Maxime/.npm/577b60c4-core-util-is-1-0-0.lock
+1140 verbose cache add [ 'isarray@0.0.1', null ]
+1141 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+1142 verbose parsed url { protocol: null,
+1142 verbose parsed url   slashes: null,
+1142 verbose parsed url   auth: null,
+1142 verbose parsed url   host: null,
+1142 verbose parsed url   port: null,
+1142 verbose parsed url   hostname: null,
+1142 verbose parsed url   hash: null,
+1142 verbose parsed url   search: null,
+1142 verbose parsed url   query: null,
+1142 verbose parsed url   pathname: 'isarray@0.0.1',
+1142 verbose parsed url   path: 'isarray@0.0.1',
+1142 verbose parsed url   href: 'isarray@0.0.1' }
+1143 verbose cache add [ 'string_decoder@~0.10.x', null ]
+1144 verbose cache add name=undefined spec="string_decoder@~0.10.x" args=["string_decoder@~0.10.x",null]
+1145 verbose parsed url { protocol: null,
+1145 verbose parsed url   slashes: null,
+1145 verbose parsed url   auth: null,
+1145 verbose parsed url   host: null,
+1145 verbose parsed url   port: null,
+1145 verbose parsed url   hostname: null,
+1145 verbose parsed url   hash: null,
+1145 verbose parsed url   search: null,
+1145 verbose parsed url   query: null,
+1145 verbose parsed url   pathname: 'string_decoder@~0.10.x',
+1145 verbose parsed url   path: 'string_decoder@~0.10.x',
+1145 verbose parsed url   href: 'string_decoder@~0.10.x' }
+1146 verbose cache add [ 'inherits@~2.0.1', null ]
+1147 verbose cache add name=undefined spec="inherits@~2.0.1" args=["inherits@~2.0.1",null]
+1148 verbose parsed url { protocol: null,
+1148 verbose parsed url   slashes: null,
+1148 verbose parsed url   auth: null,
+1148 verbose parsed url   host: null,
+1148 verbose parsed url   port: null,
+1148 verbose parsed url   hostname: null,
+1148 verbose parsed url   hash: null,
+1148 verbose parsed url   search: null,
+1148 verbose parsed url   query: null,
+1148 verbose parsed url   pathname: 'inherits@~2.0.1',
+1148 verbose parsed url   path: 'inherits@~2.0.1',
+1148 verbose parsed url   href: 'inherits@~2.0.1' }
+1149 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+1150 verbose parsed url { protocol: null,
+1150 verbose parsed url   slashes: null,
+1150 verbose parsed url   auth: null,
+1150 verbose parsed url   host: null,
+1150 verbose parsed url   port: null,
+1150 verbose parsed url   hostname: null,
+1150 verbose parsed url   hash: null,
+1150 verbose parsed url   search: null,
+1150 verbose parsed url   query: null,
+1150 verbose parsed url   pathname: '0.0.1',
+1150 verbose parsed url   path: '0.0.1',
+1150 verbose parsed url   href: '0.0.1' }
+1151 verbose addNamed [ 'isarray', '0.0.1' ]
+1152 verbose addNamed [ '0.0.1', '0.0.1' ]
+1153 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+1154 verbose lock isarray@0.0.1 /Users/Maxime/.npm/9efe11b1-isarray-0-0-1.lock
+1155 silly addNameRange { name: 'core-util-is',
+1155 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+1155 silly addNameRange   hasData: false }
+1156 verbose cache add name="string_decoder" spec="~0.10.x" args=["string_decoder","~0.10.x"]
+1157 verbose parsed url { protocol: null,
+1157 verbose parsed url   slashes: null,
+1157 verbose parsed url   auth: null,
+1157 verbose parsed url   host: null,
+1157 verbose parsed url   port: null,
+1157 verbose parsed url   hostname: null,
+1157 verbose parsed url   hash: null,
+1157 verbose parsed url   search: null,
+1157 verbose parsed url   query: null,
+1157 verbose parsed url   pathname: '~0.10.x',
+1157 verbose parsed url   path: '~0.10.x',
+1157 verbose parsed url   href: '~0.10.x' }
+1158 verbose addNamed [ 'string_decoder', '~0.10.x' ]
+1159 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+1160 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+1161 verbose lock string_decoder@~0.10.x /Users/Maxime/.npm/8f75c97d-string-decoder-0-10-x.lock
+1162 verbose cache add name="inherits" spec="~2.0.1" args=["inherits","~2.0.1"]
+1163 verbose parsed url { protocol: null,
+1163 verbose parsed url   slashes: null,
+1163 verbose parsed url   auth: null,
+1163 verbose parsed url   host: null,
+1163 verbose parsed url   port: null,
+1163 verbose parsed url   hostname: null,
+1163 verbose parsed url   hash: null,
+1163 verbose parsed url   search: null,
+1163 verbose parsed url   query: null,
+1163 verbose parsed url   pathname: '~2.0.1',
+1163 verbose parsed url   path: '~2.0.1',
+1163 verbose parsed url   href: '~2.0.1' }
+1164 verbose addNamed [ 'inherits', '~2.0.1' ]
+1165 verbose addNamed [ null, '>=2.0.1-0 <2.1.0-0' ]
+1166 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+1167 verbose lock inherits@~2.0.1 /Users/Maxime/.npm/098ef39f-inherits-2-0-1.lock
+1168 silly lockFile f6179158--dateformat-dateformat-1-0-8-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+1169 silly lockFile f6179158--dateformat-dateformat-1-0-8-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.8.tgz
+1170 silly addNameRange { name: 'string_decoder',
+1170 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+1170 silly addNameRange   hasData: false }
+1171 silly addNameRange { name: 'inherits', range: '>=2.0.1-0 <2.1.0-0', hasData: false }
+1172 silly lockFile 25657613-dateformat-1-0-8 dateformat@1.0.8
+1173 silly lockFile 25657613-dateformat-1-0-8 dateformat@1.0.8
+1174 silly lockFile 9c570b30-dateformat-1-0-7-1-2-3 dateformat@^1.0.7-1.2.3
+1175 silly lockFile 9c570b30-dateformat-1-0-7-1-2-3 dateformat@^1.0.7-1.2.3
+1176 verbose request where is /core-util-is
+1177 verbose request registry https://registry.npmjs.org/
+1178 verbose url raw /core-util-is
+1179 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+1180 verbose url resolved https://registry.npmjs.org/core-util-is
+1181 verbose request where is https://registry.npmjs.org/core-util-is
+1182 info trying registry request attempt 1 at 20:42:19
+1183 verbose etag "1DM3AHIM42HCDO4GJ71NHQO3O"
+1184 http GET https://registry.npmjs.org/core-util-is
+1185 verbose about to build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules/gulp-util
+1186 verbose node_modules/gulp-less/node_modules/gulp-util unbuild
+1187 info preuninstall gulp-util@3.0.1
+1188 verbose request where is /isarray
+1189 verbose request registry https://registry.npmjs.org/
+1190 verbose url raw /isarray
+1191 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+1192 verbose url resolved https://registry.npmjs.org/isarray
+1193 verbose request where is https://registry.npmjs.org/isarray
+1194 info trying registry request attempt 1 at 20:42:19
+1195 verbose etag "C9G6KLTFV9E8I4RST21BBF653"
+1196 http GET https://registry.npmjs.org/isarray
+1197 verbose request where is /string_decoder
+1198 verbose request registry https://registry.npmjs.org/
+1199 verbose url raw /string_decoder
+1200 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+1201 verbose url resolved https://registry.npmjs.org/string_decoder
+1202 verbose request where is https://registry.npmjs.org/string_decoder
+1203 info trying registry request attempt 1 at 20:42:19
+1204 verbose etag "5LTQBGJLEFFY5DM9FI1YPLE02"
+1205 http GET https://registry.npmjs.org/string_decoder
+1206 verbose request where is /inherits
+1207 verbose request registry https://registry.npmjs.org/
+1208 verbose url raw /inherits
+1209 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+1210 verbose url resolved https://registry.npmjs.org/inherits
+1211 verbose request where is https://registry.npmjs.org/inherits
+1212 info trying registry request attempt 1 at 20:42:19
+1213 verbose etag "BVVVLO9F0SYSTO7F6UCP7E16D"
+1214 http GET https://registry.npmjs.org/inherits
+1215 info uninstall gulp-util@3.0.1
+1216 verbose false,/Users/Maxime/Desktop/Development/PDTX/node_modules,/Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less/node_modules unbuild gulp-util@3.0.1
+1217 info postuninstall gulp-util@3.0.1
+1218 silly gunzTarPerm extractEntry dist/less-1.4.1.js
+1219 silly gunzTarPerm modified mode [ 'dist/less-1.4.1.js', 438, 420 ]
+1220 verbose about to build /Users/Maxime/Desktop/Development/PDTX/node_modules/gulp-less
+1221 verbose node_modules/gulp-less unbuild
+1222 info preuninstall gulp-less@1.3.5
+1223 info uninstall gulp-less@1.3.5
+1224 verbose true,/Users/Maxime/Desktop/Development/PDTX/node_modules,/Users/Maxime/Desktop/Development/PDTX/node_modules unbuild gulp-less@1.3.5
+1225 info postuninstall gulp-less@1.3.5
+1226 silly gunzTarPerm extractEntry dist/less-1.7.1.min.js
+1227 silly gunzTarPerm modified mode [ 'dist/less-1.7.1.min.js', 438, 420 ]
+1228 error Error: EACCES, mkdir '/Users/Maxime/.npm/dateformat/1.0.8'
+1228 error  { [Error: EACCES, mkdir '/Users/Maxime/.npm/dateformat/1.0.8']
+1228 error   errno: 3,
+1228 error   code: 'EACCES',
+1228 error   path: '/Users/Maxime/.npm/dateformat/1.0.8',
+1228 error   parent: 'gulp-util' }
+1229 error Please try running this command again as root/Administrator.
+1230 error System Darwin 13.3.0
+1231 error command "node" "/usr/local/bin/npm" "install" "gulp-less"
+1232 error cwd /Users/Maxime/Desktop/Development/PDTX
+1233 error node -v v0.10.30
+1234 error npm -v 1.4.27
+1235 error path /Users/Maxime/.npm/dateformat/1.0.8
+1236 error code EACCES
+1237 error errno 3
+1238 error stack Error: EACCES, mkdir '/Users/Maxime/.npm/dateformat/1.0.8'
+1239 verbose exit [ 3, true ]
