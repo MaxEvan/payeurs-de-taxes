@@ -12,12 +12,14 @@
 */
 
 App::before(function($request) {
-	if( Cookie::get('auth') == null && Request::url() != "http://pdtx.app/login") {
-		return Redirect::to('/login');
+	if(Request::isMethod('get')){
+		if( Cookie::get('auth') == null && Request::url() != "http://pdtx.app/login") {
+			return Redirect::to('/login');
+		}
+		else if( Cookie::get('auth') != null && Request::url() == "http://pdtx.app/login" ) {
+			return Redirect::home();
+		} 
 	}
-	else if( Cookie::get('auth') != null && Request::url() == "http://pdtx.app/login" ) {
-		return Redirect::home();
-	} 
 });
 
 
