@@ -13,10 +13,10 @@
 
 App::before(function($request) {
 	if(Request::isMethod('get')){
-		if( Cookie::get('auth') == null && Request::url() != "http://pdtx.app/login") {
+		if( Cookie::get('auth') == null && Request::url() !=  $_ENV['domain'] . "/login") {
 			return Redirect::to('/login');
 		}
-		else if( Cookie::get('auth') != null && Request::url() == "http://pdtx.app/login" ) {
+		else if( Cookie::get('auth') != null && Request::url() == $_ENV['domain'] . "/login" ) {
 			return Redirect::home();
 		} 
 	}

@@ -27,16 +27,16 @@
 					<nav>
 						<ul class="list-inline" id="menu">
 							<li class="navLink articlesLink">
-								<a href="/"><u>Accueil</u></a>
+								<a href="/">Accueil</a>
 							</li>							
 							<li class="navLink articlesLink">
-								<a href="/opinions"><u>Opinions</u></a>
+								<a href="/opinions">Opinions</a>
 							</li>
 							<li class="navLink aboutLink">
-								<a href="/suggestions"><u>Suggestions</u></a>
+								<a href="/suggestions">Suggestions</a>
 							</li>
 							<li class="navlink contactLink">
-								<a href="/contact"><u>contact</u></a>
+								<a href="/contact">contact</a>
 							</li>
 						</ul>
 					</nav>
