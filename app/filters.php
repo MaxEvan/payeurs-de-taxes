@@ -12,13 +12,11 @@
 */
 
 App::before(function($request) {
-	$www = "http://www." . $_ENV['domain'] . "/login";
-	$pdtx = "http://" . $_ENV['domain'] . "/login";
 	if(Request::isMethod('get')){
-		if( Cookie::get('auth') == null && Request::url() != $www && Request::url() != $pdtx) {
+		if( Cookie::get('auth') == null && Request::path() != "login") {
 			return Redirect::to('/login');
 		}
-		else if( Cookie::get('auth') != null && Request::url() == $www && Request::url() == $pdtx) {
+		else if( Cookie::get('auth') != null && Request::path() == "login") {
 			return Redirect::home();
 		} 
 	}
