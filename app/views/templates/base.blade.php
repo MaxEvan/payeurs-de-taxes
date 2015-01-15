@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="row bottom">
-				<div class="col-lg-8 col-md-8 col-sm-7 col-left">
+				<div id="col-left" class="col-lg-8 col-md-8 col-sm-7 col-left">
 					<section id="articleContent">
 						@yield('content')
 					</section>
@@ -58,9 +58,10 @@
 							@include('partials.sidebarArticles')
 						</div>
 					</section>
-					<a href="" id="moreArticles"><h4>Plus de r&eacute;sultats...</h4></a>
+					<a href="#" id=""><h4>Plus de r&eacute;sultats...</h4></a>
 				</div>
-		</div>  
+		</div> 
+		<a href="#" id="backToTop"><img id="returnTop" src="/img/arrow-up.png" alt="return to top"></a>
 		<script src="/js/min/min.js"></script>
 		<script>
 			var offset = $(".item-img").length ;

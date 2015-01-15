@@ -27,12 +27,9 @@ $(".item-choice a").click(function(e){
 $('#Grid').mixitup();
 
 
-// CUSTOM ---------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
+// CUSTOM ---
 
-// Sidebar Scripts
-// ------------------
-
+// Load article
 $(".col-right").on("click", ".sidebarArticle", function(e) {
 	e.preventDefault();
 	var id = $(this).attr("data-articleId");
@@ -55,6 +52,7 @@ $(".col-right").on("click", ".sidebarArticle", function(e) {
 	});
 });
 
+// Load more articles
 $("#moreArticles").click(function(e) {
 	e.preventDefault();
 	$.ajax({
@@ -72,18 +70,34 @@ $("#moreArticles").click(function(e) {
 	});
 });
 
+// return top display
+$("#col-left").scroll(function() {
+	if($(this).scrollTop() > 500){
+		$("#returnTop").fadeIn();
+	}
+	else{
+		$("#returnTop").fadeOut();
+	}
+});
 
+$(window).scroll(function() {
+	if($("#col-left").scrollTop() != 0) {
+		return true;
+	}
+	else if($(this).scrollTop() > 300){
+		$("#returnTop").fadeIn();
+	}
+	else{
+		$("#returnTop").fadeOut();
+	}
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// return top action
+$("#backToTop").click(function(e){
+	e.preventDefault();
+	if($("#col-left").scrollTop() > 0){
+		$("#col-left").animate({scrollTop : 0}, 800);
+	}else{
+		$("html, body").animate({scrollTop : 0}, 800);
+	}
+});
