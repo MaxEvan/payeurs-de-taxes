@@ -7,8 +7,8 @@
 <!-- Bootstrap -->
 <link href="/css/10-bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/css/min/min.css" rel="stylesheet" media="screen">
-
 </head>
+
 	<body class="page-index">
 		<div class="container" id="container">
 			<div class="row top">

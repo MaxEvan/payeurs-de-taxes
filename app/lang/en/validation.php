@@ -18,7 +18,7 @@ return array(
 	"after"                => "The :attribute must be a date after :date.",
 	"alpha"                => "The :attribute may only contain letters.",
 	"alpha_dash"           => "The :attribute may only contain letters, numbers, and dashes.",
-	"alpha_num"            => "The :attribute may only contain letters and numbers.",
+	"alpha_num"            => "Le :attribute ne doit contenir que des lettres et des chiffres.",
 	"array"                => "The :attribute must be an array.",
 	"before"               => "The :attribute must be a date before :date.",
 	"between"              => array(
@@ -27,7 +27,7 @@ return array(
 		"string"  => "The :attribute must be between :min and :max characters.",
 		"array"   => "The :attribute must have between :min and :max items.",
 	),
-	"confirmed"            => "The :attribute confirmation does not match.",
+	"confirmed"            => "La confirmation du :attribute ne correspond pas.",
 	"date"                 => "The :attribute is not a valid date.",
 	"date_format"          => "The :attribute does not match the format :format.",
 	"different"            => "The :attribute and :other must be different.",
@@ -49,13 +49,13 @@ return array(
 	"min"                  => array(
 		"numeric" => "The :attribute must be at least :min.",
 		"file"    => "The :attribute must be at least :min kilobytes.",
-		"string"  => "The :attribute must be at least :min characters.",
+		"string"  => "Le :attribute doit faire au moins :min caracteres.",
 		"array"   => "The :attribute must have at least :min items.",
 	),
 	"not_in"               => "The selected :attribute is invalid.",
 	"numeric"              => "The :attribute must be a number.",
 	"regex"                => "The :attribute format is invalid.",
-	"required"             => "The :attribute field is required.",
+	"required"             => "Le :attribute est requis",
 	"required_if"          => "The :attribute field is required when :other is :value.",
 	"required_with"        => "The :attribute field is required when :values is present.",
 	"required_with_all"    => "The :attribute field is required when :values is present.",
@@ -68,7 +68,7 @@ return array(
 		"string"  => "The :attribute must be :size characters.",
 		"array"   => "The :attribute must contain :size items.",
 	),
-	"unique"               => "The :attribute has already been taken.",
+	"unique"               => "Le :attribute est d&eacute;j&agrave; utilis&eacute;.",
 	"url"                  => "The :attribute format is invalid.",
 
 	/*
@@ -83,8 +83,10 @@ return array(
 	*/
 
 	'custom' => array(
-		'attribute-name' => array(
-			'rule-name' => 'custom-message',
+		'email' => array(
+			'required' => "L'adresse courriel est requise",
+			'email'		=> "Vous devez entrer une adresse courriel valide",
+			'unique'	=> "L' :attribute est d&eacute;j&agrave; utilis&eacute;e."
 		),
 	),
 
@@ -99,6 +101,10 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
+	'attributes' => array(
+		'username' => "nom d'usager",
+		'email'    => 'adresse courriel',
+		'password' => 'mot de passe'
+	),
 
 );
