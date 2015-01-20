@@ -18,8 +18,10 @@ class CreateUsersTable extends Migration {
 			$table->string('username')->unique();
 			$table->string('password');
 			$table->string('email');
-			$table->tinyInteger('admin');
-			$table->tinyInteger('active');
+			$table->boolean('admin')->default(0);
+			$table->boolean('active')->default(0);;
+			$table->boolean('confirmed')->default(0);
+			$table->string('confirmation_code')->nullable();
 			$table->timestamps();
 		});
 	}

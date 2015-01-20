@@ -21,9 +21,9 @@ class CreateArticlesTable extends Migration {
 			$table->datetime('date');
 			$table->string('tags');
 			$table->string('image');
-			$table->integer('pour');	
-			$table->integer('contre');	
-			$table->tinyInteger('active');
+			$table->integer('pour')->default(0);	
+			$table->integer('contre')->default(0);	
+			$table->tinyInteger('active')->default(1);
 			$table->timestamps();
 		});
 	}
