@@ -653,11 +653,6 @@ html,body,.container {
     text-align: center;
 }
 
-#access, #login, #register{
-    background-color: black;
-    color: white;
-}
-
 .modal, .loginInput, .registerInput{
     text-align: center;     
 }
@@ -674,38 +669,41 @@ html,body,.container {
     padding: 10 0 0 0;
 }
 
-#error{
+.error{
+    border:0;
+    margin:0;
     color: red;
 }
 
-#register{
-    margin-top: 20px;
+.confirmBtn{
     border: 1px solid black;
+    background-color: black;
+    color: white;
 }
 
-#registerBody{
+.authBody{
     margin-top: 100px;
     text-align: center;
 }
 
-.registerInput{
+.authInput{
     width: 200px;
     margin:auto;
     border-bottom: 1px solid black !important;
+    text-align: center;
 }
 
-#registerForm{
+.authBtn{
+    margin-top: 20px;
+}
+
+.authForm{
     width: 200px;
     padding-top: 25px;
     border-radius: 5px;
     margin: auto;
     label{
         padding-top: 20px;
-    }
-    p{
-        border:0;
-        margin:0;
-        color: red;
     }
 }
 // END LOGIN_REGISTER

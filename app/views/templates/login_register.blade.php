@@ -15,7 +15,9 @@
             <div class="name"><a href="/">PayeursDeTaxes.ca</a></div>
         </div>
     </div>
+    <div class="authBody">
     @yield('content')
+    </div>
 </div>
 <script src="/js/min/min.js"></script>
 </body>

@@ -27,16 +27,20 @@ class UserController extends BaseController {
 
         $validator = Validator::make($input, $rules);
         
-        if( $validator->fails() ) {
-            Input::flashExcept('password');
+        if($validator->fails()) {
+            $input = Session::keep(['username', 'email']);
             $messages = $validator->messages();
-            return Redirect::back()->withInput(Input::all())->withErrors($messages);
+            return Redirect::back()->withInput($input)->withErrors($messages);
         }
 
-        User::create(array('username' => Input::get('username'),
-                           'password' => Hash::make(Input::get('password')),
-                           'email'    => Input::get('email')
-                    ));
+        $code = str_random(20);
+
+        User::create([
+            'username'          => Input::get('username'),                               
+            'password'          => Hash::make(Input::get('password')),
+            'email'             => Input::get('email'),               
+            'confirmation_code' => $code                              
+        ]);
 
         return Redirect::to('register/verify');
     }

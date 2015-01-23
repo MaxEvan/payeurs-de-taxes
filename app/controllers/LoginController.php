@@ -15,18 +15,16 @@ class LoginController extends BaseController {
 		if( Cookie::get('auth') != null ){
 			return Redirect::home();
 		}else{
-			$data = Input::get();
-			$username = $data['username'];
-			$password = $data['password'];
+			$username = Input::get('username');
+			$password = Input::get('password');
 
-			$result = DB::table('users')
+			$pass = DB::table('users')
 				->where('username', $username)
-				->get();
+				->pluck('password');
 
-			if($result){
-				$hash = $result[0]->password;
-				if(Hash::check($password, $hash)){
-					$hashcook = Hash::make($password);
+			if($pass){
+				if(Hash::check($password, $pass)){
+					$hashcook = Hash::make('authorizationsuccessful');
 					$cookie = Cookie::forever('auth', $hashcook);
 					return Response::make()->withCookie($cookie);
 				}

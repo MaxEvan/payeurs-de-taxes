@@ -4,7 +4,7 @@
 		<!-- Button trigger modal -->
 		<div id="buttonDiv">
 			<h4>Le site est encore en version bêta! Vous devez avoir un identifiant pour y acc&eacute;der.</h4>
-			<button id="access" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+			<button id="access" type="button" class="btn btn-default btn-lg confirmBtn" data-toggle="modal" data-target="#myModal">
 			  Acc&eacute;der au site
 			</button>
 		</div>
@@ -28,12 +28,14 @@
 		        	    <input type="password" class="form-control loginInput" id="pass" placeholder="Mot de passe">
 		        	  </div>
 		        	  <div><small><a href="/register">Pas de compte? Inscrivez vous ici!</a></small></div>
-		        	  <div id="error" class="hidden">MAUVAIS USAGER OU MOT DE PASSE!</div>
+		        	  <hr>
+		        	  <div><small><a href="/register/verify">Vous avec un compte non confirm&eacute;? cliquez ici</a></small></div>
+		        	  <div class="hidden error">MAUVAIS USAGER OU MOT DE PASSE!</div>
 		        	</form>
 		      </div>
 		      <div class="modal-footer">
 		        <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-		        <button id="login" type="button" class="btn btn-primary">Connexion</button>
+		        <button id="login" type="button" class="btn btn-default confirmBtn">Connexion</button>
 		      </div>
 		    </div>
 		  </div>

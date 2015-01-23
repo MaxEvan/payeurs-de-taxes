@@ -116,9 +116,9 @@ $("#login").click(function(){
 		},
 		success: function(data) {
 			if(data == "fail"){
-				$("#error").toggleClass("hidden");
+				$(".error").toggleClass("hidden");
 				setTimeout(function(){
-					$("#error").toggleClass("hidden");
+					$(".error").toggleClass("hidden");
 				}, 1750);
 			}
 			else{
