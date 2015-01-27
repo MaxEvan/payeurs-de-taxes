@@ -24,10 +24,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-    'development' => array('ME9-2.local', 'TEST'),
-    'production'  => array('payeursdetaxes.ca')
-));
+$env = $app->detectEnvironment(function(){
+    return getenv('APP_ENV') ?: 'development';
+});
 
 /*
 |--------------------------------------------------------------------------
