@@ -1,17 +1,27 @@
 <?php
 
+use PDTX\Mailers\UserMailer;
+
 class UserController extends BaseController {
+
+    protected $mailer;
+
+    public function __construct(UserMailer $mailer) {
+        $this->mailer = $mailer;
+    }
 
 	/**
 	 * Lands on the register page to create new user
 	 *
 	 * @return Response
 	 */
-	public function getIndex() {
+	public function getIndex() 
+    {
 		return View::make('pages.register');
 	}
 
-    public function createUser() {
+    public function createUser() 
+    {
         $rules = [
             'username' => 'required|min:6|unique:users|alpha_num',
             'email' => 'required|email|unique:users',
@@ -28,9 +38,9 @@ class UserController extends BaseController {
         $validator = Validator::make($input, $rules);
         
         if($validator->fails()) {
-            $input = Session::keep(['username', 'email']);
+            $keep = Session::keep(['username', 'email']);
             $messages = $validator->messages();
-            return Redirect::back()->withInput($input)->withErrors($messages);
+            return Redirect::back()->withInput($keep)->withErrors($messages);
         }
 
         $code = str_random(20);
@@ -42,7 +52,8 @@ class UserController extends BaseController {
             'confirmation_code' => $code                              
         ]);
 
+        $this->mailer->sendConfirmation(Input::get('email'), $code);
+
         return Redirect::to('register/verify');
     }
-
 }

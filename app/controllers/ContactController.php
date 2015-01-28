@@ -6,7 +6,8 @@ class ContactController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex(){
+	public function getIndex()
+	{
 		$articles = $this->initializeSidebarArticles();
 		return View::make('pages.contact')
 					->with('articles', $articles);

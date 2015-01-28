@@ -6,7 +6,8 @@ class SuggestionsController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex(){
+	public function getIndex()
+	{
 		$articles = $this->initializeSidebarArticles();
 		return View::make('pages.suggestions')
 					->with('articles', $articles);

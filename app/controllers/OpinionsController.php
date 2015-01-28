@@ -6,7 +6,8 @@ class OpinionsController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex($id = null){
+	public function getIndex($id = null)
+	{
 		$articles = $this->initializeSidebarArticles();
 		$ajax = Input::get('ajax');
 		if($ajax == "ajax"){

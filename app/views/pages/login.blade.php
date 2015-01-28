@@ -27,9 +27,8 @@
 		        	    <label for="pass">Mot de passe</label>
 		        	    <input type="password" class="form-control loginInput" id="pass" placeholder="Mot de passe">
 		        	  </div>
-		        	  <div><small><a href="/register">Pas de compte? Inscrivez vous ici!</a></small></div>
-		        	  <hr>
-		        	  <div><small><a href="/register/verify">Vous avec un compte non confirm&eacute;? cliquez ici</a></small></div>
+		        	  <div><a href="/register">Pas de compte? Inscrivez vous ici!</a></div><br>
+		        	  <div><a href="/register/verify">Vous avec un compte non confirm&eacute;? cliquez ici</a></div>
 		        	  <div class="hidden error">MAUVAIS USAGER OU MOT DE PASSE!</div>
 		        	</form>
 		      </div>

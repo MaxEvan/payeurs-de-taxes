@@ -7,11 +7,13 @@ class LoginController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex() {
+	public function getIndex() 
+	{
 		return View::make('pages.login');
 	}
 
-	public function login() {
+	public function login() 
+	{
 		if( Cookie::get('auth') != null ){
 			return Redirect::home();
 		}else{
@@ -22,18 +24,22 @@ class LoginController extends BaseController {
 				->where('username', $username)
 				->pluck('password');
 
-			if($pass){
-				if(Hash::check($password, $pass)){
+			if($pass)
+			{
+				if(Hash::check($password, $pass))
+				{
 					$hashcook = Hash::make('authorizationsuccessful');
 					$cookie = Cookie::forever('auth', $hashcook);
 					return Response::make()->withCookie($cookie);
 				}
-				else{
+				else
+				{
 					$ret = "fail";
 					return $ret;
 				}
 			}
-			else{
+			else
+			{
 				$ret = "fail";
 				return $ret;
 			}
@@ -45,11 +51,12 @@ class LoginController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function update() {
-		$pass = Hash::make('pdtxbeta123');
-		DB::table('users')
-			->where('username', 'beta')
-			->update(array('password' => $pass));
-	}
+	// public function update() 
+	// {
+	// 	$pass = Hash::make('pdtxbeta123');
+	// 	DB::table('users')
+	// 		->where('username', 'beta')
+	// 		->update(array('password' => $pass));
+	// }
 
 }
