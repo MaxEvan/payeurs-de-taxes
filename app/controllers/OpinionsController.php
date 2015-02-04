@@ -48,4 +48,9 @@ class OpinionsController extends BaseController {
 				->with('articles', $more)->render();
 		return Response::json($html);
 	}
+
+	public function fillSidebar($count, $offset) 
+	{
+	    //func_body...
+	}
 }

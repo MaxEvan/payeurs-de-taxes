@@ -23,7 +23,6 @@
             </a>
             <!--work tags-->
             <p class="item-tags">
-                
             </p>
         </div>
     </div>

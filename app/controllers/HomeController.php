@@ -1,8 +1,6 @@
 <?php
 
-use \User\sadsadas;
-
-class HomeController extends BaseController extends sadsadas {
+class HomeController extends BaseController {
 	/**
 	 * Returns the home page.
 	 *
