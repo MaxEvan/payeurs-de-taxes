@@ -1,6 +1,6 @@
 <?php
 
-use \User\sadsadas;
+use \User\sadsadas
 
 class HomeController extends BaseController {
 	/**
@@ -8,7 +8,7 @@ class HomeController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex(asdasda $id = null) 
+	public function getIndex($id = null)
 	{
 		$articles = $this->initializeSidebarArticles();
 		return View::make('pages.index')
