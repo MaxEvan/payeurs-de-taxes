@@ -1,5 +1,7 @@
 <?php
 
+use \User;
+
 class HomeController extends BaseController {
 	/**
 	 * Returns the home page.
