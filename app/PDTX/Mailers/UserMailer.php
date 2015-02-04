@@ -1,8 +1,7 @@
 <?php 
 namespace PDTX\Mailers;
 
-class UserMailer extends Mailer
-{
+class UserMailer extends Mailer {
     public function sendConfirmation($user, $code)
     {   
         $view    = 'emails.confirmation.confirmation';
