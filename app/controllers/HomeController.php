@@ -1,6 +1,6 @@
 <?php
 
-use \User;
+use \User\sadsadas;
 
 class HomeController extends BaseController {
 	/**
