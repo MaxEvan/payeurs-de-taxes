@@ -10,16 +10,46 @@ class UserController extends BaseController {
         $this->mailer = $mailer;
     }
 
-	/**
-	 * Lands on the register page to create new user
-	 *
-	 * @return Response
-	 */
-	public function getIndex() 
+    public function login() 
     {
-		return View::make('pages.register');
-	}
 
+        if( Cookie::get('auth') != null ){
+            return Redirect::home();
+        }else{
+            $username = Input::get('username');
+            $password = Input::get('password');
+
+            $pass = DB::table('users')
+                ->where('username', $username)
+                ->pluck('password');
+
+            if($pass)
+            {
+                if(Hash::check($password, $pass))
+                {
+                    $hashcook = Hash::make('authorizationsuccessful');
+                    $cookie = Cookie::forever('auth', $hashcook);
+                    return Response::make()->withCookie($cookie);
+                }
+                else
+                {
+                    $ret = "fail";
+                    return $ret;
+                }
+            }
+            else
+            {
+                $ret = "fail";
+                return $ret;
+            }
+        }
+    }
+
+    /**
+     * Creates a user
+     *
+     * @return Response
+     */
     public function createUser() 
     {
         $rules = [

@@ -8,8 +8,6 @@ class HomeController extends BaseController {
 	 */
 	public function getIndex($id = null)
 	{
-		$articles = $this->initializeSidebarArticles();
-		return View::make('pages.index')
-			->with('articles', $articles);
+
 	}
 }

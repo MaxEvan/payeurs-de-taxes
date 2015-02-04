@@ -6,7 +6,7 @@ class BaseController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function initializeSidebarArticles()
+	public function initializeSidebarOpinions()
     {
 		return DB::table('articles')->orderBy('date', 'desc')->take(4)->get();
 	}
