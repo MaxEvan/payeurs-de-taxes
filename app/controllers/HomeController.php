@@ -2,7 +2,7 @@
 
 use \User\sadsadas;
 
-class HomeController extends BaseController {
+class HomeController extends BaseController extends sadsadas {
 	/**
 	 * Returns the home page.
 	 *
