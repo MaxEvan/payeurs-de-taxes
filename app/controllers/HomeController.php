@@ -8,7 +8,7 @@ class HomeController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getIndex($id = null) 
+	public function getIndex(asdasda $id = null) 
 	{
 		$articles = $this->initializeSidebarArticles();
 		return View::make('pages.index')
