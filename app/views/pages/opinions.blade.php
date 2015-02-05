@@ -1,7 +1,7 @@
 @extends('templates.base')
 
 @section('content')
-	@include('partials.article')
+	@include('partials.opinion')
 @stop
 
 @section('scripts')

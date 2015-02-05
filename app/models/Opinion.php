@@ -2,17 +2,28 @@
 
 class Opinion extends Eloquent { 
 
-    protected $table = 'articles';
+    protected $table   = 'opinions';
+    protected $guarded = [];
 
-    public function getOpinions($count/*how many articles?*/) 
+    public function initializeOpinions() 
     {
-        // Grab the Opinions
+        $opinions = DB::table('opinions')->orderBy('date', 'desc')->take(4)->get();
+        return $opinions;
+    }
 
-        // Return the values
+    public function getOpinion($id) 
+    {
+        // $opinion = Opinion::
     }
 
     public function store($inputValues /*All the field values*/) 
     {
         // Write to database
+    }
+
+    public function getLatestOpinion() 
+    {
+        $latest = DB::table('opinions')->orderBy('date', 'desc')->take(1)->get();
+        return $latest[0];
     }
 }

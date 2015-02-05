@@ -4,20 +4,20 @@
 // Route::post('userEmail', 'UserController@...');
 
 // Suggestion...
-// Route::controller('suggestions', 'SuggestionsController');
+Route::get('suggestions', 'PagesController@showSuggestions');
 
 // Contact...
-// Route::controller('contact', 'ContactController');
+Route::get('contact', 'PagesController@showContact');
 
 // Opinions...
-// Route::controller('opinions/{id?}', 'OpinionsController');
+Route::get('opinions/{id?}', 'PagesController@showOpinion');
 // Route::get('getMoreArticles', 'OpinionsController@getMoreArticles');
 // Route::get('ajaxArticles', 'OpinionsController@getIndex');
 
 // Login/Registration...
 // Route::post('login', 'LoginController@login');
 // Route::post('/register/verify', 'VerificationController@verify');
-// Route::post('register', 'UserController@createUser');
+Route::post('register', 'UserController@createUser');
 
 // Pages...
 Route::get('login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);

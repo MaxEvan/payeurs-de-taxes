@@ -26,16 +26,16 @@
 				<div class="col-lg-4 col-md-4 col-sm-5 col-right">
 					<nav>
 						<ul class="list-inline" id="menu">
-							<li class="navLink articlesLink">
+							<li class="navLink">
 								<a href="/">Accueil</a>
 							</li>							
-							<li class="navLink articlesLink">
+							<li class="navLink">
 								<a href="/opinions">Opinions</a>
 							</li>
-							<li class="navLink aboutLink">
+							<li class="navLink">
 								<a href="/suggestions">Suggestions</a>
 							</li>
-							<li class="navlink contactLink">
+							<li class="navlink">
 								<a href="/contact">contact</a>
 							</li>
 						</ul>
@@ -55,7 +55,7 @@
 					<section class="row" id="Grid">
 						<div id="sideContent">
 							@include('partials.sideFilters')
-							@include('partials.sidebarArticles')
+							@include('partials.sidebarOpinions')
 						</div>
 					</section>
 					<a href="#" id=""><h4>Plus de r&eacute;sultats...</h4></a>
@@ -63,8 +63,6 @@
 		</div> 
 		<a href="#" id="backToTop"><img id="returnTop" src="/img/arrow-up.png" alt="return to top"></a>
 		<script src="/js/min/min.js"></script>
-		<script>
-			var offset = $(".item-img").length ;
-		</script>
+		<script>var offset = $(".item-img").length ;</script>
 	</body>
 </html>

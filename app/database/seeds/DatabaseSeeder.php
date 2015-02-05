@@ -9,13 +9,13 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		$this->call('UserTableSeeder');
-		// $this->call('ArticleTableSeeder');
+		$this->call('UsersTableSeeder');
+		$this->call('OpinionsTableSeeder');
 	}
 
 }
 
-class UserTableSeeder extends Seeder {
+class UsersTableSeeder extends Seeder {
 	public function run()
 	{
 		DB::table('users')->delete();
@@ -23,17 +23,21 @@ class UserTableSeeder extends Seeder {
 	}
 }
 
-class ArticleTableSeeder extends Seeder {
+class OpinionsTableSeeder extends Seeder {
 	public function run()
 	{
-		DB::table('articles')->delete();
-		Article::create( array('title' => 'TITRE 1', 'content' => 'content', 'date' => '2015-01-01', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 2', 'content' => 'content', 'date' => '2015-01-02', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 3', 'content' => 'content', 'date' => '2015-01-03', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 4', 'content' => 'content', 'date' => '2015-01-04', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 5', 'content' => 'content', 'date' => '2015-01-05', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 6', 'content' => 'content', 'date' => '2015-01-06', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 7', 'content' => 'content', 'date' => '2015-01-07', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
-		Article::create( array('title' => 'TITRE 8', 'content' => 'content', 'date' => '2015-01-08', 'image' => '/img/vole.jpg', 'resume' => 'resume') );
+		DB::table('opinions')->delete();
+		for($i=1; $i<11; $i++)
+		{
+			Opinion::create( 
+				['title' => 'TITRE ' . $i, 
+				 'content' => 'content ' . $i, 
+				 'date' => '2015-01-0' . $i, 
+				 'image' => '/img/vole.jpg', 
+				 'pour' => rand(1, 20), 
+				 'contre' => rand(1, 20), 
+				 'resume' => 'resume ' . $i] 
+			);
+		}
 	}
 }
