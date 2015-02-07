@@ -109,9 +109,9 @@ class PagesController extends BaseController {
      *
      * @return Response
      */
-    public function showVerify() 
+    public function showConfirmation() 
     {
-        return View::make('pages.verify');
+        return View::make('pages.confirmation');
     }
 
 }

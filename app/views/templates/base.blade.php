@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -57,12 +58,15 @@
 							@include('partials.sideFilters')
 							@include('partials.sidebarOpinions')
 						</div>
+						<button style="display: block; width: 150px; margin: 20px auto" id="loadMore" class="btn btn-default pdtxBtn ">Plus de r&eacute;sultats...</button>
+						<div style="width: 150px; margin: auto" id="loading" class="hidden">
+							<h3 style="display:inline-block; margin:20px 0;">Chargement</h3>
+							<img style="display:inline-block; height: 5px;" src="/img/ajax-loader.gif" />
+						</div>
 					</section>
-					<a href="#" id=""><h4>Plus de r&eacute;sultats...</h4></a>
 				</div>
 		</div> 
 		<a href="#" id="backToTop"><img id="returnTop" src="/img/arrow-up.png" alt="return to top"></a>
 		<script src="/js/min/min.js"></script>
-		<script>var offset = $(".item-img").length ;</script>
 	</body>
 </html>

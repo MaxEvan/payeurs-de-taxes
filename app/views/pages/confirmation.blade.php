@@ -1,8 +1,8 @@
-@extends('templates.login_register')
+@extends('templates.formPage')
 
 @section('content')
-        <h1>Derni&egrave;re v&eacute;rification...</h1> <br>
-        <p style="width:350px; margin:auto;">Vous avez re&ccedil;u un num&eacute;ro de confirmation &agrave; l'adresse courriel fournie. Entrez ce code avec votre nom d'usager pour confirmer votre inscription.</p>
+        <h1>Confirmation du compte...</h1> <br>
+        <p  class="text-justify">Vous avez re&ccedil;u un num&eacute;ro de confirmation <br> &agrave; l'adresse courriel fournie. Entrez ce code avec <br> votre nom d'usager pour confirmer votre inscription.</p>
         <br/>
         <?php if($errors->first('confirmation')){ echo "<p class='error'>" . $errors->first('confirmation'). "</p>";}?>
         {{ Form::open(['class' => 'authForm']) }}
@@ -10,6 +10,6 @@
             {{ Form::text('username', null, ['class' => 'form-control authInput']) }}
             {{ Form::label('confirmation', 'Code de confirmation') }}
             {{ Form::text('confirmation', null, ['class' => 'form-control authInput']) }}
-            {{ Form::submit('Confirmer', ['class' => 'btn btn-default confirmBtn authBtn', 'id' => 'confirm']) }}
+            {{ Form::submit('Confirmer le compte', ['class' => 'btn btn-default pdtxBtn authBtn', 'id' => 'confirm']) }}
         {{ Form::close() }}
 @stop

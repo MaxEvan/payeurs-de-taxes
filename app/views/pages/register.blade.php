@@ -1,7 +1,7 @@
-@extends('templates.login_register')
+@extends('templates.formPage')
 
 @section('content')
-    <h1>Remplissez le formulaire pour acc&eacute;der au site</h1>
+    <h1>Formulaire d'inscription</h1>
     <br/>
     {{ Form::open(['class' => 'authForm']) }}
         <div>
@@ -15,7 +15,7 @@
             <?php if($errors->first('email')){ echo "<p class='error'>" . $errors->first('email'). "</p>";}?>
         </div> 
         <div>
-            {{ Form::label('Password', 'Mot de passe') }}
+            {{ Form::label('password', 'Mot de passe') }}
             {{ Form::password('password', ['class' => 'form-control authInput']) }}
             <?php if($errors->first('password')){ echo "<p class='error'>" . $errors->first('password'). "</p>";}?>
         </div>
@@ -24,7 +24,7 @@
             {{ Form::password('password_confirmation', ['class' => 'form-control authInput', 'placeholder' => 'R&eacute;p&eacute;tez le mot de passe']) }}
         </div>
         <div>
-            {{ Form::submit('Cr&eacute;er le compte', ['class' => 'btn btn-default confirmBtn authBtn', 'id' => 'register']) }}
+            {{ Form::submit('Cr&eacute;er le compte', ['class' => 'btn btn-default pdtxBtn authBtn', 'id' => 'register']) }}
         </div>
     {{ Form::close() }}
 @stop

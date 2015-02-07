@@ -12,16 +12,16 @@
 */
 
 App::before(function($request) {
-	if(Request::path() != "register" && Request::path() != "register/verify"){
-		if(Request::isMethod('get')){
-			if( Cookie::get('auth') == null && Request::path() != "login") {
-				return Redirect::to('/login');
-			}
-			else if( Cookie::get('auth') != null && Request::path() == "login") {
-				return Redirect::home();
-			} 
-		}
-	}
+	// if(Request::path() != "register" && Request::path() != "register/confirmation"){
+	// 	if(Request::isMethod('get')){
+	// 		if(Cookie::get('auth') == null && Request::path() != "login") {
+	// 			return Redirect::to('/login');
+	// 		}
+	// 		else if( Cookie::get('auth') != null && Request::path() == "login") {
+	// 			return Redirect::home();
+	// 		} 
+	// 	}
+	// }
 });
 
 

@@ -16,12 +16,13 @@ class CreateUsersTable extends Migration {
         {
             $table->increments('id');
             $table->string('username')->unique();
-            $table->string('password');
+            $table->string('password', 60);
             $table->string('email')->unique();
             $table->boolean('admin')->default(0);
             $table->boolean('active')->default(0);;
             $table->boolean('confirmed')->default(0);
             $table->string('confirmation_code')->nullable();
+            $table->rememberToken();
             $table->timestamps();
         });
     }

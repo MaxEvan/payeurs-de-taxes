@@ -13,12 +13,12 @@ class Opinion extends Eloquent {
 
     public function getOpinion($id) 
     {
-        // $opinion = Opinion::
+        // $opinion = Opinion...
     }
 
     public function store($inputValues /*All the field values*/) 
     {
-        // Write to database
+        // Write to database for eventual admin form for writing opinions
     }
 
     public function getLatestOpinion() 
