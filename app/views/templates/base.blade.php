@@ -51,11 +51,10 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-5 col-right">
 					<div id="scroll-shadow"></div>
-					<h1 class="visible-xs section-header">Opinions r&eacute;centes</h1>
-						@yield('filters')
+					<h1 class="section-header">Derni&egrave;res opinions</h1>
 					<section class="row" id="Grid">
 						<div id="sideContent">
-							@include('partials.sideFilters')
+							<!-- @include('partials.sideFilters') -->
 							@include('partials.sidebarOpinions')
 						</div>
 						<button style="display: block; width: 150px; margin: 20px auto" id="loadMore" class="btn btn-default pdtxBtn ">Plus de r&eacute;sultats...</button>
