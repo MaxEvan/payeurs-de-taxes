@@ -18,6 +18,5 @@ function getMoreOpinions(offset) {
             }
         );
 
-    },1000);
-      
+    },1000);  
 }

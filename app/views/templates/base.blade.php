@@ -45,13 +45,13 @@
 			</div>
 			<div class="row bottom">
 				<div id="col-left" class="col-lg-8 col-md-8 col-sm-7 col-left">
-					<section id="articleContent">
+					<section id="opinionContent">
 						@yield('content')
 					</section>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-5 col-right">
 					<div id="scroll-shadow"></div>
-					<h1 class="section-header">Derni&egrave;res opinions</h1>
+					<h2 class="section-header">Derni&egrave;res opinions</h2>
 					<section class="row" id="Grid">
 						<div id="sideContent">
 							<!-- @include('partials.sideFilters') -->

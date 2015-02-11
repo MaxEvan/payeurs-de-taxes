@@ -1,36 +1,36 @@
-<!--article image-->
-<img src="{{ isset($displayedOpinion->image) ? $displayedOpinion->image : 'blank' }}" class="currentArticleImg">
+<!--opinion image-->
+<img src="{{ isset($displayedOpinion->image) ? $displayedOpinion->image : 'blank' }}" class="currentOpinionImg">
 
-<!--article title-->
+<!--opinion title-->
 <div class="titleContainer">
-    <h1 class="articleTitle">{{ isset($displayedOpinion->content) ? $displayedOpinion->title : 'Titre manquant!' }}</h1>
+    <h1 class="opinionTitle">{{ isset($displayedOpinion->content) ? $displayedOpinion->title : 'Titre manquant!' }}</h1>
     <span class="pull-right">
         {{ isset($displayedOpinion->pour) ? $displayedOpinion->pour : 0 }}
-        <img class="articleIcon" src="/img/icon/approve.png" alt="">
+        <img class="opinionIcon" src="/img/icon/approve.png" alt="">
         {{ isset($displayedOpinion->contre) ? $displayedOpinion->contre : 0 }}
-        <img class="articleIcon" src="/img/icon/disapprove.png" alt="">
+        <img class="opinionIcon" src="/img/icon/disapprove.png" alt="">
     </span>
 </div>
 <h1 class="spacer">___</h1>
 
-<!--article date-->
-<p class="article-date">
+<!--opinion date-->
+<p class="opinion-date">
     {{ isset($displayedOpinion->date) ? date('d-m-Y', strtotime($displayedOpinion->date)) : 'Date manquante' }}
 </p>
 
-<!--article tags-->
-<p class="article-tags">
-    <!-- load the tags associated with the article -->
+<!--opinion tags-->
+<p class="opinion-tags">
+    <!-- load the tags associated with the opinion -->
 </p>
 
-<!--article content-->
-<p class="article-description">
+<!--opinion content-->
+<p class="opinion-description">
     <small>
         {{ isset($displayedOpinion->resume) ? $displayedOpinion->resume : 'R&eacute;sum&eacute; manquant...' }}
     </small>
 </p>
 <br>
-<p class="article-content paragraph">
+<p class="opinion-content paragraph">
     {{ isset($displayedOpinion->content) ? $displayedOpinion->content : 'Contenu manquant...' }}
 </p>
 

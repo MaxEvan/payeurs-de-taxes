@@ -1,15 +1,15 @@
-<div class="mix web-design mix_all sidebarArticle" data-articleId="{{ isset($opinion->id) ? $opinion->id : '#'}}">
+<div class="mix web-design mix_all sidebarOpinion" data-opinionid="{{ isset($opinion->id) ? $opinion->id : '#'}}">
     <div class="panel panel-default item">
         <div class="panel-heading">
-            <a href="/articles/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="articleLink">
+            <a href="/opinions/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="opinionLink">
                 <!--work image-->
                 <img class="item-img" src="{{ isset($opinion->image) ? $opinion->image : 'blank' }}" alt="Work 1">
             </a>
         </div>
         <div class="panel-body">
-            <a href="/articles/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="articleLink">
+            <a href="/opinions/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="opinionLink">
                 <div>
-                    <h4 class="articleTitle">{{ isset($opinion->title) ? $opinion->title : 'Titre Manquant' }}</h4>
+                    <h4 class="opinionTitle">{{ isset($opinion->title) ? $opinion->title : 'Titre Manquant' }}</h4>
                     <span class="pull-right">
                         {{ isset($opinion->pour) ? $opinion->pour : 0 }}
                         <img class="thumbnailThumbs" src="/img/icon/approve.png" alt="">

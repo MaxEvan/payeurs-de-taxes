@@ -51,6 +51,14 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+// Custom 404 page
+App::missing(function($exception)
+{
+    // if(App::environment() == 'production'){
+        return View::make('errors.404');
+    // }
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

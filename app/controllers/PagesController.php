@@ -3,21 +3,28 @@
 use \Opinion;
 
 class PagesController extends BaseController {
+    
+    /**
+     * Instance of the Opinion model.
+     *
+     * @var string
+     */
+    protected $opinion;
 
-    protected $opinions;
-
-    protected $latest;
-
+    /**
+     * Injection of the Opinion model in the construct.
+     *
+     * @var string
+     */
     function __construct(Opinion $opinion)
     {
-        $this->opinions = $opinion->initializeOpinions();
-        $this->latest   = $opinion->getLatestOpinion();
+        $this->opinion = $opinion;
     }
 
     /**
-     * Initialize page with sidebar opinions
-     * @var name of the .blade.php file
-     * @var assoc. array passed to the View::make->with() method
+     * Initialize page with sidebar opinions.
+     * @var Name of the .blade.php file
+     * @var Assoc. array passed to the View::make->with() method
      *
      * @return Response
      */
@@ -25,7 +32,7 @@ class PagesController extends BaseController {
     {
         $page = 'pages.' . $name;
         $array = [];
-        $array['opinions'] = $this->opinions;
+        $array['opinions'] = $this->opinion->initializeSidebarOpinions();
         if($data) 
         {
             foreach($data as $k => $v)
@@ -33,12 +40,11 @@ class PagesController extends BaseController {
                 $array[$k] = $v;
             }
         }
-        // dd($array);
         return View::make($page)->with($array);
     }
 
     /**
-     * Show the home page
+     * Show the home page.
      *
      * @return Response
      */
@@ -48,24 +54,24 @@ class PagesController extends BaseController {
     }
    
    /**
-    * Show the opinions page with the displayed opinion in content section
-    * @var displayedOpinion id
+    * Show the opinions page with the displayed opinion in content section.
+    * @var Displayed opinion id
     *
     * @return Response
     */
     public function showOpinion($id = null) {
         if($id == null)
         {
-            return $this->initialize('opinions', ['displayedOpinion' => $this->latest]);
+            return $this->initialize('opinions', ['displayedOpinion' => $this->opinion->getOpinion()]);
         }
         else
         {
-            return true;
+            return $this->initialize('opinions', ['displayedOpinion' => $this->opinion->getOpinion($id)]);
         }
     }
 
     /**
-     * Show the suggestions page
+     * Show the suggestions page.
      *
      * @return Response
      */
@@ -75,7 +81,7 @@ class PagesController extends BaseController {
     }
 
     /**
-     * Show the contact page
+     * Show the contact page.
      *
      * @return Response
      */
@@ -85,7 +91,7 @@ class PagesController extends BaseController {
     }
 
     /**
-     * Show the login page
+     * Show the login page.
      *
      * @return Response
      */
@@ -95,7 +101,7 @@ class PagesController extends BaseController {
     }
 
     /**
-     * Show the register page
+     * Show the register page.
      *
      * @return Response
      */
@@ -105,7 +111,7 @@ class PagesController extends BaseController {
     }
 
     /**
-     * Show the verify page
+     * Show the identity confirmation page.
      *
      * @return Response
      */

@@ -1,8 +1,9 @@
-// Load article in content section
-$(".col-right").on("click", ".sidebarArticle", function(e) {
+// Load opinion in content section Ajax
+$(".col-right").on("click", ".sidebarOpinion", function(e) {
     e.preventDefault();
-    var id = $(this).attr("data-articleId");
+    var id = $(this).attr("data-opinionid");
     var url = "opinions/" + id;
+    renderOpinion(id);
     updateUrl(url);
 });
 

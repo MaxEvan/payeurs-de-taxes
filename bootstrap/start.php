@@ -24,9 +24,15 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(function(){
-    return getenv('APP_ENV') ?: 'development';
-});
+// $env = $app->detectEnvironment(array(
+//     'development' => array('TEST'),
+//     'production'  => array('payeursdetaxes.ca')
+// ));
+
+$env = $app->detectEnvironment(array(
+        'development' => array('TEST'),
+        'production'  => array('payeursdetaxes.ca')
+));
 
 /*
 |--------------------------------------------------------------------------
