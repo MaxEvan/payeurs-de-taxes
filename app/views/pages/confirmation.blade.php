@@ -2,7 +2,7 @@
 
 @section('content')
         <h1>Confirmation du compte...</h1> <br>
-        <p  class="text-justify">Vous avez re&ccedil;u un num&eacute;ro de confirmation <br> &agrave; l'adresse courriel fournie. Entrez ce code avec <br> votre nom d'usager pour confirmer votre inscription.</p>
+        <p  class="text-justify">Entrez le code de confirmation re&ccedil;u par courriel <br> avec votre nom d'usager pour confirmer votre inscription.</p>
         <br/>
         <?php if($errors->first('confirmation')){ echo "<p class='error'>" . $errors->first('confirmation'). "</p>";}?>
         {{ Form::open(['class' => 'authForm']) }}

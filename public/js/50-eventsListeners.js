@@ -12,3 +12,8 @@ $("#loadMore").click(function(e) {
     var offset = $(".item-img").length;
     getMoreOpinions(offset);
 });
+
+$("#backToTop").click(function(e){
+    e.preventDefault();
+    returnToTop();
+});

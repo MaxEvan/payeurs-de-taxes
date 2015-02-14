@@ -1,3 +1,12 @@
+// Function when click on the img
+function returnToTop(){
+    if($("#col-left").scrollTop() > 0){
+        $("#col-left").animate({scrollTop : 0}, 800);
+    }else{
+        $("html, body").animate({scrollTop : 0}, 800);
+    }
+}
+
 // Display the button when on Desktop
 $("#col-left").scroll(function() {
     if($(this).scrollTop() > 100){
@@ -18,15 +27,5 @@ $(window).scroll(function() {
     }
     else{
         $("#returnTop").fadeOut();
-    }
-});
-
-// Click return top
-$("#backToTop").click(function(e){
-    e.preventDefault();
-    if($("#col-left").scrollTop() > 0){
-        $("#col-left").animate({scrollTop : 0}, 800);
-    }else{
-        $("html, body").animate({scrollTop : 0}, 800);
     }
 });
