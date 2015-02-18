@@ -1,48 +1,42 @@
 <?php
 
 use PDTX\Mailers\UserMailer;
-use PDTX\Forms\PdtxFormValidator;
+use PDTX\Forms\FormValidator;
 
-class UserController extends BaseController {
+class UsersController extends BaseController {
 
     protected $mailer;
+    protected $validator;
 
-    public function __construct(UserMailer $mailer) {
+    public function __construct(UserMailer $mailer, FormValidator $validator) {
         $this->mailer = $mailer;
+        $this->validator = $validator;
     }
 
     /**
     * Log the user in
-    * @var User object
     *
     * @return Response
     */
-    public function login()
+    public function login($input=null)
     {
-        $username = Input::get('username');
-        $password = Input::get('password');
-
-        $pass = DB::table('users')->where('username', $username)->pluck('password');
-
-        if($pass)
+        (!$input) ? $input = ['username' => Input::get('username'), 'password' => Input::get('password')] : false;
+        if(Auth::attempt(['username' => $input['username'], 'password' => $input['password']], false, true))
         {
-            if(Hash::check($password, $pass))
-            {
-                $hashcook = Hash::make('authorizationsuccessful');
-                $cookie = Cookie::forever('auth', $hashcook);
-                return Response::make()->withCookie($cookie);
-            }
-            else
-            {
-                $ret = "fail";
-                return $ret;
-            }
+            Session::put('username', $input['username']);
+            return View::make('pages.home');
         }
-        else
-        {
-            $ret = "fail";
-            return $ret;
-        }
+    }
+
+    /**
+    * Log the user out
+    *
+    * @return Response
+    */
+    public function logout()
+    {
+        Auth::logout();
+        return Redirect::to('/login');
     }
 
     /**
@@ -51,61 +45,53 @@ class UserController extends BaseController {
     *
     * @return Response
     */
-    public function create(User $user)
+    public function create()
     {
-    //TODO: externalize the validator logic
-        $rules = [
-        'username' => 'required|min:6|unique:users|alpha_num',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|confirmed|min:6|alpha_num'
-        ];
-
         $input = Input::only(
             'username',
             'email',
             'password',
             'password_confirmation'
-            );
+        );
 
-        $validator = Validator::make($input, $rules);
-
-        if($validator->fails()) {
-            $keep = Session::keep(['username', 'email']);
-            $messages = $validator->messages();
-            return Redirect::back()->withInput($keep)->withErrors($messages);
-        }
-
-        $code = str_random(20);
-
-        User::create([
-            'username'          => Input::get('username'),                               
-            'password'          => Hash::make(Input::get('password')),
-            'email'             => Input::get('email'),               
-            'confirmation_code' => $code                              
+        if(!is_array($return = $this->validator->validateRegister($input)))
+        {
+            $code = str_random(20);
+            User::create([
+                'username'          => Input::get('username'),                               
+                'password'          => Hash::make(Input::get('password')),
+                'email'             => Input::get('email'),               
+                'confirmation_code' => $code                        
             ]);
 
-        $this->mailer->sendConfirmation(Input::get('email'), $code);
-
-        return Redirect::to('register/verify');
+            $this->mailer->sendConfirmation(Input::get('email'), $code);
+            return Redirect::to('register/confirmation');
+        }
+        else
+        {
+           return Redirect::back()->withInput($return['input'])->withErrors($return['messages']);
+        }
     }
 
-    public function confirm(User $user)
+    public function confirm()
     {
-        $username     = Input::get('username');
-        $confirmation = Input::get('confirmation');
-        $value        = DB::table('users')->where('username', $username)->pluck('confirmation_code');
+        $input = [
+            'username'     => Input::get('username'),
+            'password'     => Input::get('password'),
+            'confirmation' => Input::get('confirmation')
+        ];
 
-        if($confirmation === $value)
+        $check = DB::table('users')->where('username', $input['username'])->pluck('confirmation_code');
+
+        if($input['confirmation'] === $check)
         {
-            $hashcook = Hash::make('authorizationsuccessful');
-            $cookie = Cookie::forever('auth', $hashcook);
-            DB::table('users')->where('username', $username)->update(['active' => 1, 'confirmed' => 1]);
-            return Redirect::home()->withCookie($cookie);
+            DB::table('users')->where('username', $input['username'])->update(['active' => 1, 'confirmed' => 1]);
+            $this->login($input);
         }
         else
         {   
             $keep = Session::keep('username');
-            return Redirect::back()->withInput($keep)->withErrors(['confirmation' => "Le nom d'usager ou le code de confirmation n'est pas bon"]);
+            return Redirect::back()->withInput($keep)->withErrors(['confirmation' => "Les informations entr&eacute;es ne sont pas valides. Veuillez les v&eacute;rifier avant de continuer."]);
         }
     }
 }

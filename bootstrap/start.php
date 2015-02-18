@@ -30,7 +30,7 @@ $app = new Illuminate\Foundation\Application;
 // ));
 
 $env = $app->detectEnvironment(array(
-        'development' => array('TEST'),
+        'development' => array('TEST', 'ME9.local'),
         'production'  => array('payeursdetaxes.ca')
 ));
 

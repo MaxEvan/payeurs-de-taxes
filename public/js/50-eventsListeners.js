@@ -13,7 +13,14 @@ $("#loadMore").click(function(e) {
     getMoreOpinions(offset);
 });
 
+// Get back to top
 $("#backToTop").click(function(e){
     e.preventDefault();
     returnToTop();
 });
+
+// Logout
+$("#logout").click(function(e) {
+    e.preventDefault();
+    logout();
+})

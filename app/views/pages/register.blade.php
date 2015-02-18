@@ -26,5 +26,9 @@
         <div>
             {{ Form::submit('Cr&eacute;er le compte', ['class' => 'btn btn-default pdtxBtn authBtn', 'id' => 'register']) }}
         </div>
+        <br>
+        <div>
+            <a href="/login"><small>Retour &agrave; la page de connexion.</small></a>
+        </div>
     {{ Form::close() }}
 @stop

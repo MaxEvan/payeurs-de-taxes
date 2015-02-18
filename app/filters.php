@@ -11,23 +11,12 @@
 |
 */
 
-App::before(function($request) {
-	if(Request::path() != "register" && Request::path() != "register/confirmation"){
-		if(Request::isMethod('get')){
-			if(Cookie::get('auth') == null && Request::path() != "login") {
-				return Redirect::to('/login');
-			}
-			else if( Cookie::get('auth') != null && Request::path() == "login") {
-				return Redirect::home();
-			} 
-		}
-	}
-});
+// App::before(function($request) {
+// });
 
 
-App::after(function($request, $response) {
-
-});
+// App::after(function($request, $response) {
+// });
 
 /*
 |--------------------------------------------------------------------------
@@ -40,41 +29,14 @@ App::after(function($request, $response) {
 |
 */
 
-Route::filter('auth', function()
+Route::filter('notAuth', function()
 {
-	if (Auth::guest())
-	{
-		if (Request::ajax())
-		{
-			return Response::make('Unauthorized', 401);
-		}
-		else
-		{
-			return Redirect::guest('login');
-		}
-	}
+	if (Auth::guest()) return Redirect::to('login');
 });
 
-
-Route::filter('auth.basic', function()
+Route::filter('isAuth', function()
 {
-	return Auth::basic();
-});
-
-/*
-|--------------------------------------------------------------------------
-| Guest Filter
-|--------------------------------------------------------------------------
-|
-| The "guest" filter is the counterpart of the authentication filters as
-| it simply checks that the current user is not logged in. A redirect
-| response will be issued if they are, which you may freely change.
-|
-*/
-
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
+	if (Auth::check()) return Redirect::home();
 });
 
 /*
@@ -82,8 +44,8 @@ Route::filter('guest', function()
 | CSRF Protection Filter
 |--------------------------------------------------------------------------
 |
-| The CSRF filter is responsible for protecting your application against
-| cross-site request forgery attacks. If this special token in a user
+| The CSRF filter is responysible for protecting your application against
+| cross-site request forger attacks. If this special token in a user
 | session does not match the one given in this request, we'll bail.
 |
 */

@@ -8,8 +8,14 @@
         {{ Form::open(['class' => 'authForm']) }}
             {{ Form::label('username', "Nom d'usager") }}
             {{ Form::text('username', null, ['class' => 'form-control authInput']) }}
+            {{ Form::label('password', 'Mot de passe') }}
+            {{ Form::password('password', ['class' => 'form-control authInput']) }}
             {{ Form::label('confirmation', 'Code de confirmation') }}
             {{ Form::text('confirmation', null, ['class' => 'form-control authInput']) }}
             {{ Form::submit('Confirmer le compte', ['class' => 'btn btn-default pdtxBtn authBtn', 'id' => 'confirm']) }}
         {{ Form::close() }}
+        <br>
+        <div>
+            <a href="/login"><small>Retour &agrave; la page de connexion.</small></a>
+        </div>
 @stop

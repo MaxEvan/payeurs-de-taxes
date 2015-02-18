@@ -54,9 +54,9 @@ App::error(function(Exception $exception, $code)
 // Custom 404 page
 App::missing(function($exception)
 {
-    // if(App::environment() == 'production'){
+    if(App::environment() == 'production'){
         return View::make('errors.404');
-    // }
+    }
 });
 
 /*
