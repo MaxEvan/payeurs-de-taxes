@@ -6,8 +6,10 @@ Route::group(['before' => 'isAuth'], function() {
     Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
     Route::post('/login', 'UsersController@login');
     Route::post('/register/confirmation', 'UsersController@confirm');
-    Route::post('/register', 'UsersController@create');
+    Route::post('/register', 'UsersController@register');
 });
+
+
 
 Route::group(['before' => 'notAuth'], function() {
     Route::get('/', ['as' => 'home', 'uses' => 'PagesController@showHome']);

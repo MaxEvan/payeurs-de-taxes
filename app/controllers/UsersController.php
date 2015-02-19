@@ -21,10 +21,21 @@ class UsersController extends BaseController {
     public function login($input=null)
     {
         (!$input) ? $input = ['username' => Input::get('username'), 'password' => Input::get('password')] : false;
-        if(Auth::attempt(['username' => $input['username'], 'password' => $input['password']], false, true))
+
+        $auth = ['username' => $input['username'], 
+                 'password' => $input['password'],
+                 'confirmed' => 1, 
+                 'active' => 1];
+
+        if(Auth::attempt($auth, false, true))
         {
-            Session::put('username', $input['username']);
-            return View::make('pages.home');
+            // dd("OK/LOGIN");
+            return Redirect::home();
+        }
+        else
+        {
+            dd("NOT/OK/LOGIN");
+            return Redirect::back()->withErrors(['message' => "Connexion impossible, assurez vous que votre <br/> compte est confrm&eacute et v&eacute;rifiez vos identifiants."]);
         }
     }
 
@@ -40,21 +51,14 @@ class UsersController extends BaseController {
     }
 
     /**
-    * Create a new user
+    * Register a new user
     * @var User object
     *
     * @return Response
     */
-    public function create()
+    public function register()
     {
-        $input = Input::only(
-            'username',
-            'email',
-            'password',
-            'password_confirmation'
-        );
-
-        if(!is_array($return = $this->validator->validateRegister($input)))
+        if($this->validator->validateRegistrationForm())
         {
             $code = str_random(20);
             User::create([
@@ -69,29 +73,20 @@ class UsersController extends BaseController {
         }
         else
         {
-           return Redirect::back()->withInput($return['input'])->withErrors($return['messages']);
+           return Redirect::back()->withInput(Input::all())->withErrors(Session::get('messages'));
         }
     }
 
     public function confirm()
     {
-        $input = [
-            'username'     => Input::get('username'),
-            'password'     => Input::get('password'),
-            'confirmation' => Input::get('confirmation')
-        ];
-
-        $check = DB::table('users')->where('username', $input['username'])->pluck('confirmation_code');
-
-        if($input['confirmation'] === $check)
+        if($this->validator->validateConfirmationForm())
         {
-            DB::table('users')->where('username', $input['username'])->update(['active' => 1, 'confirmed' => 1]);
-            $this->login($input);
+            $this->login();
         }
         else
-        {   
-            $keep = Session::keep('username');
-            return Redirect::back()->withInput($keep)->withErrors(['confirmation' => "Les informations entr&eacute;es ne sont pas valides. Veuillez les v&eacute;rifier avant de continuer."]);
+        {
+            dd("NOT/OK/CONFIRMATION");
+            return Redirect::back()->withInput(Input::all())->withErrors(Session::get('messages'));
         }
     }
 }

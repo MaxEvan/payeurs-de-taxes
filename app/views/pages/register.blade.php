@@ -1,7 +1,7 @@
 @extends('templates.formPage')
 
 @section('content')
-    <h1>Formulaire d'inscription</h1>
+    <h1>Inscription</h1>
     <br/>
     {{ Form::open(['class' => 'authForm']) }}
         <div>

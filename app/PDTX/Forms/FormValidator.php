@@ -3,6 +3,8 @@
 use \Validator;
 use \Session;
 use \Redirect;
+use \Input;
+use \DB;
 
 class FormValidator {
 
@@ -12,24 +14,35 @@ class FormValidator {
      *
      * @return Response
      */
-    public function validateConfirmation($input)
+    public function validateConfirmationForm()
     {
         $rules = [
             'username'     => 'required|exists:users',
+            'password' => 'required',
             'confirmation' => 'required'
         ];
 
-        $validator = Validator::make($input, $rules);
-
+        $validator = Validator::make(Input::all(), $rules);
         if($validator->fails())
         {
             $messages = $validator->messages();
-            return ['messages' => $messages];
+            Session::flash('messages', $messages);
+            return false;
         }
-        else
+
+        $check = DB::table('users')->where('username', Input::get('username'))->pluck('confirmation_code');
+        if(Input::get('confirmation') === $check)
         {
+            DB::table('users')->where('username', Input::get('username'))->update(['active' => 1, 'confirmed' => 1]);
             return true;
         }
+        else
+        {   
+            Session::flash('messages', ['confirmation' => "Le code de confirmation n'est pas le bon."]);
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -38,7 +51,7 @@ class FormValidator {
      *
      * @return Response
      */
-    public function validateRegister($input)
+    public function validateRegistrationForm()
     {
         $rules = [
             'username' => 'required|min:6|unique:users|alpha_num',
@@ -46,18 +59,15 @@ class FormValidator {
             'password' => 'required|confirmed|min:6|alpha_num'
         ];
 
-        $validator = Validator::make($input, $rules);
-
+        $validator = Validator::make(Input::all(), $rules);
         if($validator->fails())
         {
-            $keep = Session::keep(['username', 'email']);
             $messages = $validator->messages();
-            return ['messages' => $messages, 'input' => $keep];
+            Session::flash('messages', $messages);
+            return false;
         }
-        else
-        {
-            return true;
-        }
+
+        return true;
     }
 
     /**
@@ -68,8 +78,6 @@ class FormValidator {
      */
     public function validateLogin($formInput)
     {
-        // returns the validation response
-        // if errors keep input and back()
-        // else return @response
+
     }
 }

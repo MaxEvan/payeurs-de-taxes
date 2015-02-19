@@ -2,6 +2,7 @@
 
 @section('content')
 	<h1>Connexion</h1>
+    <?php if($errors->first('message')){ echo "<p class='error'>" . $errors->first('message'). "</p>";}?>
 	{{ Form::open(['class' => 'authForm']) }}
 		<div>
 			{{ Form::label('username', "Nom d'utilisateur") }}
