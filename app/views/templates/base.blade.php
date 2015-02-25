@@ -10,6 +10,11 @@
 <link href="/css/min/min.css" rel="stylesheet" media="screen">
 </head>
 	<body class="page-index">
+		<div id="socialDiv">
+			<a class="socialLink" href="https://www.facebook.com/pages/Payeursdetaxesca/1621627638064752"><img class="socialImg social" src="/img/icon/icon-facebook.png" alt="Facebook"></a>
+			<a class="socialLink" href="https://twitter.com/PayeursDeTaxes"><img class="socialImg social" src="/img/icon/icon-twitter.png" alt="Twitter"></a>
+       		<a class="socialLink" href="https://plus.google.com/u/0/103967291940630513527"><img class="socialImg social" src="/img/icon/icon-google.png" alt="Google plus"></a>    
+    	</div>
 		<div class="container" id="container">
 			<div class="row top">
 				<div class="col-lg-8 col-md-8 col-sm-7 col-left">
@@ -19,11 +24,6 @@
 							<span style="color:white;"> | {{ Auth::user()->username }}</span>
 							<a href="#" id="logout" style="font-size: 13px;"><u>D&eacute;connexion</u></a>
 						</span>
-						<div style="float:right">
-							<a href="https://www.facebook.com/pages/Payeursdetaxesca/1621627638064752"><img class="social" src="/img/icon/icon-facebook.png" alt="facebook"></a>
-							<a href="https://twitter.com/PayeursDeTaxes"><img class="social" src="/img/icon/icon-twitter.png" alt="twitter"></a>
-				       		<a href="https://plus.google.com/u/0/103967291940630513527"><img class="social imgSocial" src="/img/icon/icon-google.png" alt="Google plus"></a>    
-				    	</div>
 					</div> 
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-5 col-right">
