@@ -19,12 +19,8 @@
 							<div id="dropdown">
 								<a href="#" id="menuIcon"><img id="bars" src="/img/icon/icon_bars.png"></a>
 								<ul id="profileDropdown" class="hidden">
-									<li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li>
-									<li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li>
-									<li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li>
-									<li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li>
-									<li class="dropdownItem" id="logout">D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li>
-									<li class="dropdownItem">{{Auth::user()}}</li>
+									<a href="#"><li class="dropdownItem">{{Auth::user()->username}}</li></a>
+									<a href="#" id="logout"><li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li></a>
 								</ul>
 							</div>
 						</span>

@@ -639,7 +639,7 @@ html,body,.container {
 
 
 #logoutImg{
-    width:15px;
+    width:12px;
 }
 
 #menuIcon{
@@ -668,6 +668,7 @@ html,body,.container {
     width: 100px;
     right: -15px;
     position: absolute;
+    z-index: 2147483647;
 }
 
 .dropdownItem{
@@ -675,6 +676,14 @@ html,body,.container {
     &:hover{
         background-color: @grey-6;
     }
+}
+
+.row.top{
+    z-index: 10000;
+}
+
+.row.bottom{
+    z-index: 1;
 }
 // LOGIN_REGISTER
 #buttonDiv{
