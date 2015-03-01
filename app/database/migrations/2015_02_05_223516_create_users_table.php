@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration {
             $table->boolean('active')->default(0);;
             $table->boolean('confirmed')->default(0);
             $table->string('confirmation_code')->nullable();
+            $table->binary('voted_for')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

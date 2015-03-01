@@ -30,10 +30,8 @@ class CreateCommentsTable extends Migration {
 
             $table->string('author');
             $table->mediumText('content');
-            $table->enum('tags', []);
-            $table->datetime('date');
-            $table->integer('approval');
-            $table->integer('disapproval');
+            $table->integer('approval')->unsigned();
+            $table->integer('disapproval')->unsigned();
             $table->timestamps();
         });
     }

@@ -12,7 +12,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('css', function() {
-	gulp.src('public/css/less/*.less')
+	gulp.src(['public/css/css/*.css', 'public/css/less/*.less'])
 		.pipe(concat('min.css'))
 		.pipe(less())
 		.pipe(mincss())

@@ -29,12 +29,10 @@ class UsersController extends BaseController {
 
         if(Auth::attempt($auth, false, true))
         {
-            // dd("OK/LOGIN");
             return Redirect::home();
         }
         else
         {
-            dd("NOT/OK/LOGIN");
             return Redirect::back()->withErrors(['message' => "Connexion impossible, assurez vous que votre <br/> compte est confrm&eacute et v&eacute;rifiez vos identifiants."]);
         }
     }

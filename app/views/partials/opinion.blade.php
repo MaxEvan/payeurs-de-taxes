@@ -41,10 +41,18 @@
 </ul> -->
 <hr>
 
+<!-- Voting area -->
+<h2 id="voteArea" class="media">&Ecirc;tes vous plut&ocirc;t <button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button> <br> avec les opinions exprim&eacute;es dans ce texte.</h2>
+
 <!--comments-->
 <h1>Commentaires</h1>
-@include('partials.comment')
+    @include('partials.comment')
+<div class="text-center">
+    <button id="leaveComment" class="btn btn-default pdtxBtn authBtn">Laisser un commentaire</button>
+</div>
 <hr>
+
+
 <h3>pour faire part d'une opinion...</h3>
 @include('partials.contactForm')
 <hr>
