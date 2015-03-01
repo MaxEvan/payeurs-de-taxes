@@ -23,4 +23,10 @@ $("#backToTop").click(function(e){
 $("#logout").click(function(e) {
     e.preventDefault();
     logout();
-})
+});
+
+// DropDown
+
+$("#menuIcon").click(function() {
+    $("#profileDropdown").toggleClass("hidden");
+});

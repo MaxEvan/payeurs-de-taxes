@@ -617,21 +617,14 @@ html,body,.container {
 }
 
 #socialDiv{
-    position: absolute;
-    /*top: 200px;
     .socialLink{
-        z-index:100000;
-        height: 100px;
-        width: 100px;
-        background-color: red;
+        width: 30px;
+        height: 30px;
     }
     .socialImg{
-        display: block;
         width: 30px;
     }
-    */
 }
-
 
 #returnTop{
     width: 50px;
@@ -640,6 +633,49 @@ html,body,.container {
     display: none;
 }
 
+#caret{
+    width: 1px;
+}
+
+
+#logoutImg{
+    width:15px;
+}
+
+#menuIcon{
+    padding: 10px;
+    #bars{
+        width: 20px;
+    }
+}
+
+#profileDiv{
+    float: right;
+    position: relative;
+}
+
+#dropdown{
+    display:inline;
+}
+
+#profileDropdown{
+    font-size: 15px;
+    position: relative;
+    list-style-type:none;
+    color: white;
+    background-color: @grey-5;
+    padding: 5px;
+    width: 100px;
+    right: -15px;
+    position: absolute;
+}
+
+.dropdownItem{
+    padding: 2px;
+    &:hover{
+        background-color: @grey-6;
+    }
+}
 // LOGIN_REGISTER
 #buttonDiv{
     margin-top: 20%;
@@ -780,7 +816,7 @@ html,body,.container {
 
 @media screen and (min-width: 1600px) and (max-width: 1000000px){
     #opinionContent{
-        padding: 2.5% 15% 0 15%;
+        margin: 2.5% 15% 0 15%;
     }
     .currentOpinionImg{
         height: 350px;
