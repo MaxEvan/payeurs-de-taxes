@@ -29,12 +29,12 @@
 |
 */
 
-Route::filter('notAuth', function()
+Route::filter('userIsNotAuth', function()
 {
 	if (Auth::guest()) return Redirect::to('login');
 });
 
-Route::filter('isAuth', function()
+Route::filter('userIsAuth', function()
 {
 	if (Auth::check()) return Redirect::home();
 });

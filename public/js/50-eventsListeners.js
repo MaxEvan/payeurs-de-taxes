@@ -1,5 +1,5 @@
 // Load an article article
-$(".col-right").on("click", ".sidebarOpinion [href='/Accueil']", function(e) {
+$(".col-right").on("click", ".sidebarOpinion", function(e) {
     e.preventDefault();
     var id = $(this).attr("data-opinionid");
     var url = "opinions/" + id;
@@ -26,22 +26,47 @@ $("#logout").click(function(e) {
 });
 
 // Show the dropdown
-$("#menuIcon").click(function() {
+$("#menuIcon").click(function(e) {
+    e.preventDefault();
     $("#profileDropdown").toggleClass("hidden");
-    flashMessage.warning("POUR!");
 });
 
 // Vote pour
-$("#voteFor").click(function() {
-    flashMessage.warning("POUR!");
+$(document).on("click", "#voteFor", function() {
+    var id = $("#currentOpinion").attr("data-id");
+    checkVote("for", id).done(function(resp) {
+        if(resp == "ALREADY_VOTED"){
+            flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
+        }
+        else{
+            flashMessage.success("Votre vote est enregistr&eacute; avec succ&egrave;.");
+        }
+    });
 });
 
 // Vote contre
-$("#voteAgainst").click(function() {
-    flashMessage.warning("CONTRE!");
+$(document).on("click", "#voteAgainst", function() {
+    var id = $("#currentOpinion").attr("data-id");
+     checkVote("against", id).done(function(resp) {
+        if(resp == "ALREADY_VOTED"){
+            flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
+        }
+        else{
+            flashMessage.success("Votre vote est enregistr&eacute; avec succ&egrave;.");
+        }
+    });
 });
 
 // Bouton commentaire
-$("#leaveComment").click(function() {
-    flashMessage.success("lache un com");
+$(document).on("click", "#leaveComment", function() {
+    var id = $("#currentOpinion").attr("data-id");
+    alert(id);
+    checkVote(null, id).done(function(resp) {
+        if(resp != "ALREADY_VOTED"){
+            flashMessage.error("Vous devez voter avant de pouvoir &eacute;crire un commentaire.");
+        }
+        else{
+            flashMessage.warning("LAISSEZ UN COMMENTAIRE");
+        }
+    });
 });

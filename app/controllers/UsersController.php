@@ -87,4 +87,28 @@ class UsersController extends BaseController {
             return Redirect::back()->withInput(Input::all())->withErrors(Session::get('messages'));
         }
     }
+
+    public function vote()
+    {
+        $user_id = Auth::user()->id;
+        $id = Input::get('currentOpinionId');
+        $side = Input::get('side');
+        $voted = User::find($user_id)['voted_for'];
+        !$voted ? $voted = "": true;
+        $voted = unserialize($voted);
+
+        if(in_array($id, $voted))
+        {
+            $ret = "ALREADY_VOTED";
+        }
+        else
+        {
+            array_push($voted, $id);
+            $voted = serialize($voted);
+            DB::table('users')->where('id', $user_id)->update(['voted_for' => $voted]);
+            $ret = "VOTED";
+        }
+
+        return $ret;
+    }
 }

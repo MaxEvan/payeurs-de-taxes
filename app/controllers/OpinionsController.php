@@ -22,9 +22,9 @@ class OpinionsController extends BaseController {
 	 */
 	public function renderOpinion()
 	{
-		$id = Input::get('id');
+		$id      = Input::get('id');
 		$opinion = Opinion::find($id);
-		$html 	= View::make('partials.opinion')->with('displayedOpinion', $opinion)->render();
+		$html    = View::make('partials.opinion')->with('displayedOpinion', $opinion)->render();
 		return Response::json($html);
 	}
 }

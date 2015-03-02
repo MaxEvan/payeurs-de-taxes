@@ -46,7 +46,7 @@ class Opinion extends Eloquent {
         {
             App::abort(404);
         }
-
+        
         return $opinion;
     }
 

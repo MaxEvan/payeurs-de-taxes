@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['before' => 'isAuth'], function() {
+Route::group(['before' => 'userIsAuth'], function() {
     Route::get('/login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);
     Route::get('/register/confirmation', ['as' => 'confirmation', 'uses' => 'PagesController@showConfirmation']);
     Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
@@ -11,7 +11,7 @@ Route::group(['before' => 'isAuth'], function() {
 
 
 
-Route::group(['before' => 'notAuth'], function() {
+Route::group(['before' => 'userIsNotAuth'], function() {    
     Route::get('/', ['as' => 'home', 'uses' => 'PagesController@showHome']);
     Route::get('/logout', 'UsersController@logout');
     Route::get('/opinions/{id?}', 'PagesController@showOpinion');
@@ -19,4 +19,5 @@ Route::group(['before' => 'notAuth'], function() {
     Route::get('/getMoreOpinions', 'OpinionsController@getMoreOpinions');
     Route::get('/suggestions', 'PagesController@showSuggestions');
     Route::get('/contact', 'PagesController@showContact');
+    Route::get('/vote', 'UsersController@vote');
 });
