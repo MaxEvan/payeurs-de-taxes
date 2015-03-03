@@ -43,8 +43,8 @@
 <hr>
 
 <!-- Voting area -->
-<h2 id="voteArea" class="media">&Ecirc;tes vous <button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button> <br> avec les opinions exprim&eacute;es dans ce texte.</h2>
-
+<h2 id="voteArea">Votez! <br> <button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button></h2>
+<hr>
 <!--comments-->
 <h1>Commentaires</h1>
 @include('partials.comment')

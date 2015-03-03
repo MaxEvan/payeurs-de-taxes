@@ -2,9 +2,6 @@
     <div class="panel-body">
         <form role="form">
             <div class="form-group">
-                <input type="email" class="form-control" id="contactEmail" placeholder="Adresse Courriel">
-            </div>
-            <div class="form-group">
                 <textarea class="form-control" rows="10" id="contactMessage" placeholder="Votre texte ici..."></textarea>
             </div>
         </form>
