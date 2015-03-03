@@ -1,4 +1,4 @@
-// Load an article article
+// Load an opinion
 $(".col-right").on("click", ".sidebarOpinion", function(e) {
     e.preventDefault();
     var id = $(this).attr("data-opinionid");
@@ -31,10 +31,10 @@ $("#menuIcon").click(function(e) {
     $("#profileDropdown").toggleClass("hidden");
 });
 
-// Vote pour
+// Vote for
 $(document).on("click", "#voteFor", function() {
     var id = $("#currentOpinion").attr("data-id");
-    checkVote("for", id).done(function(resp) {
+    vote(id, "pour").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
             flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
         }
@@ -44,10 +44,10 @@ $(document).on("click", "#voteFor", function() {
     });
 });
 
-// Vote contre
+// Vote against
 $(document).on("click", "#voteAgainst", function() {
     var id = $("#currentOpinion").attr("data-id");
-     checkVote("against", id).done(function(resp) {
+     vote(id, "contre").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
             flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
         }
@@ -57,16 +57,26 @@ $(document).on("click", "#voteAgainst", function() {
     });
 });
 
-// Bouton commentaire
+// Comment button
 $(document).on("click", "#leaveComment", function() {
-    var id = $("#currentOpinion").attr("data-id");
-    alert(id);
-    checkVote(null, id).done(function(resp) {
-        if(resp != "ALREADY_VOTED"){
-            flashMessage.error("Vous devez voter avant de pouvoir &eacute;crire un commentaire.");
-        }
-        else{
-            flashMessage.warning("LAISSEZ UN COMMENTAIRE");
-        }
-    });
+    if(!window.commentBoxInstance){
+        var id = $("#currentOpinion").attr("data-id");
+        vote(id, null).done(function(resp) {
+            if(resp != "ALREADY_VOTED"){
+                flashMessage.error("Vous devez voter avant de pouvoir &eacute;crire un commentaire.");
+            }
+            else{
+                flashMessage.info("Laissez un comentaire");
+                showCommentBox();
+                window.commentBoxInstance = 1;
+            }
+        });
+    }
+});
+
+
+$(document).on("click", ".writeComment",function(){
+    var message = $("#commentMessage").val();
+    alert(message);
+    // saveComment();
 });

@@ -1,7 +1,7 @@
-function checkVote(side, id) {
+function vote(id, side) {
     return $.ajax({
         url : "/vote",
-        type: "GET",
+        type: "POST",
         data: {
             side : side,
             currentOpinionId : id

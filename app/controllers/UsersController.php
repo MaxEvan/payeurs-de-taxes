@@ -8,9 +8,10 @@ class UsersController extends BaseController {
     protected $mailer;
     protected $validator;
 
-    public function __construct(UserMailer $mailer, FormValidator $validator) {
+    public function __construct(UserMailer $mailer, FormValidator $validator, Opinion $opinion) {
         $this->mailer = $mailer;
         $this->validator = $validator;
+        $this->opinion = $opinion;
     }
 
     /**
@@ -50,7 +51,6 @@ class UsersController extends BaseController {
 
     /**
     * Register a new user
-    * @var User object
     *
     * @return Response
     */
@@ -75,6 +75,11 @@ class UsersController extends BaseController {
         }
     }
 
+    /**
+    * Confirm user with emailed code
+    *
+    * @return Response
+    */
     public function confirm()
     {
         if($this->validator->validateConfirmationForm())
@@ -88,25 +93,26 @@ class UsersController extends BaseController {
         }
     }
 
-    public function vote()
+    /**
+    * Check if a user has already voted or not for an opinion
+    *
+    * @return Response
+    */
+    public function checkVote()
     {
-        $user_id = Auth::user()->id;
-        $id = Input::get('currentOpinionId');
-        $side = Input::get('side');
-        $voted = User::find($user_id)['voted_for'];
-        !$voted ? $voted = "": true;
-        $voted = unserialize($voted);
+        $user_id    = Auth::user()->id;
+        $opinion_id = Input::get('currentOpinionId');
+        $vote_side  = Input::get('side');
+        $voted_for  = User::find($user_id)->voted_for;
+        !$voted_for ? $voted_for = []: $voted_for = unserialize($voted_for);        
 
-        if(in_array($id, $voted))
+        if(in_array($opinion_id, $voted_for))
         {
             $ret = "ALREADY_VOTED";
         }
         else
         {
-            array_push($voted, $id);
-            $voted = serialize($voted);
-            DB::table('users')->where('id', $user_id)->update(['voted_for' => $voted]);
-            $ret = "VOTED";
+            !$vote_side ? $ret = "NEED_VOTE" : $ret = $this->opinion->vote($user_id ,$voted_for, $opinion_id, $vote_side);
         }
 
         return $ret;

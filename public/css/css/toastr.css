@@ -67,16 +67,16 @@ button.toast-close-button {
   width: 100%;
 }
 .toast-top-left {
-  top: 12px;
-  left: 12px;
+  top: 50px;
+  left: 0px;
 }
 .toast-top-right {
   top: 12px;
   right: 12px;
 }
 .toast-bottom-right {
-  right: 12px;
-  bottom: 12px;
+  right: 0px;
+  bottom: 0px;
 }
 .toast-bottom-left {
   bottom: 12px;

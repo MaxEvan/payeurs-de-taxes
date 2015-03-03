@@ -19,5 +19,5 @@ Route::group(['before' => 'userIsNotAuth'], function() {
     Route::get('/getMoreOpinions', 'OpinionsController@getMoreOpinions');
     Route::get('/suggestions', 'PagesController@showSuggestions');
     Route::get('/contact', 'PagesController@showContact');
-    Route::get('/vote', 'UsersController@vote');
+    Route::post('/vote', 'UsersController@checkVote');
 });

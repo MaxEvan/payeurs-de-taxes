@@ -34,27 +34,37 @@
     <p class="opinion-content paragraph">
         {{ isset($displayedOpinion->content) ? $displayedOpinion->content : 'Contenu manquant...' }}
     </p>
+    <p>
+        <i class="pull-right">
+           &Eacute;crit par : {{ isset($displayedOpinion->author) ? $displayedOpinion->author : 'Auteur!' }}
+        </i>
+    </p>
+
+    <br>
+    <hr>
+
 
     <!--navigation-->
 <!-- <ul class="pager">
 <li class="previous"><a href="#">&lt; Pr&eacute;c&eacute;dent</a></li>
 <li class="next disabled"><a href="#">Suivant &gt;</a></li>
 </ul> -->
-<hr>
 
 <!-- Voting area -->
-<h2 id="voteArea">Votez! <br> <button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button></h2>
+<h1>Votez</h1>
+<div id="voteArea"><button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou  <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button></div>
 <hr>
 <!--comments-->
-<h1>Commentaires</h1>
-@include('partials.comment')
+<div id="commentsDiv">
+    <h1>Commentaires</h1>
+    @include('partials.comment')
+</div>
 <div class="text-center">
-    <button id="leaveComment" class="btn btn-default pdtxBtn authBtn">Laisser un commentaire</button>
+    <button id="leaveComment" class="btn btn-default pdtxBtn authBtn">Ajouter un commentaire</button>
 </div>
 <hr>
 
 
-<h3>pour faire part d'une opinion...</h3>
-@include('partials.contactForm')
-<hr>
+<h1>Pour faire part d'une opinion...</h1>
+<a href="/suggestions">Visitez la page des suggestions</a>
 </div>

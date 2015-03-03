@@ -70,4 +70,26 @@ class Opinion extends Eloquent {
         $latest = DB::table('opinions')->orderBy('date', 'desc')->take(1)->get();
         return $latest[0];
     }
+
+    /**
+    * Vote for an opinion
+    *
+    * @return Response
+    */
+    public function vote($user_id, $vote_array, $opinion_id, $vote_side) 
+    {
+        // Push the opinion's ID in the array and make it the new voted for array for the user
+        array_push($vote_array, $opinion_id);
+        $vote_array = serialize($vote_array);
+
+        // Grab the opinion and the side
+        $opinion    = Opinion::find($opinion_id);
+        $side       = Input::get('side');
+
+        // Make the databases updates
+        DB::table('users')->where('id', $user_id)->update(['voted_for' => $vote_array]);
+        DB::table('opinions')->where('id', $opinion_id)->update([$side => $opinion->$side+1]);
+
+        return "VOTE_DONE";
+    }
 }

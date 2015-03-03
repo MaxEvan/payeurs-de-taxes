@@ -1,4 +1,4 @@
-<div class="media">
+<div class="media comment">
     <a class="pull-left" href="#">
         <img class="media-object img-circle" src="" alt="miniature-comment" width="48">
     </a>
