@@ -7,11 +7,13 @@ function showCommentBox() {
                 '</div>' +
                 '</form>' +
                 '<div class="text-center">' +
-                '<button class="pdtxBtn writeComment">Terminer</button>' +
+                '<button id="writeComment" class=" btn btn-default pdtxBtn">Soumettre</button>' +
+                '<button id="cancelComment" class=" btn btn-default pdtxBtn">Annuler</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
 
     $("#commentsDiv").append(html);
 
+    window.commentBoxInstance = 1;
 }

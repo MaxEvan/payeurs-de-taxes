@@ -57,7 +57,6 @@
 <!--comments-->
 <div id="commentsDiv">
     <h1>Commentaires</h1>
-    @include('partials.comment')
 </div>
 <div class="text-center">
     <button id="leaveComment" class="btn btn-default pdtxBtn authBtn">Ajouter un commentaire</button>

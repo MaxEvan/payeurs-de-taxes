@@ -700,6 +700,10 @@ html,body,.container {
     margin: 10px 0;
 }
 
+#writeComment, #closeComment{
+    margin: 0 10px;
+}
+
 // LOGIN_REGISTER
 #buttonDiv{
     margin-top: 20%;
@@ -730,9 +734,12 @@ html,body,.container {
 
 .pdtxBtn{
     border-radius: 0;
-    border: 1px solid black;
-    background-color: black;
+    background-color: rgb(51,51,51);
     color: white;
+    &:hover{
+        background-color: rgb(40,40,40);
+        color:white;
+    }
 }
 
 .authBtn{
@@ -830,7 +837,8 @@ html,body,.container {
 @media screen and (min-width: 1000px){
     #homeText{
         font-size: 19px;
-        width: 85%;
+        width: 100%;
+        margin: 0;
     }
 }
 

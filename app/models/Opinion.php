@@ -10,7 +10,7 @@ class Opinion extends Eloquent {
     protected $table   = 'opinions';
 
     /**
-     * What fields of the table are guarded against mass assignement.
+     * What fields are guarded against mass assignement.
      *
      * @var string
      */

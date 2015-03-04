@@ -7,6 +7,7 @@ class UsersController extends BaseController {
 
     protected $mailer;
     protected $validator;
+    protected $opinion;
 
     public function __construct(UserMailer $mailer, FormValidator $validator, Opinion $opinion) {
         $this->mailer = $mailer;

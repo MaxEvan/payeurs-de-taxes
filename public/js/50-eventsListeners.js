@@ -36,10 +36,10 @@ $(document).on("click", "#voteFor", function() {
     var id = $("#currentOpinion").attr("data-id");
     vote(id, "pour").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
-            flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
+            flashMessage.error(appMessages.alreadyVoted);
         }
         else{
-            flashMessage.success("Votre vote est enregistr&eacute; avec succ&egrave;.");
+            flashMessage.success(appMessages.voteSaved);
         }
     });
 });
@@ -49,10 +49,10 @@ $(document).on("click", "#voteAgainst", function() {
     var id = $("#currentOpinion").attr("data-id");
      vote(id, "contre").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
-            flashMessage.error("Vous avez d&eacute;j&agrave; vot&eacute; pour cet article.");
+            flashMessage.error(appMessages.alreadyVoted);
         }
         else{
-            flashMessage.success("Votre vote est enregistr&eacute; avec succ&egrave;.");
+            flashMessage.success(appMessages.voteSaved);
         }
     });
 });
@@ -63,20 +63,31 @@ $(document).on("click", "#leaveComment", function() {
         var id = $("#currentOpinion").attr("data-id");
         vote(id, null).done(function(resp) {
             if(resp != "ALREADY_VOTED"){
-                flashMessage.error("Vous devez voter avant de pouvoir &eacute;crire un commentaire.");
+                flashMessage.error(appMessages.voteFirst);
             }
             else{
-                flashMessage.info("Laissez un comentaire");
+                flashMessage.info(appMessages.leaveComment);
                 showCommentBox();
-                window.commentBoxInstance = 1;
             }
         });
     }
 });
 
+// Save the comment
+$(document).on("click", "#writeComment",function(){
+    var opinion_id = $("#currentOpinion").attr("data-id");
+    var content = $("#commentMessage").val();
+    content = $.trim(content);
+    if(!content || content.length == 0){        
+         flashMessage.error(appMessages.emptyComment);
+         return false;
+    }
+    // saveComment(opinion_id, content);
+    closeCommentBox();
+    flashMessage.success(appMessages.commentSaved)
+});
 
-$(document).on("click", ".writeComment",function(){
-    var message = $("#commentMessage").val();
-    alert(message);
-    // saveComment();
+// Cancel the current comment
+$(document).on("click", "#cancelComment",function(){
+    closeCommentBox();
 });

@@ -27,4 +27,5 @@ class OpinionsController extends BaseController {
 		$html    = View::make('partials.opinion')->with('displayedOpinion', $opinion)->render();
 		return Response::json($html);
 	}
+
 }
