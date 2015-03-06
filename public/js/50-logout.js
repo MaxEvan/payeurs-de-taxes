@@ -1,4 +1,4 @@
-function logout() {
+app.logout = function() {
     $.ajax({
         url: "/logout",
         type: "GET",

@@ -19,6 +19,8 @@ Route::group(['before' => 'userIsNotAuth'], function() {
     Route::get('/getMoreOpinions', 'OpinionsController@getMoreOpinions');
     Route::get('/suggestions', 'PagesController@showSuggestions');
     Route::get('/contact', 'PagesController@showContact');
-    Route::post('/vote', 'UsersController@checkVote');
-    Route::post('/saveComment', 'CommentsController@saveComment');
+    Route::post('/vote', 'UsersController@vote');
+    Route::post('/saveComment', 'CommentsController@save');
+    Route::post('/sendSuggestion', 'UsersController@sendSuggestionToAdmin');
+    Route::post('/sendEmailToAdmin', 'UsersController@sendEmailToAdmin');
 });

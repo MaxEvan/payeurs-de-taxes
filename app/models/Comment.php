@@ -16,11 +16,8 @@ class Comment extends Eloquent {
      */
     protected $guarded = [];
 
-    public function saveComment($user_id, $opinion_id, $content) 
+    public function get($opinion_id)
     {
-        $insert = ['user_id'    => $user_id,
-                    'opinion_id' => $opinion_id, 
-                    'content'    => $content];
-        DB::table('comments')->insert($insert);
+        return Comment::where('opinion_id', '=', $opinion_id)->get();
     }
 }

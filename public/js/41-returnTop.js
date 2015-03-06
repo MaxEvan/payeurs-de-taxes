@@ -1,5 +1,5 @@
 // Function when click on the img
-function returnToTop(){
+app.returnToTop = function(){
     if($("#col-left").scrollTop() > 0){
         $("#col-left").animate({scrollTop : 0}, 800);
     }else{

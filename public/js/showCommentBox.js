@@ -1,4 +1,4 @@
-function showCommentBox() {
+app.showCommentBox = function() {
     var html =  '<div class="panel panel-default contact btn-footer commentBox">' +
                 '<div class="panel-body">' +
                 '<form role="form">' +

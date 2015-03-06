@@ -34,12 +34,6 @@ class Opinion extends Eloquent {
      */
     public function getOpinion($id = null) 
     {
-        if(!$id)
-        {
-            $id      = DB::table('opinions')->max('id');
-            $opinion = Opinion::find($id);
-        }
-
         $opinion = Opinion::find($id);
 
         if(!$opinion)

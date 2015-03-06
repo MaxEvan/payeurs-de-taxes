@@ -52,11 +52,18 @@
 
 <!-- Voting area -->
 <h1>Votez</h1>
+<h1 class="spacer">___</h1>
 <div id="voteArea"><button id="voteFor" class="btn btn-default pdtxBtn">EN ACCORD</button> ou  <button id="voteAgainst" class="btn btn-default pdtxBtn">EN D&Eacute;SACCORD</button></div>
 <hr>
 <!--comments-->
 <div id="commentsDiv">
     <h1>Commentaires</h1>
+    <h1 class="spacer">___</h1>
+    @if(isset($comments))
+        @foreach($comments as $comment)
+            @include('partials.comment')
+        @endforeach
+    @endif
 </div>
 <div class="text-center">
     <button id="leaveComment" class="btn btn-default pdtxBtn authBtn">Ajouter un commentaire</button>
@@ -65,5 +72,6 @@
 
 
 <h1>Pour faire part d'une opinion...</h1>
+<h1 class="spacer">___</h1>
 <a href="/suggestions">Visitez la page des suggestions</a>
 </div>

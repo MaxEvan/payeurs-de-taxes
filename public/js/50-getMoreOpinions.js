@@ -1,4 +1,4 @@
-function getMoreOpinions(offset) {
+app.getMoreOpinions = function(offset) {
     $("#loading, #loadMore").toggleClass("hidden");
     setTimeout(function() {
 

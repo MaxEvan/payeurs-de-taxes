@@ -12,13 +12,21 @@ class PagesController extends BaseController {
     protected $opinion;
 
     /**
-     * Injection of the Opinion model in the construct.
+     * Instance of the Comment model.
      *
      * @var string
      */
-    function __construct(Opinion $opinion)
+    protected $comments;
+
+    /**
+     * Injection of the Opinion and Comment models in the construct.
+     *
+     * @var string
+     */
+    function __construct(Opinion $opinion, Comment $comments)
     {
         $this->opinion = $opinion;
+        $this->comments = $comments;
     }
 
     /**
@@ -62,11 +70,12 @@ class PagesController extends BaseController {
     public function showOpinion($id = null) {
         if($id == null)
         {
-            return $this->initialize('opinions', ['displayedOpinion' => $this->opinion->getOpinion()]);
+            $id = DB::table('opinions')->max('id');
+            return Redirect::to('opinions/' . $id);
         }
         else
         {
-            return $this->initialize('opinions', ['displayedOpinion' => $this->opinion->getOpinion($id)]);
+            return $this->initialize('opinions', ['displayedOpinion' => $this->opinion->getOpinion($id), 'comments' => $this->comments->get($id)]);
         }
     }
 

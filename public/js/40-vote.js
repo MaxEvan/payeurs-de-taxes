@@ -1,4 +1,4 @@
-function vote(id, side) {
+app.vote = function(id, side) {
     return $.ajax({
         url : "/vote",
         type: "POST",

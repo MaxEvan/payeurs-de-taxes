@@ -5,8 +5,8 @@
                 <textarea class="form-control" rows="10" id="contactMessage" placeholder="Votre texte ici..."></textarea>
             </div>
         </form>
-    </div>
-    <div class="panel-footer">
-        <a class="btn btn-grey btn-lg btn-block">Envoi</a>
+        <div class="pull-right">
+            <button id="sendSuggestion" class="btn btn-default pdtxBtn">Envoyer</button>
+        </div>
     </div>
 </div>

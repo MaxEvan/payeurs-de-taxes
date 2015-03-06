@@ -24,8 +24,8 @@ class OpinionsController extends BaseController {
 	{
 		$id      = Input::get('id');
 		$opinion = Opinion::find($id);
-		$html    = View::make('partials.opinion')->with('displayedOpinion', $opinion)->render();
-		return Response::json($html);
+		$html    = Response::json(View::make('partials.opinion')->with('displayedOpinion', $opinion)->render());
+		return ['powpow', $html];
 	}
 
 }

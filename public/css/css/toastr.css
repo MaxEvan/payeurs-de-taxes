@@ -67,7 +67,7 @@ button.toast-close-button {
   width: 100%;
 }
 .toast-top-left {
-  top: 50px;
+  top: 0px;
   left: 0px;
 }
 .toast-top-right {
@@ -108,7 +108,7 @@ button.toast-close-button {
   -webkit-box-shadow: 0 0 12px #999999;
   box-shadow: 0 0 12px #999999;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: alpha(opacity=80);
 }

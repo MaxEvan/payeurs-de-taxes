@@ -1,12 +1,7 @@
 <div class="media comment">
-    <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="" alt="miniature-comment" width="48">
-    </a>
     <div class="media-body">
-        <h3 class="media-heading">Mr. Commentaire</h3>
-        <p class="comment-date">09 sep 2013</p>
-        <p class="comment-content">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius. Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non?
-    </p></div>
-    <div>
+        <h3 class="media-heading">{{ $comment['author'] }}</h3>
+        <p class="comment-date">{{ isset($comment->created_at) ? $comment->created_at : 'Date manquante!' }}</p>
+        <p class="comment-content">{{ isset($comment->content) ? $comment->content : 'Contenu manquant!' }}</p>
     </div>
 </div>

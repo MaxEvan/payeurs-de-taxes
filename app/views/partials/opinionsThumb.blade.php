@@ -1,4 +1,5 @@
-<div class="mix web-design mix_all sidebarOpinion" data-opinionid="{{ isset($opinion->id) ? $opinion->id : '#'}}">
+<a href="/opinions/{{ isset($opinion->id) ? $opinion->id : '#'}}">
+    <div class="mix web-design mix_all sidebarOpinion" data-opinionid="{{ isset($opinion->id) ? $opinion->id : '#'}}">
     <div class="panel panel-default item">
         <div class="panel-heading">
             <a href="/opinions/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="opinionLink">
@@ -7,7 +8,6 @@
             </a>
         </div>
         <div class="panel-body">
-            <a href="/opinions/{{ isset($opinion->id) ? $opinion->id : '#'}}" class="opinionLink">
                 <div>
                     <h4 class="opinionTitle">{{ isset($opinion->title) ? $opinion->title : 'Titre Manquant' }}</h4>
                     <span class="pull-right">
@@ -20,10 +20,10 @@
                 <p>{{ isset($opinion->date) ? date('Y-m-d', strtotime($opinion->date)) : 'Date manquante' }}<br>
                     <hr>
                     {{ isset($opinion->resume) ? substr($opinion->resume, 0, 30).(' ...') : 'Contenu manquant' }}</p>
-            </a>
             <!--work tags-->
             <p class="item-tags">
             </p>
         </div>
     </div>
 </div>
+</a>

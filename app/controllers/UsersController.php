@@ -99,7 +99,7 @@ class UsersController extends BaseController {
     *
     * @return Response
     */
-    public function checkVote()
+    public function vote()
     {
         $user_id    = Auth::user()->id;
         $opinion_id = Input::get('currentOpinionId');
@@ -117,5 +117,15 @@ class UsersController extends BaseController {
         }
 
         return $ret;
+    }
+
+    public function SendSuggestionToAdmin() 
+    {
+        return "powpow";
+    }
+
+    public function sendEmailToAmdin() 
+    {
+        return "powpowopw";
     }
 }

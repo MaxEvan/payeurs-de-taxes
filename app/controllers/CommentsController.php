@@ -2,23 +2,21 @@
 
 class CommentsController extends BaseController {
 
-	protected $comment;
-
-	function __construct(Comment $comment) {
-		$this->comment = $comment;
-	}
-	
 	/**
 	 * Save the comment written by the user
 	 *
 	 * @return Response
 	 */
-	public function saveComment()
+	public function save()
 	{
-		$user_id    = Auth::user()->id;
-		$opinion_id = Input::get('opinion_id');
-		$content    = Input::get('content');
-		$this->comment->saveComment($user_id, $opinion_id, $content);
+		$comment = Comment::create([
+			'user_id'    => Auth::user()->id,
+			'opinion_id' => Input::get('opinion_id'),
+			'author'     => Auth::user()->username,
+			'content'    => Input::get('content')
+		]);
+
+		return $comment;
 	}
 
 }
