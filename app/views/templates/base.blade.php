@@ -24,9 +24,9 @@
 							</div>
 						</span>
 						<span id="socialDiv" style="float:right;">
-							<a class="socialLink" href="https://www.facebook.com/pages/Payeursdetaxesca/1621627638064752"><img class="social socialImg" src="/img/icon/icon-facebook.png" alt="facebook"></a>
-							<a class="socialLink" href="https://twitter.com/PayeursDeTaxes"><img class="social socialImg" src="/img/icon/icon-twitter.png" alt="twitter"></a>
-				       		<a class="socialLink" href="https://plus.google.com/u/0/103967291940630513527"><img class="social socialImg" src="/img/icon/icon-google.png" alt="Google plus"></a>    
+							<a class="socialLink" href="https://www.facebook.com/pages/Payeursdetaxesca/1621627638064752" target="_blank"><img class="social socialImg" src="/img/icon/icon-facebook.png" alt="facebook"></a>
+							<a class="socialLink" href="https://twitter.com/PayeursDeTaxes" target="_blank"><img class="social socialImg" src="/img/icon/icon-twitter.png" alt="twitter"></a>
+				       		<a class="socialLink" href="https://plus.google.com/u/0/103967291940630513527" target="_blank"><img class="social socialImg" src="/img/icon/icon-google.png" alt="Google plus"></a>    
 				    	</span>
 					</div> 
 				</div>

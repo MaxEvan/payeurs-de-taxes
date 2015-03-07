@@ -85,11 +85,12 @@ class UsersController extends BaseController {
     {
         if($this->validator->validateConfirmationForm())
         {
-            $this->login();
+            Auth::attempt(['username' => Input::get('username'), 'password' => Input::get('password')], false, true);
+            DB::table('users')->where('username', Input::get('username'))->update(['active' => 1, 'confirmed' => 1]);
+            return Redirect::home();
         }
         else
         {
-            dd("NOT/OK/CONFIRMATION");
             return Redirect::back()->withInput(Input::all())->withErrors(Session::get('messages'));
         }
     }

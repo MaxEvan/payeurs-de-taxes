@@ -5,6 +5,7 @@ use \Session;
 use \Redirect;
 use \Input;
 use \DB;
+use \Hash;
 
 class FormValidator {
 
@@ -18,9 +19,16 @@ class FormValidator {
     {
         $rules = [
             'username'     => 'required|exists:users',
-            'password' => 'required',
+            'password'     => 'required',
             'confirmation' => 'required'
         ];
+
+        $pass = DB::table('users')->where('username', Input::get('username'))->pluck('password');
+        if(! Hash::check(Input::get('password'), $pass))
+        {
+            Session::flash('messages', ['messages' => "V&eacute;rifiez votre nom d'usager et mot de passe"]);
+            return false;
+        }
 
         $validator = Validator::make(Input::all(), $rules);
         if($validator->fails())
@@ -33,7 +41,6 @@ class FormValidator {
         $check = DB::table('users')->where('username', Input::get('username'))->pluck('confirmation_code');
         if(Input::get('confirmation') === $check)
         {
-            DB::table('users')->where('username', Input::get('username'))->update(['active' => 1, 'confirmed' => 1]);
             return true;
         }
         else
