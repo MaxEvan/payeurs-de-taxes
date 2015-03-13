@@ -36,7 +36,7 @@ $(document).on("click", "#voteFor", function() {
     var id = $("#currentOpinion").attr("data-id");
     app.vote(id, "pour").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
-            app.flashMessage.error(app.appMessages.alreadyVoted);
+            app.flashMessage.warning(app.appMessages.alreadyVoted);
         }
         else{
             app.flashMessage.success(app.appMessages.voteSaved);
@@ -49,7 +49,7 @@ $(document).on("click", "#voteAgainst", function() {
     var id = $("#currentOpinion").attr("data-id");
      app.vote(id, "contre").done(function(resp) {
         if(resp == "ALREADY_VOTED"){
-            app.flashMessage.error(app.appMessages.alreadyVoted);
+            app.flashMessage.warning(app.appMessages.alreadyVoted);
         }
         else{
             app.flashMessage.success(app.appMessages.voteSaved);
@@ -82,7 +82,7 @@ $(document).on("click", "#writeComment",function(){
          app.flashMessage.warning(app.appMessages.emptyComment);
          return false;
     }
-    app.saveComment(opinion_id, content);/*.done(function(resp){console.log(resp)});*/
+    app.saveComment(opinion_id, content);
     app.closeCommentBox();
     app.flashMessage.success(app.appMessages.commentSaved);
 });
@@ -93,4 +93,13 @@ $(document).on("click", "#cancelComment",function(){
 });
 
 
-emailSent
+$("#sendOpinion").click(function(){
+    var title = $("#opinionTitle").val();
+    var body  = $("#opinionBody").val();
+    app.sendEmailToAdmin(body, title);
+});
+
+$("#sendEmail").click(function(){
+    var body  = $("#emailBody").val();
+    app.sendEmailToAdmin(body);
+});

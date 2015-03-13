@@ -21,6 +21,5 @@ Route::group(['before' => 'userIsNotAuth'], function() {
     Route::get('/contact', 'PagesController@showContact');
     Route::post('/vote', 'UsersController@vote');
     Route::post('/saveComment', 'CommentsController@save');
-    Route::post('/sendSuggestion', 'UsersController@sendSuggestionToAdmin');
     Route::post('/sendEmailToAdmin', 'UsersController@sendEmailToAdmin');
 });

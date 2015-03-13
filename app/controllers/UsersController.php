@@ -120,13 +120,12 @@ class UsersController extends BaseController {
         return $ret;
     }
 
-    public function SendSuggestionToAdmin() 
+    public function sendEmailToAdmin() 
     {
-        return "powpow";
-    }
+        $user  = Auth::user()->email;
+        $body  = Input::get('body');
+        $title = Input::get('title');
 
-    public function sendEmailToAmdin() 
-    {
-        return "powpowopw";
+        $this->mailer->sendEmailToAdmin($user, $body ,$title);
     }
 }

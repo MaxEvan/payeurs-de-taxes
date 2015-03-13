@@ -40,7 +40,7 @@
 								<a href="/opinions">Opinions</a>
 							</li>
 							<li class="navLink">
-								<a href="/suggestions">Suggestions</a>
+								<a href="/suggestions">Idées</a>
 							</li>
 							<li class="navlink">
 								<a href="/contact">contact</a>
