@@ -73,5 +73,5 @@
 
 <h1>Pour faire part d'une opinion...</h1>
 <h1 class="spacer">___</h1>
-<a href="/suggestions">Visitez la page des suggestions</a>
+<a href="/suggestions">Cliquez ce lien pour accéder à la page des suggestions...</a>
 </div>
