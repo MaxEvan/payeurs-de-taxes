@@ -20,5 +20,6 @@ app.appMessages = {
     alreadyVoted : "Vous avez d&eacute;j&agrave; vot&eacute; pour cette opinion.",
     emptyComment : "Votre commentaire est vide.",
     commentSaved : "Votre commentaire a &eacute;t&eacute; enregistr&eacute; avec succ&egrave;s!",
-    emailSent    : "Votre courriel a &eacute;t&eacute; envoy&eacute; avec succ&egrave;s!"
+    emailSent    : "Votre courriel a &eacute;t&eacute; envoy&eacute; avec succ&egrave;s!",
+    fillEmail    : "Assurez vous de remplir tous les champs pour votre courriel"
 }

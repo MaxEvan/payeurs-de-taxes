@@ -14,7 +14,7 @@ class UserMailer extends Mailer {
     public function sendEmailToAdmin($user, $body, $title=null)
     {
         !$title ? $subject = "Message de : " . $user : $subject = "Opinion de : " . $user;
-        $view = 'email.fromUser.message';
+        $view = 'emails.fromUser.message';
         $data = ['body' => $body, 'title' => $title];
 
         return $this->sendTo('payeursdetaxes@gmail.com', $subject, $view, $data);

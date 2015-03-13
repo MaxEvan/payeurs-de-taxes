@@ -96,10 +96,21 @@ $(document).on("click", "#cancelComment",function(){
 $("#sendOpinion").click(function(){
     var title = $("#opinionTitle").val();
     var body  = $("#opinionBody").val();
+    title     = $.trim(title);
+    body      = $.trim(body);
+
+    if(title.length == 0 || body.length == 0){
+        app.flashMessage.warning(app.appMessages.fillEmail);
+        return false;
+    }
     app.sendEmailToAdmin(body, title);
 });
 
 $("#sendEmail").click(function(){
     var body  = $("#emailBody").val();
+    body      = $.trim(body);
+    if(body.length == 0){
+        app.flashMessage.warning(app.appMessages.fillEmail);
+    }
     app.sendEmailToAdmin(body);
 });

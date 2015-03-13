@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'Admin@payeursdetaxes.ca', 'name' => 'Admin'),
+	'from' => array('address' => 'Admin@payeursdetaxes.ca', 'name' => 'PayeursDeTaxes'),
 
 	/*
 	|--------------------------------------------------------------------------
