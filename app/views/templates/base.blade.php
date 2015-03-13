@@ -39,9 +39,9 @@
 							<li class="navLink">
 								<a href="/opinions">Opinions</a>
 							</li>
-							<li class="navLink">
-								<a href="/suggestions">Idées</a>
-							</li>
+	<!-- 						<li class="navLink">
+								<a href="/suggestions">Suggestions</a>
+							</li> -->
 							<li class="navlink">
 								<a href="/contact">contact</a>
 							</li>
