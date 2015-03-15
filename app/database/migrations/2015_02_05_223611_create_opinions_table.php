@@ -18,6 +18,7 @@ class CreateOpinionsTable extends Migration {
             $table->string('title');
             $table->string('resume');
             $table->mediumText('content');
+            $table->string('author');
             $table->datetime('date');
             $table->string('tags');
             $table->string('image');
