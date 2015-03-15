@@ -73,5 +73,5 @@
 
 <h1>Pour faire part d'une opinion...</h1>
 <h1 class="spacer">___</h1>
-<a href="/suggestions">CLIQUEZ CE LIEN POUR DONNER VOTRE OPINION</a>
+<a href="/suggestions">CLIQUEZ CE LIEN POUR PUBLIER UNE OPINION</a>
 </div>
