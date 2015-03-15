@@ -111,6 +111,7 @@ $("#sendEmail").click(function(){
     body      = $.trim(body);
     if(body.length == 0){
         app.flashMessage.warning(app.appMessages.fillEmail);
+        return false;
     }
     app.sendEmailToAdmin(body);
 });
