@@ -18,9 +18,9 @@
 				<ul style="text-align:justify">
 					<li>Donner une tribune aux Citoyens Payeurs de taxes pour critiquer les politiques actuelles en matière de taxation, d’impôt et de perceptions obligatoires</li>
 					<li>Proposer des suggestions pour mieux utiliser nos impôts et nos taxes.</li>
-					<li>Rapporter des faits où l’on a connaissance de gaspillage ou de mauvaise utilisation de nos taxes.
-					<li>Rapporter les faits sur lesquels se basent les critiques ou suggestions. </li>
-					<li>Influencer nos décideurs,afin qu’ils dépensent notre argent comme nous le voudrions. </li>
+					<li>Rapporter des faits où l’on a connaissance de gaspillage ou de mauvaise utilisation de nos taxes.</li>
+					<li>Rapporter les faits sur lesquels se basent les critiques ou suggestions.</li>
+					<li>Influencer nos décideurs afin qu’ils dépensent notre argent comme nous le voudrions.</li>
 				</ul>
 				</div><br/>
 			</p>
