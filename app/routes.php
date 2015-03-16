@@ -11,15 +11,17 @@ Route::group(['before' => 'userIsAuth'], function() {
 
 
 
-Route::group(['before' => 'userIsNotAuth'], function() {    
-    Route::get('/', ['as' => 'home', 'uses' => 'PagesController@showHome']);
+Route::group(['before' => 'userIsNotAuth'], function() {
     Route::get('/logout', 'UsersController@logout');
-    Route::get('/opinions/{id?}', 'PagesController@showOpinion');
-    Route::get('/renderOpinion', 'OpinionsController@renderOpinion');
-    Route::get('/getMoreOpinions', 'OpinionsController@getMoreOpinions');
-    Route::get('/suggestions', 'PagesController@showSuggestions');
-    Route::get('/contact', 'PagesController@showContact');
-    Route::post('/vote', 'UsersController@vote');
-    Route::post('/saveComment', 'CommentsController@save');
     Route::post('/sendEmailToAdmin', 'UsersController@sendEmailToAdmin');
+    Route::post('/saveComment', 'CommentsController@save');
+    Route::post('/vote', 'UsersController@vote');
 });
+
+Route::get('/opinions/{id?}', 'PagesController@showOpinion');
+Route::get('/renderOpinion', 'OpinionsController@renderOpinion');
+Route::get('/getMoreOpinions', 'OpinionsController@getMoreOpinions');
+Route::get('/suggestions', 'PagesController@showSuggestions');
+Route::get('/contact', 'PagesController@showContact');
+Route::get('/', ['as' => 'home', 'uses' => 'PagesController@showHome']);
+

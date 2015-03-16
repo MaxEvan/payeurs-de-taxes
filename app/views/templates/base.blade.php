@@ -15,6 +15,7 @@
 					<div id="navbar" class="name" style="diplay:inline;">
 						<a href="/">PayeursDeTaxes.ca</a>
 						<span id="profileDiv">
+						@if(Auth::user())
 							<div id="dropdown">
 								<a href="#" id="menuIcon"><img id="bars" src="/img/icon/icon_bars.png"></a>
 								<ul id="profileDropdown" class="hidden">
@@ -22,6 +23,9 @@
 									<a href="#" id="logout"><li class="dropdownItem" >D&eacute;connexion <img id="logoutImg" src="/img/icon/logout.png" alt=""></li></a>
 								</ul>
 							</div>
+						@else
+							<a href="/login"><small>Connexion</small></a>
+						@endif
 						</span>
 						<span id="socialDiv" style="float:right;">
 							<a class="socialLink" href="https://www.facebook.com/pages/Payeursdetaxesca/1621627638064752" target="_blank"><img class="social socialImg" src="/img/icon/icon-facebook.png" alt="facebook"></a>

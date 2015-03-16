@@ -7,7 +7,14 @@ app.sendEmailToAdmin = function(body, title) {
             body: body
         },
         success: function(resp) {
-            app.flashMessage.success(app.appMessages.emailSent);
+            if(resp == "NOTAUTH")
+            {
+                app.flashMessage.error(app.appMessages.register);
+            }
+            else
+            {
+                app.flashMessage.success(app.appMessages.emailSent);
+            }
         } 
     });
 }

@@ -31,7 +31,7 @@
 
 Route::filter('userIsNotAuth', function()
 {
-	if (Auth::guest()) return Redirect::to('login');
+	if (Auth::guest()) return "NOTAUTH";
 });
 
 Route::filter('userIsAuth', function()
