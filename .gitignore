@@ -7,3 +7,5 @@ composer.lock Remove this one after you create a project
 .DS_Store
 Thumbs.db
 payeursdetaxes.info
+gulpfile.js
+node_modules/
