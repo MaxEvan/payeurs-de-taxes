@@ -9,3 +9,8 @@ Thumbs.db
 payeursdetaxes.info
 gulpfile.js
 node_modules/
+readme.md
+phpunit.xml
+config.codekit
+CONTRIBUTING.md
+composer.json
