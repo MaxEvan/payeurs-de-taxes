@@ -22,5 +22,5 @@ app.appMessages = {
     commentSaved : "Votre commentaire a &eacute;t&eacute; enregistr&eacute; avec succ&egrave;s!",
     emailSent    : "Votre courriel a &eacute;t&eacute; envoy&eacute; avec succ&egrave;s!",
     fillEmail    : "Assurez vous de remplir tous les champs pour votre courriel.",
-    register     : "Vous devez vous inscrire avant d'effectuer cette action!"
+    register     : "Vous devez &ecirc;tre connect&eacute; avant d'effectuer cette action! Cliquez sur connexion."
 }

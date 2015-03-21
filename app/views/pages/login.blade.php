@@ -19,6 +19,6 @@
 	<br>
 	<div><a href="/">Retour à la page d'accueil</a></div><br>
 	<div><a href="/register">Pas de compte? Inscrivez vous ici!</a></div><br>
-	<div><a href="/register/confirmation">Vous avec un compte non confirm&eacute;? cliquez ici...</a></div>
+	<div><a href="/register/confirmation">Vous avez un compte non confirm&eacute;? cliquez ici...</a></div>
 	<div class="hidden error">MAUVAIS USAGER OU MOT DE PASSE!</div>
 @stop
