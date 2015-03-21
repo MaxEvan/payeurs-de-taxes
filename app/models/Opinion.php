@@ -61,7 +61,7 @@ class Opinion extends Eloquent {
      */
     public function getLatestOpinion() 
     {
-        $latest = DB::table('opinions')->orderBy('date', 'asc')->take(1)->get();
+        $latest = DB::table('opinions')->orderBy('date', 'desc')->get();
         return $latest[0];
     }
 

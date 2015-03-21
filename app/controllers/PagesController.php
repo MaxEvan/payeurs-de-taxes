@@ -70,7 +70,7 @@ class PagesController extends BaseController {
     public function showOpinion($id = null) {
         if($id == null)
         {
-            $id = DB::table('opinions')->max('id');
+            $id = $this->opinion->getLatestOpinion()->id;
             return Redirect::to('opinions/' . $id);
         }
         else
