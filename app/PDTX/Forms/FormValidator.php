@@ -61,7 +61,7 @@ class FormValidator {
     public function validateRegistrationForm()
     {
         $rules = [
-            'username' => 'required|min:6|unique:users|alpha_num',
+            'username' => 'required|unique:users|alpha_num',
             'email'    => 'required|email|unique:users',
             'password' => 'required|confirmed|min:6|alpha_num'
         ];
