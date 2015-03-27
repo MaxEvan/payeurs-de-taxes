@@ -29,7 +29,7 @@ class UsersController extends BaseController {
                  'confirmed' => 1, 
                  'active' => 1];
 
-        if(Auth::attempt($auth, false, true))
+        if(Auth::attempt($auth, true))
         {
             return Redirect::home();
         }
@@ -81,17 +81,18 @@ class UsersController extends BaseController {
     *
     * @return Response
     */
-    public function confirm()
+    public function confirm($code = null)
     {
-        if($this->validator->validateConfirmationForm())
-        {
-            Auth::attempt(['username' => Input::get('username'), 'password' => Input::get('password')], false, true);
-            DB::table('users')->where('username', Input::get('username'))->update(['active' => 1, 'confirmed' => 1]);
-            return Redirect::home();
+        $user = DB::table('users')->where('confirmation_code', $code)->get();
+
+        if(!$code || !$user){
+            return Redirect::to('/login');
         }
         else
         {
-            return Redirect::back()->withInput(Input::all())->withErrors(Session::get('messages'));
+            $update = ['active' => 1, 'confirmed' => 1, 'confirmation_code' => null];
+            DB::table('users')->where('confirmation_code', $code)->update($update); 
+            return View::make('pages.confirmation');
         }
     }
 

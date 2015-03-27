@@ -8,9 +8,8 @@
 
         <div>
             Il ne reste plus qu'&agrave; confirmer votre adresse courriel.<br>
-            Entrez vos informations pour terminer votre inscription!<br>
-            {{ URL::route('confirmation') }} <br>
-            <h2>Code de confirmation : {{ $code }}</h2>
+            Cliquez sur ce lien pour confirmer votre compte<br>
+            {{ URL::route('confirmation') }}/{{ $code }} <br>
         </div>
 
     </body>
