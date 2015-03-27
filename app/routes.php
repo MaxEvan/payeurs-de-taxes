@@ -4,7 +4,7 @@ Route::group(['before' => 'userIsAuth'], function() {
     Route::get('/login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);
     Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
     Route::post('/login', 'UsersController@login');
-    Route::get('/register/confirmation/{code?}', 'UsersController@confirm');
+    Route::get('/register/confirmation/{code?}', ['as' => 'confirmation', 'uses' => 'UsersController@confirm']);
     Route::post('/register', 'UsersController@register');
 });
 

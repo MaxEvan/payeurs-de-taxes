@@ -68,7 +68,7 @@ class UsersController extends BaseController {
             ]);
 
             $this->mailer->sendConfirmation(Input::get('email'), $code);
-            return Redirect::to('register/confirmation');
+            return View::make("pages.registerEmail");
         }
         else
         {
