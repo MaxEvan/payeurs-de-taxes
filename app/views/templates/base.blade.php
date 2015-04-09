@@ -12,8 +12,14 @@
 		<div class="container" id="container">
 			<div class="row top">
 				<div class="col-lg-8 col-md-8 col-sm-7 col-left">
-					<div id="navbar" class="name" style="diplay:inline;">
+					<div id="navbar" class="name">
 						<a href="/">PayeursDeTaxes.ca</a>
+											<span id="containerDette">
+												<span>Dette du Québec</span>
+												<span id="publicDebt">
+						    						<span id="frenchClock"></span>
+												</span>
+											</span>
 						<span id="profileDiv">
 						@if(Auth::user())
 							<div id="dropdown">

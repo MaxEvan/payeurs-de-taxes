@@ -22,7 +22,7 @@ function addCommas(nStr, french)
     
     if (french == true)
        x2 = x2 + " $";
-        else
+    else
        x1 = "$" + x1;
                 
     return x1 + x2;
@@ -31,7 +31,7 @@ function addCommas(nStr, french)
 
 function updateDebtClock()
 {
-    var debtContainer = document.getElementById("public_debt");
+    var debtContainer = document.getElementById("publicDebt");
 
     if (debtContainer)
     {
