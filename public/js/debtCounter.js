@@ -38,7 +38,7 @@ function updateDebtClock()
         var start = new Date("2015-03-26");
         var now = new Date();
         var seconds = (now.getTime() - start.getTime()-57600000) / 10;
-        var baseDebt = 274413881557;
+        var baseDebt = 207413881557;
         var newDebt = seconds * 2.08607507;
         var result = baseDebt + newDebt;
 
